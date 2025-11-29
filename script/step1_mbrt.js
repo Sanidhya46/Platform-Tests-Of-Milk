@@ -100,6 +100,10 @@ const tongs_down4 = document.querySelector('#tongs_down4');
 pipette2();
 
 timerDisplay.style.visibility  = "block"
+
+
+
+
 function pipette2() {
    
     if (f === 100) {
@@ -277,15 +281,45 @@ function pipette2() {
                                                                        pipette_centrifuge2.style.bottom = "11%"
                                      setTimeout(function(){
                                       pipette_centrifuge2.style.rotate = "-90deg"
+                                       f = 145;
                                       setTimeout(function(){
                                          pipette_centrifuge2.style.bottom = "-7%"
 
-                                         startbutton.style.visibility="visible"
+                                       
+                                       
+                                        
+                                          tube_cap_a.addEventListener("click", function() {
+                                               if(f === 145){
+                                                f = 146;
+                                                console.log("cap clicked !!")
+                                                    tube_cap_a.style.bottom = "60%";
+
+                                       
+
+
+                                        setTimeout(function(){
+                   tube_cap_a.style.left = "66%"
+                    setTimeout(function(){
+                         tube_cap_a.style.bottom = "45%"
+         if (f === 146) {
+        f = 146.5;
+              tube_cap_b.style.bottom = "60%"
+               setTimeout(function(){
+                   tube_cap_b.style.left = "69.7%"
+                   setTimeout(function(){
+                         tube_cap_b.style.bottom = "45%"
+                                        f =147;
+                                        startbutton.style.visibility="visible"
                                          startbutton.innerText="Next"
                                          ins.innerText="Click on Next button"
-                                          tube_cap_A.style.opacity = "100%"
-                                         f = 145;
-                                        
+                                        },1000)
+                                          },1000)
+                                        }
+                                                   },1000)
+                                                },1000)
+                                                  
+                                               }
+                                          },)
                                          console.log("f is 150 just after next")
                                                       },1000)
                                                    },1000)
@@ -369,213 +403,18 @@ function zoominout(element) {
     }, 0);
 }
 
-if(f === 150){
-  f = 150.5;
-  milk_tube_b_3();
-function milk_tube_b_3(){
-  stp39.style.visibility = "visible";
- ins.innerText = "click on the tube_cap to close the tubes "
- console.log("tube cap ready to be clicked")
-   tube_cap_A.addEventListener("click", function() {
-    pulse(tube_cap_A)
-    console.log("tube_cap_a clicked")
-         if (f === 150.5) {
-        f = 151;
-              tube_cap_a.style.bottom = "60%"
-               setTimeout(function(){
-                   tube_cap_a.style.left = "66%"
-                    setTimeout(function(){
-                         tube_cap_a.style.bottom = "45%"
-         if (f === 151) {
-        f = 152;
-              tube_cap_b.style.bottom = "60%"
-               setTimeout(function(){
-                   tube_cap_b.style.left = "69.7%"
-                    setTimeout(function(){
-                      tongs_A.style.opacity = "100%"
-                      tongs_A.style.visibility = "visible"
-                         tube_cap_b.style.bottom = "45%"
-                          ins.innerText = "click on the tongs to invert tubes for sometime to mix well the methylene solution with the milk"
-                          setTimeout(function(){
-                          tube_cap_a.style.opacity = "0%"
-                          tube_cap_a.style.visibility = "hidden"
-                           tube_cap_b.style.visibility = "hidden"
-                            methylene_blue_tube_b.style.visibility = "hidden"
-                            //   test_tube_b_3.style.visibility = "hidden"
-                            //  test_tube_b_3.style.opacity = "0%"
-                              
-                  tube_cap_b.style.opacity = "0%"
-                  test_tube_a_2.style.opacity = "0%"
-                 
-                           closed_methylene_blue_tube_a.style.opacity = "100%"
-                  closed_methylene_blue_tube_b.style.opacity = "100%"
-                 
-                
-                  methylene_blue_tube_b.style.visibility = ""
-                         
-                          tongs_A.onclick = function() {
-                            pulse(tongs_A)
-         if (f === 152) {
-        f = 153;
-        tongs_upper.style.bottom = "38%"
-        tongs_down.style.bottom = "34%"
-         setTimeout(() => {
-              // milk_tube_a_2.style.bottom =  "60%"
-              // milk_tube_b_2.style.bottom = "60%"
-              // test_tube_a_2.style.bottom = "60%"
-              // test_tube_b_2.style.bottom = "60%"
-              // tube_cap_a.style.bottom = "60%"
-              // tube_cap_b.style.bottom = "60%"
-                 tongs_upper.style.left = "58%"
-                  tongs_down.style.left = "58%"
-                   tongs_upper.style.bottom = "36.8%"
-                  tongs_down.style.transform = "rotate(-10deg)"
-                 
-                       setTimeout(() => {
-                        tongs_upper.style.bottom = "86%"
-                  tongs_down.style.bottom = "83%"
-                  closed_methylene_blue_tube_a.style.bottom = "60%"
-
-                           setTimeout(() => {
-                  // test_tube_a_2.style.transform = "rotate(180deg)"
-                  //  methylene_blue_tube.style.transform = "rotate(180deg)"
-                  closed_methylene_blue_tube_a.style.transform = "rotate(180deg)"
-                             
-                         setTimeout(() => {
-                          tongs_upper2.style.opacity = "100%";
-                           tongs_down2.style.opacity = "100%";
-                           tongs_upper.style.opacity = "0%";
-                           tongs_down.style.opacity = "0%";
-                            
-                                  setTimeout(() => {
-                                      closed_methylene_blue_tube_a.style.opacity = "0%"
-                                      closed_methylene_blue_tube_a.style.visibility = "block"
-                                      inverted_methylene_blue_tube_a.style.opacity = "100%"
-                                        setTimeout(() => {
-                                      inverted_methylene_blue_tube_a.style.bottom = "20%"
-                                      tongs_upper2.style.bottom = "35%";
-                                      tongs_down2.style.bottom = "32%";
-                                        setTimeout(() => {
-                                          
-                                           inverted_methylene_blue_tube_a.style.bottom = "12%" 
-                            setTimeout(() => {
-                              tongs_upper2.style.opacity = "0%";
-                              tongs_down2.style.opacity = "0%";
-                             
-
-         if (f === 153) {
-        f = 154;
-        tongs_upper2.style.left = "80%"
-        tongs_down2.style.left = "80%"
-        tongs_upper2.style.opacity = "100%"
-        tongs_down2.style.opacity  = "100%"
-         setTimeout(() => {
-             
-                 tongs_upper2.style.left = "70%"
-                  tongs_down2.style.left = "70%"
-                //    tongs_upper.style.bottom = "36.8%"
-                //   tongs_down.style.transform = "rotate(-10deg)"
-                 
-                       setTimeout(() => {
-                        tongs_upper2.style.bottom = "90%"
-                  tongs_down2.style.bottom = "88%"
-                  closed_methylene_blue_tube_b.style.bottom = "62%"
-
-                           setTimeout(() => {
-               
-                  closed_methylene_blue_tube_b.style.transform = "rotate(180deg)"
-                              setTimeout(() => {
-                                closed_methylene_blue_tube_b.style.opacity = "0%"
-                                      closed_methylene_blue_tube_b.style.visibility = "block"
-                                      inverted_methylene_blue_tube_b.style.opacity = "100%"
-                         setTimeout(() => {
-                          tongs_upper2.style.opacity = "100%";
-                           tongs_down2.style.opacity = "100%";
-                           tongs_upper.style.opacity = "0%";
-                           tongs_down.style.opacity = "0%";
-                            
-                                  setTimeout(() => {
-                                      inverted_methylene_blue_tube_b.style.bottom = "20%"
-                                      tongs_upper2.style.bottom = "38%";
-                                      tongs_down2.style.bottom = "35%";
-                             setTimeout(() => {
-                                       inverted_methylene_blue_tube_b.style.bottom = "12%"
-                                        setTimeout(() => {
-                                           tongs_upper2.style.left = "47%";
-                           tongs_down2.style.left = "47%";
-                           ins.innerText = "Click on the on switch to on the waterbath to insert the sample into them one by one"
-                             setTimeout(() => {
-                                       tongs_upper2.style.bottom = "15%";
-                           tongs_down2.style.bottom = "12%";
-                            f = 154;
-                 console.log(f)
-                  if (f === 154) {
-        f = 155;
-       
-    offSwitch2.addEventListener("click", function() {
-      console.log("switch is clicked")
-      ins.innerText = "Click on the temp increase button to increase temperature to 37°C"
-       actualTempDisplay2.style.opacity = "100%";
-    actualTempDisplay12.style.opacity = "100%";
-    pulse(actualTempDisplay2);
-    sampleTempDisplay2.style.opacity = "100%";
-    sampleTempDisplay12.style.opacity = "100%";
-    pulse(sampleTempDisplay2);
-    zoominout(sampleTempDisplay2);
-        
-    offSwitch2.style.visibility = "hidden";
-    console.log("f=150");
-    pulse(offSwitch2);
-    
-
-     
-     
-      
-    setTimeout(() => {
-        onSwitch2.click();
-        onSwitch2.style.opacity = "100%";
-    }, 1000);
-  
 
 
-});
-}else{console.log("nulll error switch2")}
-                               }, 0);  
-                                           }, 0);  
-                                    }, 0);    
-                                   }, 0);
-                           }, 0);  //300
-                   }, 0);
-                     }, 0);
-                          }, 0);
-               }, 0);
-              
-         }
-        },0)
-  },0)
- }, 0);
-                                   }, 0);
-                           }, 0);   //300
-                   }, 0);
-                          }, 0);
-               }, 0);
-         }
-        }
-         }, 0);
-                            }, 0);
-                 }, 0);
-                }
-          
-                         
-                       }, 0);
-                 }, 0);
-                
-  
-   }else{"tube_cap_a not clicked"}
-      },{ once: true });
+// if(f === 150){
+//       console.log("f was 150 → changing to 150.5");
+//   f = 150.5;
+//   console.log(f)
+//  milk_tube_b_3();
+// }
 
-}
-}
+  console.log("f for 150 is running !!")
+
+
 
 
 
@@ -697,12 +536,6 @@ setOff2.addEventListener("click", () => {
 
   },)
 
-function pulse(element) {
-    element.classList.add("pulse-effect");
-    setTimeout(() => {
-        element.classList.remove("pulse-effect");
-    }, 1000);
-}
 
 console.log("here new f is ", f)
 function tongs(){
@@ -802,6 +635,7 @@ tongs_down2.addEventListener("click", () => {
  }else{console.log("not move tongs..")}
 },)
 }
+
 
 
 
@@ -955,35 +789,35 @@ tongs_down2.addEventListener("click", () => {
          
        
       });
-       }, 0);
-        }, 0);
-       }, 0);
-       }, 0);   // 2000
-       }, 0);
-        }, 0);
-       }, 0);
-         }, 0);
-       }, 0);
-        }, 0);
-       }, 0);   // 2000
-        }, 0);   // 7000
-       }, 0);
-         }, 0);
-       }, 0);
-       }, 0);
-        }, 0);
-       }, 0);
-       }, 0);
-        }, 0);
-       }, 0);
-       }, 0);
-         }, 0);  // 2500
-            }, 0);
-    },0)     // 1200
-      }, 0);
+       }, 1000);
+        }, 1000);
+       }, 1000);
+       }, 2000);   // 2000
+       }, 1000);
+        }, 1000);
+       }, 1000);
+         }, 1000);
+       }, 1000);
+        }, 1000);
+       }, 2000);   // 2000
+        }, 7000);   // 7000
+       }, 1000);
+         }, 1000);
+       }, 1000);
+       }, 1000);
+        }, 1000);
+       }, 1000);
+       }, 1000);
+        }, 1000);
+       }, 1000);
+       }, 1000);
+         }, 2500);  // 2500
+            }, 1000);
+    },1200)     // 1200
+      }, 1000);
           }, { once: true });
     }else{console.log("not run white tube ..")}
-    }, 0); // starts after 1 sec
+    }, 1000); // starts after 1 sec
   }
 
 
@@ -1193,7 +1027,7 @@ tongs_down2.addEventListener("click", () => {
                  tongs_upper2.style.bottom = "17%";
                   setTimeout(() => {
                     ins.innerText = "Experiment Ended !! see the observations"
-                    observation_table_mbrt.style.opacity = "100%";
+                    observation_table_mbrt.style.visibility = "visible";
                       }, 1000);
                       }, 1000);
                          }, 1000);
@@ -1213,3 +1047,217 @@ tongs_down2.addEventListener("click", () => {
   }
 
 }
+
+
+function pulse(element) {
+    element.classList.add("pulse-effect");
+    setTimeout(() => {
+        element.classList.remove("pulse-effect");
+    }, 1000);
+}
+
+
+function milk_tube_b_201(){
+  stp39.style.visibility = "visible";
+ ins.innerText = "click on the tube_cap to close the tubes "
+ console.log("tube cap ready to be clicked")
+ 
+  
+                
+                    setTimeout(function(){
+                      tongs_A.style.opacity = "100%"
+                      tongs_A.style.visibility = "visible"
+                      
+                          ins.innerText = "click on the tongs to invert tubes for sometime to mix well the methylene solution with the milk"
+                          setTimeout(function(){
+                          tube_cap_a.style.opacity = "0%"
+                          tube_cap_a.style.visibility = "hidden"
+                           tube_cap_b.style.visibility = "hidden"
+                            methylene_blue_tube_b.style.visibility = "hidden"
+                            //   test_tube_b_3.style.visibility = "hidden"
+                            //  test_tube_b_3.style.opacity = "0%"
+                              
+                  tube_cap_b.style.opacity = "0%"
+                  test_tube_a_2.style.opacity = "0%"
+                 
+                           closed_methylene_blue_tube_a.style.opacity = "100%"
+                  closed_methylene_blue_tube_b.style.opacity = "100%"
+                   f = 152;
+                
+                  // methylene_blue_tube_b.style.visibility = ""
+                         
+                          tongs_A.onclick = function() {
+                            pulse(tongs_A)
+         if (f === 152) {
+        f = 153;
+        tongs_upper.style.bottom = "38%"
+        tongs_down.style.bottom = "34%"
+         setTimeout(() => {
+              // milk_tube_a_2.style.bottom =  "60%"
+              // milk_tube_b_2.style.bottom = "60%"
+              // test_tube_a_2.style.bottom = "60%"
+              // test_tube_b_2.style.bottom = "60%"
+              // tube_cap_a.style.bottom = "60%"
+              // tube_cap_b.style.bottom = "60%"
+                 tongs_upper.style.left = "58%"
+                  tongs_down.style.left = "58%"
+                   tongs_upper.style.bottom = "36.8%"
+                  tongs_down.style.transform = "rotate(-10deg)"
+                 
+                       setTimeout(() => {
+                        tongs_upper.style.bottom = "86%"
+                  tongs_down.style.bottom = "83%"
+                  closed_methylene_blue_tube_a.style.bottom = "60%"
+
+                           setTimeout(() => {
+                  // test_tube_a_2.style.transform = "rotate(180deg)"
+                  //  methylene_blue_tube.style.transform = "rotate(180deg)"
+                  closed_methylene_blue_tube_a.style.transform = "rotate(180deg)"
+                             
+                         setTimeout(() => {
+                          tongs_upper2.style.opacity = "100%";
+                           tongs_down2.style.opacity = "100%";
+                           tongs_upper.style.opacity = "0%";
+                           tongs_down.style.opacity = "0%";
+                            
+                                  setTimeout(() => {
+                                      closed_methylene_blue_tube_a.style.opacity = "0%"
+                                      closed_methylene_blue_tube_a.style.visibility = "block"
+                                      inverted_methylene_blue_tube_a.style.opacity = "100%"
+                                        setTimeout(() => {
+                                      inverted_methylene_blue_tube_a.style.bottom = "20%"
+                                      tongs_upper2.style.bottom = "35%";
+                                      tongs_down2.style.bottom = "32%";
+                                        setTimeout(() => {
+                                          
+                                           inverted_methylene_blue_tube_a.style.bottom = "12%" 
+                            setTimeout(() => {
+                              tongs_upper2.style.opacity = "0%";
+                              tongs_down2.style.opacity = "0%";
+                             
+
+         if (f === 153) {
+        f = 154;
+        tongs_upper2.style.left = "80%"
+        tongs_down2.style.left = "80%"
+        tongs_upper2.style.opacity = "100%"
+        tongs_down2.style.opacity  = "100%"
+         setTimeout(() => {
+             
+                 tongs_upper2.style.left = "70%"
+                  tongs_down2.style.left = "70%"
+                //    tongs_upper.style.bottom = "36.8%"
+                //   tongs_down.style.transform = "rotate(-10deg)"
+                 
+                       setTimeout(() => {
+                        tongs_upper2.style.bottom = "90%"
+                  tongs_down2.style.bottom = "88%"
+                  closed_methylene_blue_tube_b.style.bottom = "62%"
+
+                           setTimeout(() => {
+               
+                  closed_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                              setTimeout(() => {
+                                closed_methylene_blue_tube_b.style.opacity = "0%"
+                                      closed_methylene_blue_tube_b.style.visibility = "block"
+                                      inverted_methylene_blue_tube_b.style.opacity = "100%"
+                         setTimeout(() => {
+                          tongs_upper2.style.opacity = "100%";
+                           tongs_down2.style.opacity = "100%";
+                           tongs_upper.style.opacity = "0%";
+                           tongs_down.style.opacity = "0%";
+                            
+                                  setTimeout(() => {
+                                      inverted_methylene_blue_tube_b.style.bottom = "20%"
+                                      tongs_upper2.style.bottom = "38%";
+                                      tongs_down2.style.bottom = "35%";
+                             setTimeout(() => {
+                                       inverted_methylene_blue_tube_b.style.bottom = "12%"
+                                        setTimeout(() => {
+                                           tongs_upper2.style.left = "47%";
+                           tongs_down2.style.left = "47%";
+                           ins.innerText = "Click on the on switch to on the waterbath to insert the sample into them one by one"
+                             setTimeout(() => {
+                                       tongs_upper2.style.bottom = "15%";
+                           tongs_down2.style.bottom = "12%";
+                            f = 154;
+                 console.log(f)
+                  if (f === 154) {
+        f = 155;
+       
+    offSwitch2.addEventListener("click", function() {
+      console.log("switch is clicked")
+      ins.innerText = "Click on the temp increase button to increase temperature to 37°C"
+       actualTempDisplay2.style.opacity = "100%";
+    actualTempDisplay12.style.opacity = "100%";
+    pulse(actualTempDisplay2);
+    sampleTempDisplay2.style.opacity = "100%";
+    sampleTempDisplay12.style.opacity = "100%";
+    pulse(sampleTempDisplay2);
+    zoominout(sampleTempDisplay2);
+        
+    offSwitch2.style.visibility = "hidden";
+    console.log("f=150");
+    pulse(offSwitch2);
+    
+
+     
+     
+      
+    setTimeout(() => {
+        onSwitch2.click();
+        onSwitch2.style.opacity = "100%";
+    }, 1000);
+  
+
+
+});
+}else{console.log("nulll error switch2")}
+                               }, 1000);  
+                                           }, 1000);  
+                                    }, 1000);    
+                                   }, 1000);
+                           }, 300);  //300
+                   }, 1000);
+                     }, 1000);
+                          }, 1000);
+               }, 1000);
+              
+         }
+        },1000)
+  },1000)
+ }, 1000);
+                                   }, 1000);
+                           }, 300);   //300
+                   }, 1000);
+                          }, 1000);
+               }, 1000);
+         }
+        }
+         }, 1000);
+                            }, 1000);
+              
+                
+  
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -40,7 +40,7 @@ function start(){
         startbutton.style.visibility="hidden"
      
         ins.innerText="Click on The pipette to measure 5 ml milk from each sample and transfter to the each butyromter"
-        pipette1();
+    
     } else if(f===100){
         
         
@@ -52,12 +52,15 @@ function start(){
          
         ins.innerText=" Click on the iso amyl cap to open it "
         // pipette2();
-    } else if(f===145){
+    } else if(f===147){
+
+          console.log("f was 147 → changing to 150");
         f = 150;
       
           stp18.style.visibility = "hidden"
          
            console.log("f for 150 is ",f)
+            milk_tube_b_201();
        stp39.style.visibility = "visible"
         //  waterBath_lower2.style.visibility = visible;
         //  waterBath_upper2.style.visibility = visible;
