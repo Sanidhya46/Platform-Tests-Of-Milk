@@ -287,7 +287,7 @@ function pipette1() {
         }, { once: true });
 }else{console.log("nothing")}};
 
-// f = 100;
+f = 100;
 
 function tubewaterbath() {
    ins.innerText = "tube water bath is running"
