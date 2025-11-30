@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platform Test of Milk</title>
-  <link rel="stylesheet" href="./style.css">
+
   <style>
     body {
       margin: 0;
@@ -19,91 +19,105 @@
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: clamp(1.3rem, 4vw, 2rem);
       color: #2e7d32;
       margin-bottom: 8px;
     }
 
     header p {
-      font-size: 1rem;
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
       color: #555;
     }
 
-    /* Dashboard layout (2x2 grid) */
+    /* -------- FIXED 2×2 GRID -------- */
     .dashboard {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      max-width: 800px;
-      margin: 40px auto;
-      justify-items: center;
+      grid-template-columns: 1fr 1fr;     /* Always 2 per row */
+      gap: 15px;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 10px;
     }
 
     .card {
-      background: #ffffff;
+      background: #fff;
       border-radius: 14px;
-      padding: 40px 20px;
-      width: 90%;
+      padding: 10px;
       text-align: center;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      text-decoration: none;
-      color: inherit;
-      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.25s ease;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      min-width: 0;              /* ⭐ Forces equal shrink */
+      aspect-ratio: 1 / 1;       /* ⭐ Keeps perfect equal box */
+      overflow: hidden;          /* ⭐ Prevents text overflow */
     }
 
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
       background: #e8f5e9;
     }
 
     .card h3 {
-      margin: 10px 0 5px;
+      font-size: clamp(0.9rem, 3vw, 1.1rem);
       color: #2e7d32;
-      font-size: 1.2rem;
+      margin: 5px 0;
     }
 
     .card p {
+      font-size: clamp(0.7rem, 2.3vw, 0.9rem);
       color: #666;
-      font-size: 0.9rem;
+      margin: 0;
     }
+
+    .disabled {
+      pointer-events: none;
+      opacity: 0.6;
+      background: #f0f0f0 !important;
+    }
+    .card {
+  text-decoration: none !important;
+}
   </style>
 </head>
 
 <body>
+
   <header>
     <h1>🧪 Platform Test of Milk</h1>
-    <p>Select a test below to begin its dedicated simulation page</p>
+    <p>Select a test below to begin</p>
   </header>
 
   <main>
-    <!-- 🔹 Dashboard Section -->
     <div class="dashboard">
+
       <a href="./cob-test.html" class="card">
         <h3>🧪 COB Test</h3>
-        <p>Check milk stability and acidity reaction.</p>
+        <p>Check milk stability and acidity.</p>
       </a>
 
       <a href="./mbrt-test.html" class="card">
         <h3>🧫 MBRT Test</h3>
-        <p>Measure bacterial activity in milk samples.</p>
+        <p>Measure bacterial activity.</p>
       </a>
 
       <a class="card disabled">
-    <h3>🍶 Alcohol Test</h3>
-    <p>Work under progress… Simulator will be available soon.</p>
-</a>
+        <h3>🍶 Alcohol Test</h3>
+        <p>Coming soon…</p>
+      </a>
 
-<a class="card disabled">
-    <h3>🧍 Sedimentation Test</h3>
-    <p>Work under progress… Simulator will be available soon.</p>
-</a>
+      <a class="card disabled">
+        <h3>🧍 Sedimentation Test</h3>
+        <p>Coming soon…</p>
+      </a>
+
     </div>
   </main>
-
-  <!-- ✅ Paste script here -->
-  
 </body>
 </html>
