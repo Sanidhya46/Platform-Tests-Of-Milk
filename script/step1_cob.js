@@ -46,7 +46,7 @@ const homeBtn = document.querySelector('#homeBtn');
 
 pipette1();
 
-
+f = 0;
 
 function pipette1() {
     if (f === 1) {
@@ -287,7 +287,7 @@ function pipette1() {
         }, { once: true });
 }else{console.log("nothing")}};
 
-f = 100;
+
 
 function tubewaterbath() {
    ins.innerText = "tube water bath is running"

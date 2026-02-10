@@ -32,16 +32,17 @@ function start(){
     console.log("hello world")
     console.log("f for 0 is", f)
      startbutton.style.visibility="hidden"
+    
      if(f === 0){
-          f=1;
+          f=99;
           console.log("f for 1 is", f)
         startlab.style.visibility="hidden"
     //    statuses = 1;
         startbutton.style.visibility="hidden"
-     
+       
         ins.innerText="Click on The pipette to measure 5 ml milk from each sample and transfter to the each butyromter"
-    
-    } else if(f===100){
+        pipette2();
+    } else if(f===1000){
         
         
           
