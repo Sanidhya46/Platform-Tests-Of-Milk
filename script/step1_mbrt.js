@@ -760,293 +760,293 @@ tongs_down2.addEventListener("click", () => {
 
 }
 
-function pipette2() {
+// function pipette2() {
    
-  if (f === 99) {
-      f = 100; // Move to the next step so this function doesn't run again unintentionally
+//   if (f === 99) {
+//       f = 100; // Move to the next step so this function doesn't run again unintentionally
        
-      console.log("pipette");
-      console.log("heloo world....")
-      // test_tube_b_3.style.opacity = "100%"
-      tube_cap_a.style.opacity = "100%"
-       tube_cap_b.style.opacity = "100%"
+//       console.log("pipette");
+//       console.log("heloo world....")
+//       // test_tube_b_3.style.opacity = "100%"
+//       tube_cap_a.style.opacity = "100%"
+//        tube_cap_b.style.opacity = "100%"
  
-      pipette_centrifuge2.addEventListener("click", () => {
+//       pipette_centrifuge2.addEventListener("click", () => {
              
        
 
-        pipette_centrifuge2.style.rotate =  "0deg"
-          setTimeout(function(){
-        pipette_centrifuge2.style.bottom = "35%"
-         setTimeout(function(){
-        pipette_centrifuge2.style.left = "14%"
-                    setTimeout(function(){
-                      pipette_centrifuge2.style.bottom = "22%"
-                          setTimeout(function(){
+//         pipette_centrifuge2.style.rotate =  "0deg"
+//           setTimeout(function(){
+//         pipette_centrifuge2.style.bottom = "35%"
+//          setTimeout(function(){
+//         pipette_centrifuge2.style.left = "14%"
+//                     setTimeout(function(){
+//                       pipette_centrifuge2.style.bottom = "22%"
+//                           setTimeout(function(){
                                  
                                  
-                                  milk_a_2_50ml.style.height= "13.0%"
-                                  milk_10ml_a.style.height= "21.4%"
-                                    setTimeout(function(){
-                                            pipette_centrifuge2.style.bottom = "53%"
-                                           milk_10ml_a.style.bottom = "53%"
-                                             setTimeout(function(){
-                                               pipette_centrifuge2.style.left = "65.9%"
-                                                milk_10ml_a.style.left = "66.9%"
-                                                setTimeout(function(){
-                                                   pipette_centrifuge2.style.bottom = "43%"
-                                            milk_10ml_a.style.bottom = "43%"
-                                              setTimeout(function(){ 
-                                                        milk_strip_a_2.style.height = "32.2%"
-                                                       setTimeout(function(){      //
-                                                          milk_tube_a_2.style.height = "17.8%"
+//                                   milk_a_2_50ml.style.height= "13.0%"
+//                                   milk_10ml_a.style.height= "21.4%"
+//                                     setTimeout(function(){
+//                                             pipette_centrifuge2.style.bottom = "53%"
+//                                            milk_10ml_a.style.bottom = "53%"
+//                                              setTimeout(function(){
+//                                                pipette_centrifuge2.style.left = "65.9%"
+//                                                 milk_10ml_a.style.left = "66.9%"
+//                                                 setTimeout(function(){
+//                                                    pipette_centrifuge2.style.bottom = "43%"
+//                                             milk_10ml_a.style.bottom = "43%"
+//                                               setTimeout(function(){ 
+//                                                         milk_strip_a_2.style.height = "32.2%"
+//                                                        setTimeout(function(){      //
+//                                                           milk_tube_a_2.style.height = "17.8%"
                                                         
-                                                           setTimeout(function(){
-                                                               milk_strip_a_2.style.opacity = "0%"
-                                                                milk_10ml_a.style.opacity = "0%"
-                                                                 setTimeout(function(){
-                                                                    pipette_centrifuge2.style.bottom = "55%"
-                                                                    pipette_centrifuge2.style.zIndex = "5"
-                                                                     setTimeout(function(){
-                                                                           pipette_centrifuge2.style.left = "30.1%"
+//                                                            setTimeout(function(){
+//                                                                milk_strip_a_2.style.opacity = "0%"
+//                                                                 milk_10ml_a.style.opacity = "0%"
+//                                                                  setTimeout(function(){
+//                                                                     pipette_centrifuge2.style.bottom = "55%"
+//                                                                     pipette_centrifuge2.style.zIndex = "5"
+//                                                                      setTimeout(function(){
+//                                                                            pipette_centrifuge2.style.left = "30.1%"
                                                                            
                                                                              
                                                                    
                                                                      
                                  
                                      
-                                   f = 101;
+//                                    f = 101;
                                       
-      f = 102; 
+//       f = 102; 
 
-     //
-             //
+//      //
+//              //
             
-                 setTimeout(function(){
-                     pipette_centrifuge2.style.bottom = "22.4%"
-                         setTimeout(function(){
-                               milk_10ml_b.style.height =  "21.4%"
-                              milk_b_2_50ml.style.height ="13.0%"
+//                  setTimeout(function(){
+//                      pipette_centrifuge2.style.bottom = "22.4%"
+//                          setTimeout(function(){
+//                                milk_10ml_b.style.height =  "21.4%"
+//                               milk_b_2_50ml.style.height ="13.0%"
                          
                                    
-                                       setTimeout(function(){
-                                           pipette_centrifuge2.style.bottom = "60.4%"
-                                             milk_10ml_b.style.bottom =  "60.4%"
-                                              setTimeout(function(){
-                                                  pipette_centrifuge2.style.bottom = "60.4%"
-                                             milk_10ml_b.style.bottom =  "60.4%"
-                                              setTimeout(function(){
-                                                 pipette_centrifuge2.style.left = "69.3%"
-                                             milk_10ml_b.style.left =  "70.4%"
-                                              setTimeout(function(){
-                                                 pipette_centrifuge2.style.bottom = "40.4%"
-                                             milk_10ml_b.style.bottom =  "40.4%"
-                                               setTimeout(function(){
-                                                milk_strip_b_2.style.height = "32.2%"
-                                                       setTimeout(function(){
-                                                milk_tube_b_2.style.height = "17.8%"
-                                                 setTimeout(function(){
-                                                  milk_10ml_b.style.opacity = "0%"
-                                                  milk_strip_b_2.style.opacity = "0%"
-                                                  pipette_centrifuge2.style.zIndex = "20";
-                                                   setTimeout(function(){
-                                                        pipette_centrifuge2.style.bottom = "60.4%"
-                                                        setTimeout(function(){
-                                                          pipette_centrifuge2.style.left = "27.3%"
-                                                           setTimeout(function(){
-                                                                     pipette_centrifuge2.style.bottom = "11%"
-                                   setTimeout(function(){
-                                    pipette_centrifuge2.style.rotate = "-90deg"
-                                    setTimeout(function(){
-                                       pipette_centrifuge2.style.bottom = "-5%"
+//                                        setTimeout(function(){
+//                                            pipette_centrifuge2.style.bottom = "60.4%"
+//                                              milk_10ml_b.style.bottom =  "60.4%"
+//                                               setTimeout(function(){
+//                                                   pipette_centrifuge2.style.bottom = "60.4%"
+//                                              milk_10ml_b.style.bottom =  "60.4%"
+//                                               setTimeout(function(){
+//                                                  pipette_centrifuge2.style.left = "69.3%"
+//                                              milk_10ml_b.style.left =  "70.4%"
+//                                               setTimeout(function(){
+//                                                  pipette_centrifuge2.style.bottom = "40.4%"
+//                                              milk_10ml_b.style.bottom =  "40.4%"
+//                                                setTimeout(function(){
+//                                                 milk_strip_b_2.style.height = "32.2%"
+//                                                        setTimeout(function(){
+//                                                 milk_tube_b_2.style.height = "17.8%"
+//                                                  setTimeout(function(){
+//                                                   milk_10ml_b.style.opacity = "0%"
+//                                                   milk_strip_b_2.style.opacity = "0%"
+//                                                   pipette_centrifuge2.style.zIndex = "20";
+//                                                    setTimeout(function(){
+//                                                         pipette_centrifuge2.style.bottom = "60.4%"
+//                                                         setTimeout(function(){
+//                                                           pipette_centrifuge2.style.left = "27.3%"
+//                                                            setTimeout(function(){
+//                                                                      pipette_centrifuge2.style.bottom = "11%"
+//                                    setTimeout(function(){
+//                                     pipette_centrifuge2.style.rotate = "-90deg"
+//                                     setTimeout(function(){
+//                                        pipette_centrifuge2.style.bottom = "-5%"
 
-                                            if (f === 102) {
-      f = 103; 
-            pipette_centrifuge2.addEventListener("click", () => {
-                    pipette_centrifuge2.style.rotate =  "0deg"
-          setTimeout(function(){
-        pipette_centrifuge2.style.left= "23%"
-         setTimeout(function(){
-        pipette_centrifuge2.style.bottom = "41%"
-         setTimeout(function(){
-               pipette_centrifuge2.style.left= "45.5%"
-                 setTimeout(function(){
-                        pipette_centrifuge2.style.bottom = "25%"
-                          setTimeout(function(){
-                             methylene_blue_1ml.style.opacity = "100%"
-                             setTimeout(function(){
-                                 pipette_centrifuge2.style.bottom = "60%";
-                                   methylene_blue_1ml.style.bottom = "60%"
-                                    setTimeout(function(){
-                                          pipette_centrifuge2.style.left= "65.8%"
-                                           methylene_blue_1ml.style.left = "66.8%"
-                                           setTimeout(function(){
-                                             pipette_centrifuge2.style.bottom = "40%";
-                                   methylene_blue_1ml.style.bottom = "40%"
-                                     setTimeout(function(){
-                                      methylene_blue_drop1.style.opacity = "100%"
-                                            setTimeout(function(){
-                                            methylene_blue_drop2.style.opacity = "100%"
-                                             methylene_blue_drop1.style.opacity = "0%"
-                                       setTimeout(function(){
-                                      methylene_mid_blue.style.opacity = "100%"
-                                      milk_tube_a_2.style.opacity = "0%"
-                                       setTimeout(function(){
-                                          methylene_blue_drop2.style.opacity = "0%"
-                                             methylene_blue_tube.style.opacity = "100%"
-                                             methylene_blue_1ml.style.opacity = "0%"
-                                               setTimeout(function(){
-                                                  pipette_centrifuge2.style.bottom = "65.8%"
-                                                    setTimeout(function(){
-                                                         pipette_centrifuge2.style.left= "38%"
+//                                             if (f === 102) {
+//       f = 103; 
+//             pipette_centrifuge2.addEventListener("click", () => {
+//                     pipette_centrifuge2.style.rotate =  "0deg"
+//           setTimeout(function(){
+//         pipette_centrifuge2.style.left= "23%"
+//          setTimeout(function(){
+//         pipette_centrifuge2.style.bottom = "41%"
+//          setTimeout(function(){
+//                pipette_centrifuge2.style.left= "42.4%"
+//                  setTimeout(function(){
+//                         pipette_centrifuge2.style.bottom = "25%"
+//                           setTimeout(function(){
+//                              methylene_blue_1ml.style.opacity = "100%"
+//                              setTimeout(function(){
+//                                  pipette_centrifuge2.style.bottom = "60%";
+//                                    methylene_blue_1ml.style.bottom = "60%"
+//                                     setTimeout(function(){
+//                                           pipette_centrifuge2.style.left= "65.8%"
+//                                            methylene_blue_1ml.style.left = "66.8%"
+//                                            setTimeout(function(){
+//                                              pipette_centrifuge2.style.bottom = "40%";
+//                                    methylene_blue_1ml.style.bottom = "40%"
+//                                      setTimeout(function(){
+//                                       methylene_blue_drop1.style.opacity = "100%"
+//                                             setTimeout(function(){
+//                                             methylene_blue_drop2.style.opacity = "100%"
+//                                              methylene_blue_drop1.style.opacity = "0%"
+//                                        setTimeout(function(){
+//                                       methylene_mid_blue.style.opacity = "100%"
+//                                       milk_tube_a_2.style.opacity = "0%"
+//                                        setTimeout(function(){
+//                                           methylene_blue_drop2.style.opacity = "0%"
+//                                              methylene_blue_tube.style.opacity = "100%"
+//                                              methylene_blue_1ml.style.opacity = "0%"
+//                                                setTimeout(function(){
+//                                                   pipette_centrifuge2.style.bottom = "65.8%"
+//                                                     setTimeout(function(){
+//                                                          pipette_centrifuge2.style.left= "42.3%"
                                                          
-         setTimeout(function(){
-        pipette_centrifuge2.style.bottom = "50%"
-         setTimeout(function(){
-             pipette_centrifuge2.style.left= "45.4%"
-              setTimeout(function(){
-                 pipette_centrifuge2.style.bottom = "25%"
-                  setTimeout(function(){
-                    methylene_blue_1ml_b.style.opacity = "100%"
-                     setTimeout(function(){
-                           methylene_blue_1ml_b.style.bottom = "64%"
-                             pipette_centrifuge2.style.bottom = "64%"
-                             setTimeout(function(){
-                                 pipette_centrifuge2.style.left = "69.4%"
-                                  methylene_blue_1ml_b.style.left = "70.4%"
-                                     setTimeout(function(){
-                                         methylene_blue_1ml_b.style.bottom = "43%"
-                             pipette_centrifuge2.style.bottom = "43%"
+//          setTimeout(function(){
+      
+//          setTimeout(function(){
+        
+//               setTimeout(function(){
+//                  pipette_centrifuge2.style.bottom = "25%"
+//                   setTimeout(function(){
+//                     methylene_blue_1ml_b.style.opacity = "100%"
+//                      setTimeout(function(){
+//                            methylene_blue_1ml_b.style.bottom = "64%"
+//                              pipette_centrifuge2.style.bottom = "64%"
+//                              setTimeout(function(){
+//                                  pipette_centrifuge2.style.left = "69.4%"
+//                                   methylene_blue_1ml_b.style.left = "70.4%"
+//                                      setTimeout(function(){
+//                                          methylene_blue_1ml_b.style.bottom = "43%"
+//                              pipette_centrifuge2.style.bottom = "43%"
                               
-                                 setTimeout(function(){
-                                      methylene_blue_drop1_b.style.opacity = "100%"
-                                            setTimeout(function(){
-                                            methylene_blue_drop2_b.style.opacity = "100%"
-                                             methylene_blue_drop1_b.style.opacity = "0%"
-                                       setTimeout(function(){
-                                      methylene_mid_blue_b.style.opacity = "100%"
-                                      milk_tube_b_2.style.opacity = "0%"
-                                       setTimeout(function(){
-                                          methylene_blue_drop2_b.style.opacity = "0%"
-                                             methylene_blue_tube_b.style.opacity = "100%"
-                                             methylene_blue_1ml_b.style.opacity = "0%"
-                                              setTimeout(function(){
-                                                   pipette_centrifuge2.style.bottom = "64%"
-                                                      setTimeout(function(){
-                                                          pipette_centrifuge2.style.left = "24.4%"
-                                                             setTimeout(function(){
-                                                                     pipette_centrifuge2.style.bottom = "11%"
-                                   setTimeout(function(){
-                                    pipette_centrifuge2.style.rotate = "-90deg"
-                                     f = 145;
-                                    setTimeout(function(){
-                                       pipette_centrifuge2.style.bottom = "-7%"
+//                                  setTimeout(function(){
+//                                       methylene_blue_drop1_b.style.opacity = "100%"
+//                                             setTimeout(function(){
+//                                             methylene_blue_drop2_b.style.opacity = "100%"
+//                                              methylene_blue_drop1_b.style.opacity = "0%"
+//                                        setTimeout(function(){
+//                                       methylene_mid_blue_b.style.opacity = "100%"
+//                                       milk_tube_b_2.style.opacity = "0%"
+//                                        setTimeout(function(){
+//                                           methylene_blue_drop2_b.style.opacity = "0%"
+//                                              methylene_blue_tube_b.style.opacity = "100%"
+//                                              methylene_blue_1ml_b.style.opacity = "0%"
+//                                               setTimeout(function(){
+//                                                    pipette_centrifuge2.style.bottom = "64%"
+//                                                       setTimeout(function(){
+//                                                           pipette_centrifuge2.style.left = "24.4%"
+//                                                              setTimeout(function(){
+//                                                                      pipette_centrifuge2.style.bottom = "11%"
+//                                    setTimeout(function(){
+//                                     pipette_centrifuge2.style.rotate = "-90deg"
+//                                      f = 145;
+//                                     setTimeout(function(){
+//                                        pipette_centrifuge2.style.bottom = "-7%"
 
                                      
                                      
                                       
-                                        tube_cap_a.addEventListener("click", function() {
-                                             if(f === 145){
-                                              f = 146;
-                                              console.log("cap clicked !!")
-                                                  tube_cap_a.style.bottom = "60%";
+//                                         tube_cap_a.addEventListener("click", function() {
+//                                              if(f === 145){
+//                                               f = 146;
+//                                               console.log("cap clicked !!")
+//                                                   tube_cap_a.style.bottom = "60%";
 
                                      
 
 
-                                      setTimeout(function(){
-                 tube_cap_a.style.left = "66%"
-                  setTimeout(function(){
-                       tube_cap_a.style.bottom = "45%"
-       if (f === 146) {
-      f = 146.5;
-            tube_cap_b.style.bottom = "60%"
-             setTimeout(function(){
-                 tube_cap_b.style.left = "69.7%"
-                 setTimeout(function(){
-                       tube_cap_b.style.bottom = "45%"
-                                      f =147;
-                                      startbutton.style.visibility="visible"
-                                       startbutton.innerText="Next"
-                                       ins.innerText="Click on Next button"
-                                      },1000)
-                                        },1000)
-                                      }
-                                                 },1000)
-                                              },1000)
+//                                       setTimeout(function(){
+//                  tube_cap_a.style.left = "66%"
+//                   setTimeout(function(){
+//                        tube_cap_a.style.bottom = "45%"
+//        if (f === 146) {
+//       f = 146.5;
+//             tube_cap_b.style.bottom = "60%"
+//              setTimeout(function(){
+//                  tube_cap_b.style.left = "69.7%"
+//                  setTimeout(function(){
+//                        tube_cap_b.style.bottom = "45%"
+//                                       f =147;
+//                                       startbutton.style.visibility="visible"
+//                                        startbutton.innerText="Next"
+//                                        ins.innerText="Click on Next button"
+//                                       },1000)
+//                                         },1000)
+//                                       }
+//                                                  },1000)
+//                                               },1000)
                                                 
-                                             }
-                                        },)
-                                       console.log("f is 150 just after next")
-                                                    },1000)
-                                                 },1000)
-                                              },1000)
+//                                              }
+//                                         },)
+//                                        console.log("f is 150 just after next")
+//                                                     },1000)
+//                                                  },1000)
+//                                               },1000)
 
-                                                         },1000)
-                                                 },1000)
-                                              },1000)
-                                        },1000)
-                                 },1000)
-                                 },1000)
-                                        },1000)
-                                 },1000)
-                       },1000)
-                      },1000)
-                 },1000)
-              },1000)
-                                                 },1000)
+//                                                          },1000)
+//                                                  },1000)
+//                                               },1000)
+//                                         },1000)
+//                                  },1000)
+//                                  },1000)
+//                                         },1000)
+//                                  },1000)
+//                        },1000)
+//                       },1000)
+//                  },1000)
+//               },1000)
+//                                                  },1000)
                                 
-                                                         },2000)
-                                                 },1000)
-                                          },1000)
-                                          },1000)
-                                         },1000)
-                                        },1000)
-                                               },1000)
-                                               },1000)
-                                 },1000)
-                             },1000)
-                    },1000)
-                 },1000)
-                                                       },1000)
-                                                  },1000)
-             }, { once: true });
-            }
-                                           },1000)
-                                                       },1000)
-                                                  },1000)
-                                                            },1000)
-                                                       },1000)
-                                                  },1000)
-                                                 },1000)
-                                                 },1000)
+//                                                          },2000)
+//                                                  },1000)
+//                                           },1000)
+//                                           },1000)
+//                                          },1000)
+//                                         },1000)
+//                                                },1000)
+//                                                },1000)
+//                                  },1000)
+//                              },1000)
+//                     },1000)
+//                  },1000)
+//                                                        },1000)
+//                                                   },1000)
+//              }, { once: true });
+//             }
+//                                            },1000)
+//                                                        },1000)
+//                                                   },1000)
+//                                                             },1000)
+//                                                        },1000)
+//                                                   },0)
+//                                                  },0)
+//                                                  },0)
                                               
-                                                 },1000)
-                                         },1000)
-                                    },1000)    //10000
-                          },1000)
-                    },1000)
+//                                                  },1000)
+//                                          },1000)
+//                                     },1000)    //10000
+//                           },1000)
+//                     },1000)
 
 
      
       
                                     
-                                                               },1000)
-                                                                        },1000)
-                                                                     },1000)
-                                                               },1000)
-                                                         },1000)
-                                                           },1000)
-                                                   },1000)
-                                                },1000)
-                                      },1000)
-                               },1000)
-                      },1000)
-            },1000)
-                                                        },1000)
-                                                     }, { once: true });
-                                                  }
-                                              }
+//                                                                },0)
+//                                                                         },0)
+//                                                                      },0)
+//                                                                },0)
+//                                                          },0)
+//                                                            },0)
+//                                                    },0)
+//                                                 },0)
+//                                       },0)
+//                                },0)
+//                       },0)
+//             },0)
+//                                                         },1000)
+//                                                      }, { once: true });
+//                                                   }
+//                                               }
 
                                               function zoominout(element) {
                                                 element.classList.add("pulse-effect");
@@ -1054,7 +1054,7 @@ function pipette2() {
                                                     element.classList.remove("pulse-effect");
                                                 }, 0);
                                             }
-                                            
+
 function pulse(element) {
     element.classList.add("pulse-effect");
     setTimeout(() => {
@@ -1062,9 +1062,12 @@ function pulse(element) {
     }, 1000);
 }
 
-
+milk_tube_b_201();
 function milk_tube_b_201(){
   stp39.style.visibility = "visible";
+  test_tube_b_2.style.opacity = "0%"
+                      test_tube_c_2.style.opacity = "0%"
+                      test_tube_d_2.style.opacity = "0%"
  ins.innerText = "click on the tube_cap to close the tubes "
  console.log("tube cap ready to be clicked")
  
@@ -1130,6 +1133,20 @@ function milk_tube_b_201(){
                                       closed_methylene_blue_tube_a.style.opacity = "0%"
                                       closed_methylene_blue_tube_a.style.visibility = "block"
                                       inverted_methylene_blue_tube_a.style.opacity = "100%"
+                                      setTimeout(() => {
+                                        inverted_methylene_blue_tube_a.style.transform = "rotate(180deg)"
+                                        closed_methylene_blue_tube_a.style.transform = "rotate(0deg)"
+                                        setTimeout(() => {
+
+                                          inverted_methylene_blue_tube_a.style.opacity= "0%"
+                                          closed_methylene_blue_tube_a.style.opacity= "100%"
+                                          setTimeout(() => {
+                                            closed_methylene_blue_tube_a.style.transform = "rotate(-180deg)"
+                                            inverted_methylene_blue_tube_a.style.transform = "rotate(0deg)"
+                                            setTimeout(() => {
+                                              inverted_methylene_blue_tube_a.style.opacity= "100%"
+                                              closed_methylene_blue_tube_a.style.opacity= "0%"
+                                              setTimeout(() => {
                                         setTimeout(() => {
                                       inverted_methylene_blue_tube_a.style.bottom = "20%"
                                       tongs_upper2.style.bottom = "35%";
@@ -1167,6 +1184,13 @@ function milk_tube_b_201(){
                                 closed_methylene_blue_tube_b.style.opacity = "0%"
                                       closed_methylene_blue_tube_b.style.visibility = "block"
                                       inverted_methylene_blue_tube_b.style.opacity = "100%"
+                                      setTimeout(() => {
+                                        inverted_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                                        closed_methylene_blue_tube_b.style.transform = "rotate(0deg)"
+                                        setTimeout(() => {
+                                          closed_methylene_blue_tube_b.style.opacity = "100%"
+                                          inverted_methylene_blue_tube_b.style.opacity = "100%"
+
                          setTimeout(() => {
                           tongs_upper2.style.opacity = "100%";
                            tongs_down2.style.opacity = "100%";
@@ -1224,15 +1248,22 @@ function milk_tube_b_201(){
                                     }, 1000);    
                                    }, 1000);
                            }, 300);  //300
+                          }, 1000);
+                        }, 1000);
                    }, 1000);
                      }, 1000);
                           }, 1000);
-               }, 1000);
+               }, 0);
               
          }
-        },1000)
-  },1000)
- }, 1000);
+        },0)
+  },0)
+ }, 0);
+}, 0);
+}, 0);
+}, 1500); // 1500
+}, 1000);
+}, 0);
                                    }, 1000);
                            }, 300);   //300
                    }, 1000);

@@ -2752,7 +2752,7 @@ bottom: 5%; */
     height: 3.7%;
     width: 0.6%;
     bottom: 26%;
-    left: 46.5%;
+    left: 43.4%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
@@ -2764,7 +2764,7 @@ bottom: 5%; */
     height: 3.6%;
     width: 0.6%;
     bottom: 24%;
-    left: 46.4%;
+    left: 43.4%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
@@ -3024,7 +3024,7 @@ bottom: 5%; */
     left: 69.8%;
    visibility: visible;
     z-index: 20;
-    opacity: 0%;
+    opacity: 100%;
     transition: all 1s ease-in-out;
 }
 #closed_light_blue_tube{
@@ -3095,11 +3095,11 @@ bottom: 5%; */
     position: absolute;
     height: 41%;
     width: 2.1%;
-   bottom: 60%;
-    left: 69.5%;
+   bottom: 61.5%;
+    left: 69.6%;
     transition-duration: 1s;
     z-index: 18;
-    opacity: 0%;
+    opacity: 100%;
     transition: all 1s ease-in;
 }
 #observation_table_mbrt{
