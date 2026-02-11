@@ -1278,10 +1278,10 @@ bottom: 5%; */
 
 #setOff2 {
    position: absolute;
-  width: 1.7%;
-  height: 1.4%;
-  bottom: 12.85%;
-  left: 19.00%;
+  width: 2%;
+  height: 1.6%;
+  bottom: 12.6%;
+  left: 18.84%;
   z-index: 25;
 }
 
@@ -1366,7 +1366,7 @@ bottom: 5%; */
 #upswitchholder2 {
   position: absolute;
   width: 1.9%;
-  height: 3.2%;
+  height: 4.0%;
   bottom: 22.3%; /* 21.43 + 10% */
   left: 21.3%;
   z-index: 23;
@@ -1384,7 +1384,7 @@ bottom: 5%; */
 #upOffSwitch2 {
   position: absolute;
   width: 1.9%;
-  height: 3.2%;
+  height: 4.0%;
   bottom: 22.3%; /* 21.43 + 10% */
   left: 21.3%;
   z-index: 24;
@@ -1579,7 +1579,25 @@ bottom: 5%; */
      
 }
 
-#actualTempDisplay12 {
+#actualTempDisplay20 {
+  position: absolute;
+
+/* Background color area you care about */
+ color: cyan;
+ font-weight: bold;
+ font-size: 0.6vw;
+ 
+ text-align: center;
+ bottom: 22.9%;
+  left: 14.19%;
+ transition: all;
+ transition-duration: 1s;
+ opacity: 0%;
+   z-index: 23;
+    
+}
+
+#actualTempDisplay20 {
    position: absolute;
 
  /* Background color area you care about */
@@ -1613,7 +1631,7 @@ bottom: 5%; */
   opacity: 100%;
     z-index: 50;
 }
-#sampleTempDisplay2 {
+#sampleTempDisplay21 {
   position: absolute;
 
  /* Background color area you care about */
@@ -1700,6 +1718,86 @@ bottom: 5%; */
   left: 0.5%;
   z-index: 30;
   visibility: block;
+}
+
+#settimerDisplay {
+  position: absolute;
+ color: rgb(203, 28, 28);
+ font-weight: bold;
+ font-size: 1vw;
+ bottom: 21.5%;
+ width: 9%;
+ opacity: 100%;
+ left: 18.3%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+#actualtimerDisplay20 {
+  position: absolute;
+ color: rgb(203, 28, 28);
+ font-weight: bold;
+ font-size: 1vw;
+ bottom: 21.5%;
+ width: 9%;
+ opacity: 100%;
+ left: 17%;
+ z-index: 1000;
+ visibility: block;
+}
+
+#sampletimerDisplay {
+  position: absolute;
+ color: rgb(203, 28, 28);
+ font-weight: bold;
+ font-size: 1vw;
+ bottom: 18%;
+ width: 9%;
+ opacity: 100%;
+ left: 18.3%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+#sampletimerDisplay1{
+  position: absolute;
+ color: rgb(17, 224, 243);
+ font-weight: bold;
+ font-size: 0.7vw;
+ bottom: 18.3%;
+ width: 9%;
+ opacity: 100%;
+ left: 14%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+#sampletimerDisplay2{
+  position: absolute;
+ color: rgb(17, 224, 243);
+ font-weight: bold;
+ font-size: 0.7vw;
+ bottom: 21.8%;
+ width: 9%;
+ opacity: 100%;
+ left: 14%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+
+#set{
+  position: absolute;
+ color: rgb(89, 10, 10);
+ background-color: yellow ;
+ font-weight: bold;
+ font-size: 1.4vw;
+ bottom: 83%;
+ width: 9%;
+ opacity: 100%;
+ left: 0.5%;
+ z-index: 30;
+ visibility: block;
 }
 
 #timerDisplay13,
@@ -2206,6 +2304,12 @@ bottom: 5%; */
   left: 16.6%;
   z-index: 56;
 }
+/* #setTempDisplay2 {
+  bottom: 63%;
+  left: 60%;
+  visibility: visible;
+  z-index: 50;
+} */
 
 
 #beaker_water{
@@ -2218,6 +2322,14 @@ bottom: 5%; */
     z-index: 20;
    
     
+}
+#setTempDisplay5 {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  color: red;
+  height: 100%;
+  z-index: 30;
 }
 
 #water_beaker{
@@ -3022,7 +3134,7 @@ bottom: 5%; */
     height: 41%;
    bottom: 11.8%;
     left: 69.8%;
-   visibility: visible;
+   visibility: hidden;
     z-index: 20;
     opacity: 100%;
     transition: all 1s ease-in-out;
@@ -3099,7 +3211,7 @@ bottom: 5%; */
     left: 69.6%;
     transition-duration: 1s;
     z-index: 18;
-    opacity: 100%;
+    opacity: 0%;
     transition: all 1s ease-in;
 }
 #observation_table_mbrt{

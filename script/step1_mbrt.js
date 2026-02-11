@@ -1,5 +1,14 @@
 const milk_tube_b_2 = document.querySelector('#milk_tube_b_2');
 const milk_tube_a_2 = document.querySelector('#milk_tube_a_2');
+
+const sampleTempDisplay2 = document.getElementById("sampleTempDisplay2");
+const settimerDisplay = document.getElementById("settimerDisplay");
+const actualTimerDisplay = document.getElementById("actualTimerDisplay");
+const sampletimerDisplay = document.getElementById("sampletimerDisplay");
+
+const sampletimerDisplay1 = document.querySelector("#sampletimerDisplay1");
+const sampletimerDisplay2 = document.querySelector("#sampletimerDisplay2");
+const closed_methylene_blue_tube_b = document.querySelector('#closed_methylene_blue_tube_b'); 
 window.onload = function() {
 
 
@@ -73,7 +82,7 @@ const tongs_down = document.querySelector('#tongs_down');
 const closed_methylene_blue_tube_a = document.querySelector('#closed_methylene_blue_tube_a'); 
 
 const closed_methylene_blue_tube_a_2 = document.querySelector('#closed_methylene_blue_tube_a_2'); 
-const closed_methylene_blue_tube_b = document.querySelector('#closed_methylene_blue_tube_b'); 
+
 const closed_methylene_blue_tube_b_2 = document.querySelector('#closed_methylene_blue_tube_b_2'); 
 
 const closed_white_tube_a = document.querySelector('#closed_white_tube_a'); 
@@ -760,293 +769,293 @@ tongs_down2.addEventListener("click", () => {
 
 }
 
-// function pipette2() {
+function pipette2() {
    
-//   if (f === 99) {
-//       f = 100; // Move to the next step so this function doesn't run again unintentionally
+  if (f === 99) {
+      f = 100; // Move to the next step so this function doesn't run again unintentionally
        
-//       console.log("pipette");
-//       console.log("heloo world....")
-//       // test_tube_b_3.style.opacity = "100%"
-//       tube_cap_a.style.opacity = "100%"
-//        tube_cap_b.style.opacity = "100%"
+      console.log("pipette");
+      console.log("heloo world....")
+      // test_tube_b_3.style.opacity = "100%"
+      tube_cap_a.style.opacity = "100%"
+       tube_cap_b.style.opacity = "100%"
  
-//       pipette_centrifuge2.addEventListener("click", () => {
+      pipette_centrifuge2.addEventListener("click", () => {
              
        
 
-//         pipette_centrifuge2.style.rotate =  "0deg"
-//           setTimeout(function(){
-//         pipette_centrifuge2.style.bottom = "35%"
-//          setTimeout(function(){
-//         pipette_centrifuge2.style.left = "14%"
-//                     setTimeout(function(){
-//                       pipette_centrifuge2.style.bottom = "22%"
-//                           setTimeout(function(){
+        pipette_centrifuge2.style.rotate =  "0deg"
+          setTimeout(function(){
+        pipette_centrifuge2.style.bottom = "35%"
+         setTimeout(function(){
+        pipette_centrifuge2.style.left = "14%"
+                    setTimeout(function(){
+                      pipette_centrifuge2.style.bottom = "22%"
+                          setTimeout(function(){
                                  
                                  
-//                                   milk_a_2_50ml.style.height= "13.0%"
-//                                   milk_10ml_a.style.height= "21.4%"
-//                                     setTimeout(function(){
-//                                             pipette_centrifuge2.style.bottom = "53%"
-//                                            milk_10ml_a.style.bottom = "53%"
-//                                              setTimeout(function(){
-//                                                pipette_centrifuge2.style.left = "65.9%"
-//                                                 milk_10ml_a.style.left = "66.9%"
-//                                                 setTimeout(function(){
-//                                                    pipette_centrifuge2.style.bottom = "43%"
-//                                             milk_10ml_a.style.bottom = "43%"
-//                                               setTimeout(function(){ 
-//                                                         milk_strip_a_2.style.height = "32.2%"
-//                                                        setTimeout(function(){      //
-//                                                           milk_tube_a_2.style.height = "17.8%"
+                                  milk_a_2_50ml.style.height= "13.0%"
+                                  milk_10ml_a.style.height= "21.4%"
+                                    setTimeout(function(){
+                                            pipette_centrifuge2.style.bottom = "53%"
+                                           milk_10ml_a.style.bottom = "53%"
+                                             setTimeout(function(){
+                                               pipette_centrifuge2.style.left = "65.9%"
+                                                milk_10ml_a.style.left = "66.9%"
+                                                setTimeout(function(){
+                                                   pipette_centrifuge2.style.bottom = "43%"
+                                            milk_10ml_a.style.bottom = "43%"
+                                              setTimeout(function(){ 
+                                                        milk_strip_a_2.style.height = "32.2%"
+                                                       setTimeout(function(){      //
+                                                          milk_tube_a_2.style.height = "17.8%"
                                                         
-//                                                            setTimeout(function(){
-//                                                                milk_strip_a_2.style.opacity = "0%"
-//                                                                 milk_10ml_a.style.opacity = "0%"
-//                                                                  setTimeout(function(){
-//                                                                     pipette_centrifuge2.style.bottom = "55%"
-//                                                                     pipette_centrifuge2.style.zIndex = "5"
-//                                                                      setTimeout(function(){
-//                                                                            pipette_centrifuge2.style.left = "30.1%"
+                                                           setTimeout(function(){
+                                                               milk_strip_a_2.style.opacity = "0%"
+                                                                milk_10ml_a.style.opacity = "0%"
+                                                                 setTimeout(function(){
+                                                                    pipette_centrifuge2.style.bottom = "55%"
+                                                                    pipette_centrifuge2.style.zIndex = "5"
+                                                                     setTimeout(function(){
+                                                                           pipette_centrifuge2.style.left = "30.1%"
                                                                            
                                                                              
                                                                    
                                                                      
                                  
                                      
-//                                    f = 101;
+                                   f = 101;
                                       
-//       f = 102; 
+      f = 102; 
 
-//      //
-//              //
+     //
+             //
             
-//                  setTimeout(function(){
-//                      pipette_centrifuge2.style.bottom = "22.4%"
-//                          setTimeout(function(){
-//                                milk_10ml_b.style.height =  "21.4%"
-//                               milk_b_2_50ml.style.height ="13.0%"
+                 setTimeout(function(){
+                     pipette_centrifuge2.style.bottom = "22.4%"
+                         setTimeout(function(){
+                               milk_10ml_b.style.height =  "21.4%"
+                              milk_b_2_50ml.style.height ="13.0%"
                          
                                    
-//                                        setTimeout(function(){
-//                                            pipette_centrifuge2.style.bottom = "60.4%"
-//                                              milk_10ml_b.style.bottom =  "60.4%"
-//                                               setTimeout(function(){
-//                                                   pipette_centrifuge2.style.bottom = "60.4%"
-//                                              milk_10ml_b.style.bottom =  "60.4%"
-//                                               setTimeout(function(){
-//                                                  pipette_centrifuge2.style.left = "69.3%"
-//                                              milk_10ml_b.style.left =  "70.4%"
-//                                               setTimeout(function(){
-//                                                  pipette_centrifuge2.style.bottom = "40.4%"
-//                                              milk_10ml_b.style.bottom =  "40.4%"
-//                                                setTimeout(function(){
-//                                                 milk_strip_b_2.style.height = "32.2%"
-//                                                        setTimeout(function(){
-//                                                 milk_tube_b_2.style.height = "17.8%"
-//                                                  setTimeout(function(){
-//                                                   milk_10ml_b.style.opacity = "0%"
-//                                                   milk_strip_b_2.style.opacity = "0%"
-//                                                   pipette_centrifuge2.style.zIndex = "20";
-//                                                    setTimeout(function(){
-//                                                         pipette_centrifuge2.style.bottom = "60.4%"
-//                                                         setTimeout(function(){
-//                                                           pipette_centrifuge2.style.left = "27.3%"
-//                                                            setTimeout(function(){
-//                                                                      pipette_centrifuge2.style.bottom = "11%"
-//                                    setTimeout(function(){
-//                                     pipette_centrifuge2.style.rotate = "-90deg"
-//                                     setTimeout(function(){
-//                                        pipette_centrifuge2.style.bottom = "-5%"
+                                       setTimeout(function(){
+                                           pipette_centrifuge2.style.bottom = "60.4%"
+                                             milk_10ml_b.style.bottom =  "60.4%"
+                                              setTimeout(function(){
+                                                  pipette_centrifuge2.style.bottom = "60.4%"
+                                             milk_10ml_b.style.bottom =  "60.4%"
+                                              setTimeout(function(){
+                                                 pipette_centrifuge2.style.left = "69.3%"
+                                             milk_10ml_b.style.left =  "70.4%"
+                                              setTimeout(function(){
+                                                 pipette_centrifuge2.style.bottom = "40.4%"
+                                             milk_10ml_b.style.bottom =  "40.4%"
+                                               setTimeout(function(){
+                                                milk_strip_b_2.style.height = "32.2%"
+                                                       setTimeout(function(){
+                                                milk_tube_b_2.style.height = "17.8%"
+                                                 setTimeout(function(){
+                                                  milk_10ml_b.style.opacity = "0%"
+                                                  milk_strip_b_2.style.opacity = "0%"
+                                                  pipette_centrifuge2.style.zIndex = "20";
+                                                   setTimeout(function(){
+                                                        pipette_centrifuge2.style.bottom = "60.4%"
+                                                        setTimeout(function(){
+                                                          pipette_centrifuge2.style.left = "27.3%"
+                                                           setTimeout(function(){
+                                                                     pipette_centrifuge2.style.bottom = "11%"
+                                   setTimeout(function(){
+                                    pipette_centrifuge2.style.rotate = "-90deg"
+                                    setTimeout(function(){
+                                       pipette_centrifuge2.style.bottom = "-5%"
 
-//                                             if (f === 102) {
-//       f = 103; 
-//             pipette_centrifuge2.addEventListener("click", () => {
-//                     pipette_centrifuge2.style.rotate =  "0deg"
-//           setTimeout(function(){
-//         pipette_centrifuge2.style.left= "23%"
-//          setTimeout(function(){
-//         pipette_centrifuge2.style.bottom = "41%"
-//          setTimeout(function(){
-//                pipette_centrifuge2.style.left= "42.4%"
-//                  setTimeout(function(){
-//                         pipette_centrifuge2.style.bottom = "25%"
-//                           setTimeout(function(){
-//                              methylene_blue_1ml.style.opacity = "100%"
-//                              setTimeout(function(){
-//                                  pipette_centrifuge2.style.bottom = "60%";
-//                                    methylene_blue_1ml.style.bottom = "60%"
-//                                     setTimeout(function(){
-//                                           pipette_centrifuge2.style.left= "65.8%"
-//                                            methylene_blue_1ml.style.left = "66.8%"
-//                                            setTimeout(function(){
-//                                              pipette_centrifuge2.style.bottom = "40%";
-//                                    methylene_blue_1ml.style.bottom = "40%"
-//                                      setTimeout(function(){
-//                                       methylene_blue_drop1.style.opacity = "100%"
-//                                             setTimeout(function(){
-//                                             methylene_blue_drop2.style.opacity = "100%"
-//                                              methylene_blue_drop1.style.opacity = "0%"
-//                                        setTimeout(function(){
-//                                       methylene_mid_blue.style.opacity = "100%"
-//                                       milk_tube_a_2.style.opacity = "0%"
-//                                        setTimeout(function(){
-//                                           methylene_blue_drop2.style.opacity = "0%"
-//                                              methylene_blue_tube.style.opacity = "100%"
-//                                              methylene_blue_1ml.style.opacity = "0%"
-//                                                setTimeout(function(){
-//                                                   pipette_centrifuge2.style.bottom = "65.8%"
-//                                                     setTimeout(function(){
-//                                                          pipette_centrifuge2.style.left= "42.3%"
+                                            if (f === 102) {
+      f = 103; 
+            pipette_centrifuge2.addEventListener("click", () => {
+                    pipette_centrifuge2.style.rotate =  "0deg"
+          setTimeout(function(){
+        pipette_centrifuge2.style.left= "23%"
+         setTimeout(function(){
+        pipette_centrifuge2.style.bottom = "41%"
+         setTimeout(function(){
+               pipette_centrifuge2.style.left= "42.4%"
+                 setTimeout(function(){
+                        pipette_centrifuge2.style.bottom = "25%"
+                          setTimeout(function(){
+                             methylene_blue_1ml.style.opacity = "100%"
+                             setTimeout(function(){
+                                 pipette_centrifuge2.style.bottom = "60%";
+                                   methylene_blue_1ml.style.bottom = "60%"
+                                    setTimeout(function(){
+                                          pipette_centrifuge2.style.left= "65.8%"
+                                           methylene_blue_1ml.style.left = "66.8%"
+                                           setTimeout(function(){
+                                             pipette_centrifuge2.style.bottom = "40%";
+                                   methylene_blue_1ml.style.bottom = "40%"
+                                     setTimeout(function(){
+                                      methylene_blue_drop1.style.opacity = "100%"
+                                            setTimeout(function(){
+                                            methylene_blue_drop2.style.opacity = "100%"
+                                             methylene_blue_drop1.style.opacity = "0%"
+                                       setTimeout(function(){
+                                      methylene_mid_blue.style.opacity = "100%"
+                                      milk_tube_a_2.style.opacity = "0%"
+                                       setTimeout(function(){
+                                          methylene_blue_drop2.style.opacity = "0%"
+                                             methylene_blue_tube.style.opacity = "100%"
+                                             methylene_blue_1ml.style.opacity = "0%"
+                                               setTimeout(function(){
+                                                  pipette_centrifuge2.style.bottom = "65.8%"
+                                                    setTimeout(function(){
+                                                         pipette_centrifuge2.style.left= "42.3%"
                                                          
-//          setTimeout(function(){
+         setTimeout(function(){
       
-//          setTimeout(function(){
+         setTimeout(function(){
         
-//               setTimeout(function(){
-//                  pipette_centrifuge2.style.bottom = "25%"
-//                   setTimeout(function(){
-//                     methylene_blue_1ml_b.style.opacity = "100%"
-//                      setTimeout(function(){
-//                            methylene_blue_1ml_b.style.bottom = "64%"
-//                              pipette_centrifuge2.style.bottom = "64%"
-//                              setTimeout(function(){
-//                                  pipette_centrifuge2.style.left = "69.4%"
-//                                   methylene_blue_1ml_b.style.left = "70.4%"
-//                                      setTimeout(function(){
-//                                          methylene_blue_1ml_b.style.bottom = "43%"
-//                              pipette_centrifuge2.style.bottom = "43%"
+              setTimeout(function(){
+                 pipette_centrifuge2.style.bottom = "25%"
+                  setTimeout(function(){
+                    methylene_blue_1ml_b.style.opacity = "100%"
+                     setTimeout(function(){
+                           methylene_blue_1ml_b.style.bottom = "64%"
+                             pipette_centrifuge2.style.bottom = "64%"
+                             setTimeout(function(){
+                                 pipette_centrifuge2.style.left = "69.4%"
+                                  methylene_blue_1ml_b.style.left = "70.4%"
+                                     setTimeout(function(){
+                                         methylene_blue_1ml_b.style.bottom = "43%"
+                             pipette_centrifuge2.style.bottom = "43%"
                               
-//                                  setTimeout(function(){
-//                                       methylene_blue_drop1_b.style.opacity = "100%"
-//                                             setTimeout(function(){
-//                                             methylene_blue_drop2_b.style.opacity = "100%"
-//                                              methylene_blue_drop1_b.style.opacity = "0%"
-//                                        setTimeout(function(){
-//                                       methylene_mid_blue_b.style.opacity = "100%"
-//                                       milk_tube_b_2.style.opacity = "0%"
-//                                        setTimeout(function(){
-//                                           methylene_blue_drop2_b.style.opacity = "0%"
-//                                              methylene_blue_tube_b.style.opacity = "100%"
-//                                              methylene_blue_1ml_b.style.opacity = "0%"
-//                                               setTimeout(function(){
-//                                                    pipette_centrifuge2.style.bottom = "64%"
-//                                                       setTimeout(function(){
-//                                                           pipette_centrifuge2.style.left = "24.4%"
-//                                                              setTimeout(function(){
-//                                                                      pipette_centrifuge2.style.bottom = "11%"
-//                                    setTimeout(function(){
-//                                     pipette_centrifuge2.style.rotate = "-90deg"
-//                                      f = 145;
-//                                     setTimeout(function(){
-//                                        pipette_centrifuge2.style.bottom = "-7%"
+                                 setTimeout(function(){
+                                      methylene_blue_drop1_b.style.opacity = "100%"
+                                            setTimeout(function(){
+                                            methylene_blue_drop2_b.style.opacity = "100%"
+                                             methylene_blue_drop1_b.style.opacity = "0%"
+                                       setTimeout(function(){
+                                      methylene_mid_blue_b.style.opacity = "100%"
+                                      milk_tube_b_2.style.opacity = "0%"
+                                       setTimeout(function(){
+                                          methylene_blue_drop2_b.style.opacity = "0%"
+                                             methylene_blue_tube_b.style.opacity = "100%"
+                                             methylene_blue_1ml_b.style.opacity = "0%"
+                                              setTimeout(function(){
+                                                   pipette_centrifuge2.style.bottom = "64%"
+                                                      setTimeout(function(){
+                                                          pipette_centrifuge2.style.left = "24.4%"
+                                                             setTimeout(function(){
+                                                                     pipette_centrifuge2.style.bottom = "11%"
+                                   setTimeout(function(){
+                                    pipette_centrifuge2.style.rotate = "-90deg"
+                                     f = 145;
+                                    setTimeout(function(){
+                                       pipette_centrifuge2.style.bottom = "-7%"
 
                                      
                                      
                                       
-//                                         tube_cap_a.addEventListener("click", function() {
-//                                              if(f === 145){
-//                                               f = 146;
-//                                               console.log("cap clicked !!")
-//                                                   tube_cap_a.style.bottom = "60%";
+                                        tube_cap_a.addEventListener("click", function() {
+                                             if(f === 145){
+                                              f = 146;
+                                              console.log("cap clicked !!")
+                                                  tube_cap_a.style.bottom = "60%";
 
                                      
 
 
-//                                       setTimeout(function(){
-//                  tube_cap_a.style.left = "66%"
-//                   setTimeout(function(){
-//                        tube_cap_a.style.bottom = "45%"
-//        if (f === 146) {
-//       f = 146.5;
-//             tube_cap_b.style.bottom = "60%"
-//              setTimeout(function(){
-//                  tube_cap_b.style.left = "69.7%"
-//                  setTimeout(function(){
-//                        tube_cap_b.style.bottom = "45%"
-//                                       f =147;
-//                                       startbutton.style.visibility="visible"
-//                                        startbutton.innerText="Next"
-//                                        ins.innerText="Click on Next button"
-//                                       },1000)
-//                                         },1000)
-//                                       }
-//                                                  },1000)
-//                                               },1000)
+                                      setTimeout(function(){
+                 tube_cap_a.style.left = "66%"
+                  setTimeout(function(){
+                       tube_cap_a.style.bottom = "45%"
+       if (f === 146) {
+      f = 146.5;
+            tube_cap_b.style.bottom = "60%"
+             setTimeout(function(){
+                 tube_cap_b.style.left = "69.7%"
+                 setTimeout(function(){
+                       tube_cap_b.style.bottom = "45%"
+                                      f =147;
+                                      startbutton.style.visibility="visible"
+                                       startbutton.innerText="Next"
+                                       ins.innerText="Click on Next button"
+                                      },1000)
+                                        },1000)
+                                      }
+                                                 },1000)
+                                              },1000)
                                                 
-//                                              }
-//                                         },)
-//                                        console.log("f is 150 just after next")
-//                                                     },1000)
-//                                                  },1000)
-//                                               },1000)
+                                             }
+                                        },)
+                                       console.log("f is 150 just after next")
+                                                    },1000)
+                                                 },1000)
+                                              },1000)
 
-//                                                          },1000)
-//                                                  },1000)
-//                                               },1000)
-//                                         },1000)
-//                                  },1000)
-//                                  },1000)
-//                                         },1000)
-//                                  },1000)
-//                        },1000)
-//                       },1000)
-//                  },1000)
-//               },1000)
-//                                                  },1000)
+                                                         },1000)
+                                                 },1000)
+                                              },1000)
+                                        },1000)
+                                 },1000)
+                                 },1000)
+                                        },1000)
+                                 },1000)
+                       },1000)
+                      },1000)
+                 },1000)
+              },1000)
+                                                 },1000)
                                 
-//                                                          },2000)
-//                                                  },1000)
-//                                           },1000)
-//                                           },1000)
-//                                          },1000)
-//                                         },1000)
-//                                                },1000)
-//                                                },1000)
-//                                  },1000)
-//                              },1000)
-//                     },1000)
-//                  },1000)
-//                                                        },1000)
-//                                                   },1000)
-//              }, { once: true });
-//             }
-//                                            },1000)
-//                                                        },1000)
-//                                                   },1000)
-//                                                             },1000)
-//                                                        },1000)
-//                                                   },0)
-//                                                  },0)
-//                                                  },0)
+                                                         },2000)
+                                                 },1000)
+                                          },1000)
+                                          },1000)
+                                         },1000)
+                                        },1000)
+                                               },1000)
+                                               },1000)
+                                 },1000)
+                             },1000)
+                    },1000)
+                 },1000)
+                                                       },1000)
+                                                  },1000)
+             }, { once: true });
+            }
+                                           },1000)
+                                                       },1000)
+                                                  },1000)
+                                                            },1000)
+                                                       },1000)
+                                                  },1000)
+                                                 },1000)
+                                                 },1000)
                                               
-//                                                  },1000)
-//                                          },1000)
-//                                     },1000)    //10000
-//                           },1000)
-//                     },1000)
+                                                 },1000)
+                                         },1000)
+                                    },1000)    //10000
+                          },1000)
+                    },1000)
 
 
      
       
                                     
-//                                                                },0)
-//                                                                         },0)
-//                                                                      },0)
-//                                                                },0)
-//                                                          },0)
-//                                                            },0)
-//                                                    },0)
-//                                                 },0)
-//                                       },0)
-//                                },0)
-//                       },0)
-//             },0)
-//                                                         },1000)
-//                                                      }, { once: true });
-//                                                   }
-//                                               }
+                                                               },1000)
+                                                                        },1000)
+                                                                     },1000)
+                                                               },1000)
+                                                         },1000)
+                                                           },1000)
+                                                   },1000)
+                                                },1000)
+                                      },1000)
+                               },1000)
+                      },1000)
+            },1000)
+                                                        },1000)
+                                                     }, { once: true });
+                                                  }
+                                              }
 
                                               function zoominout(element) {
                                                 element.classList.add("pulse-effect");
@@ -1062,9 +1071,10 @@ function pulse(element) {
     }, 1000);
 }
 
-milk_tube_b_201();
+
 function milk_tube_b_201(){
   stp39.style.visibility = "visible";
+  closed_methylene_blue_tube_b.style.visibility = "visible"
   test_tube_b_2.style.opacity = "0%"
                       test_tube_c_2.style.opacity = "0%"
                       test_tube_d_2.style.opacity = "0%"
@@ -1189,8 +1199,13 @@ function milk_tube_b_201(){
                                         closed_methylene_blue_tube_b.style.transform = "rotate(0deg)"
                                         setTimeout(() => {
                                           closed_methylene_blue_tube_b.style.opacity = "100%"
-                                          inverted_methylene_blue_tube_b.style.opacity = "100%"
-
+                                          inverted_methylene_blue_tube_b.style.opacity = "0%"
+                                          setTimeout(() => {
+                                            inverted_methylene_blue_tube_b.style.transform = "rotate(0deg)"
+                                            closed_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                                            setTimeout(() => {
+                                              closed_methylene_blue_tube_b.style.opacity = "0%"
+                                              inverted_methylene_blue_tube_b.style.opacity = "100%"
                          setTimeout(() => {
                           tongs_upper2.style.opacity = "100%";
                            tongs_down2.style.opacity = "100%";
@@ -1212,58 +1227,31 @@ function milk_tube_b_201(){
                            tongs_down2.style.bottom = "12%";
                             f = 154;
                  console.log(f)
-                  if (f === 154) {
-        f = 155;
-       
-    offSwitch2.addEventListener("click", function() {
-      console.log("switch is clicked")
-      ins.innerText = "Click on the temp increase button to increase temperature to 37°C"
-       actualTempDisplay2.style.opacity = "100%";
-    actualTempDisplay12.style.opacity = "100%";
-    pulse(actualTempDisplay2);
-    sampleTempDisplay2.style.opacity = "100%";
-    sampleTempDisplay12.style.opacity = "100%";
-    pulse(sampleTempDisplay2);
-    zoominout(sampleTempDisplay2);
-        
-    offSwitch2.style.visibility = "hidden";
-    console.log("f=150");
-    pulse(offSwitch2);
-    
-
-     
-     
-      
-    setTimeout(() => {
-        onSwitch2.click();
-        onSwitch2.style.opacity = "100%";
-    }, 1000);
-  
-
-
-});
-}else{console.log("nulll error switch2")}
+                   waterbath_cob1()
+                        
                                }, 1000);  
                                            }, 1000);  
                                     }, 1000);    
                                    }, 1000);
+                                  }, 1000);
                            }, 300);  //300
+                          }, 1000);
                           }, 1000);
                         }, 1000);
                    }, 1000);
                      }, 1000);
                           }, 1000);
-               }, 0);
+               }, 1000);
               
          }
-        },0)
-  },0)
- }, 0);
-}, 0);
-}, 0);
+        },1000)
+  },1000)
+ }, 1000);
+}, 1000);
+}, 1000);
 }, 1500); // 1500
 }, 1000);
-}, 0);
+}, 1000);
                                    }, 1000);
                            }, 300);   //300
                    }, 1000);
@@ -1280,7 +1268,124 @@ function milk_tube_b_201(){
 
 }
 
+let currentTemp = 25;
+let targetTemp = 37;
+let timerStarted = false;
+let countdownInterval;
 
+
+onSwitch2.style.visibility = "hidden";
+
+onSwitch2.style.visibility = "hidden";
+
+actualTempDisplay2.style.display = "none";
+sampleTempDisplay2.style.display = "none";
+
+function waterbath_cob1() {
+  stp39.style.visibility = "visible";
+  ins.innerText = "Click on the off switch of water bath to on it "
+offSwitch2.addEventListener("click", () => {
+    if (f === 154) {
+        f = 155;
+        offSwitch2.style.visibility = "hidden";
+        onSwitch2.style.visibility = "visible";
+        pulse(onSwitch2);
+    }
+
+    onSwitch2.style.opacity = "100%";
+    pulse(onSwitch2);
+      console.log("displaying")
+      console.log(setTempDisplay2);
+    settimerDisplay.style.visibility = "visible";
+   pulse(settimerDisplay)
+   sampletimerDisplay.style.visibility = "visible";
+   pulse(sampletimerDisplay)
+
+    setTempDisplay2.style.opacity = "1";
+    actualTempDisplay2.style.display = "block";
+
+    sampletimerDisplay1.style.visibility = "visible";
+    sampletimerDisplay2.style.visibility = "visible";
+  pulse(sampletimerDisplay1)
+  pulse(sampletimerDisplay2)
+    upOffSwitch2.style.display = "block";
+
+    setTempDisplay2.textContent = `${currentTemp}°C`;
+    actualTempDisplay2.textContent = `${currentTemp}°C`;
+    sampletimerDisplay.textContent = `${currentTemp}°C`;
+
+    ins.innerText = "Click the ↑ button to raise set temperature to 100°C";
+});
+
+// TEMP UP → Increment Set Temp
+upOffSwitch2.addEventListener("click", () => {
+    if (f === 155 && currentTemp < targetTemp) {
+         console.log("upoff switch")
+        currentTemp  += 2;
+        ins.innerText = "Again Click ↑ button to raise temperature to 100°C"
+        settimerDisplay.textContent = `${currentTemp}°C`;
+        pulse(upOffSwitch2);
+
+        if (currentTemp === targetTemp && !timerStarted) {
+            f = 156;
+            timerStarted = true;
+            ins.innerText = "Reached 100°C. Click on the Set button to wait for 3 minutes... to rise the water bath temperature to 100°C";
+            console.log = "Click on the set button it is active.."
+            setOff2.addEventListener("click", () => {
+               pulse(setOff2)
+              console.log("set button active")
+            startHoldingTimer(3); // Start 2 min timer
+            f = 201;
+            latex_beaker()
+              
+            },  { once: true })
+        }
+    }
+});
+
+// ⏲️ Start Countdown Timer
+
+}
+
+function startHoldingTimer(minutes) {
+
+    let seconds = minutes * 60;
+    let currentTemp = 20; // Starting temperature
+    const targetTemp = 100;
+
+    
+    actualTempDisplay2.style.display = "block"; // Optional if you have a bath temp display
+   
+    // 🔥 Interval to increase bath temperature slowly
+    const tempInterval = setInterval(() => {
+        if (currentTemp < targetTemp) {
+            currentTemp += 2; // Increase temp slowly
+          sampletimerDisplay.textContent = `${currentTemp.toFixed(1)}°C`;
+        } else {
+            clearInterval(tempInterval);
+            sampletimerDisplay.textContent = `${targetTemp.toFixed(1)}°C`;
+        }
+    } , 400  ); //  480 every 0.5s adjust as needed
+
+    // ⏲️ Countdown Timer
+    const countdownInterval = setInterval(() => {
+       timerDisplay13.style.visibility = "visible";
+        let min = Math.floor(seconds / 60);
+        let sec = seconds % 60;
+        timerDisplay.textContent = `Timer - ${min}:${sec < 10 ? "0" : ""}${sec}`;
+        seconds--;
+
+        if (seconds < 0) {
+            clearInterval(countdownInterval);
+            clearInterval(tempInterval); // Stop temperature interval too
+            timerDisplay13.textContent = "";
+            ins.innerText = "✅ Temperature stabilized. Now Click on the tube A to put all tubes onto water bath for heating all the sample tubes at 100°C";
+            pulse(ins); // your existing animation
+            
+            
+        }
+    }, 100);  //100
+}
 
 
 
