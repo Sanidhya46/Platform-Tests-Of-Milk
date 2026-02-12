@@ -939,6 +939,7 @@ bottom: 5%; */
     transition-duration: 1s;
     z-index: 0;
 }
+
 #butyrometer_back2{
     position: absolute;
     height: 35%;
@@ -954,19 +955,20 @@ bottom: 5%; */
     position: absolute;
     height: 16%;
     width: 8.35%;
-    bottom: 7%;
-    left: 7.60%;
+    bottom: 9.8%;
+    left: 6.40%;
    
     z-index: 2;
     transition: height 1s linear;
     opacity: 100%;
 }
+
 #milk_sample_b_50ml{
     position: absolute;
     height: 16%;
     width: 8.35%;
-    bottom: 12.9%;
-    left: 19.60%;
+    bottom: 10%;
+    left: 17.60%;
    
     z-index: 2;
     transition: height 1s linear;
@@ -977,19 +979,20 @@ bottom: 5%; */
     position: absolute;
      height: 16%;
     width: 8.35%;
-    bottom: 13%;
-    left: 31.55%;
+    bottom: 10%;
+    left: 28.55%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
     transition: height 1s linear;
 }
+
 #milk_sample_d_50ml{
     position: absolute;
       height: 16%;
     width: 8.37%;
-    bottom : 7%;
-    left: 46.6%;
+    bottom : 10%;
+    left: 40.6%;
     transition: all;
     z-index: 1;
     transition: height 1s linear;
@@ -999,8 +1002,8 @@ bottom: 5%; */
     position: absolute;
    height: 20%;
     width: 10%;
-    top: 73%;
-    left: 6.27%;
+    top: 70%;
+    left: 5%;
     transition: all;
     transition-duration: 1s;
     z-index: 9;
@@ -1021,12 +1024,13 @@ bottom: 5%; */
     transition:  height 2s linear;
     opacity: 100%;
 }
+
 #milk_beaker_b_50ml{
     position: absolute;
     height: 20%;
     width: 10%;
-    top: 67%;
-    left: 18.27%;
+    top: 70%;
+    left: 16.2%;
     transition: all;
     transition-duration: 1s;
     z-index: 4;
@@ -1087,8 +1091,8 @@ bottom: 5%; */
     position: absolute;
     height: 20%;
     width: 10%;
-    top: 67%;
-    left: 30.27%;
+    top: 70%;
+    left: 27.27%;
     transition: all;
     transition-duration: 1s;
     z-index: 30;
@@ -1101,11 +1105,11 @@ bottom: 5%; */
     position: absolute;
     height: 20%;
     width: 10%;
-    top: 73%;
-    left: 45.27%;
+    top: 70%;
+    left: 39.27%;
     transition: all;
     transition-duration: 1s;
-    z-index: 2;
+    z-index: 30;
 }
 
 #butyrometer_with_stand{
@@ -2767,13 +2771,15 @@ bottom: 5%; */
     position: absolute;
     height: 30%;
     width: 2.6%;
-   bottom: -6%;
-    left: 30.0%;
+   bottom: -1%;
+    left: 56.0%;
     rotate: -90deg;
     transition: all;
     transition-duration: 1s;
     z-index: 4;
 }
+
+
 #pipette_centrifuge2{
     position: absolute;
     height: 30%;
@@ -2932,7 +2938,7 @@ bottom: 5%; */
     height: 0%;
     width: 0.6%;
    bottom: 23.20%;
-    left: 23.5%;
+    left: 21.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
@@ -2943,7 +2949,7 @@ bottom: 5%; */
     height: 0%;
     width: 0.6%;
    bottom: 18.3%;
-    left: 35.3%;
+    left: 32.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 1;
@@ -2954,7 +2960,7 @@ bottom: 5%; */
     height: 0%;
     width: 0.6%;
    bottom: 15.4%;
-    left: 50.35%;
+    left: 44.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 1;
@@ -3199,7 +3205,7 @@ bottom: 5%; */
    bottom: 60%;
     left: 66.1%;
     transition-duration: 1s;
-    z-index: 18;
+    z-index: 18; 
     opacity: 0%;
     transition: all 1s ease-in;
 }

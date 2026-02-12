@@ -97,18 +97,18 @@ function pipette1() {
                              milk_strip_a.style.opacity = "0%"
                              pipette_centrifuge.style.bottom = "60%"
                               setTimeout(function(){
-                                 pipette_centrifuge.style.left = "30%"
+                                 pipette_centrifuge.style.left = "20.49%"
                                  
                                          if (f === 3) {
                 f = 4;
                                                  setTimeout(function(){
-                                                    pipette_centrifuge.style.rotate = "0deg"
+                                                    // pipette_centrifuge.style.rotate = "0deg"
                                                     setTimeout(function(){
-                                                      pipette_centrifuge.style.bottom = "40%"
+                                                      pipette_centrifuge.style.bottom = "22%"
                                                        setTimeout(function(){
-                                                         pipette_centrifuge.style.left = "22.4%"
+                                                        //  pipette_centrifuge.style.left = "22.4%"
                                                           setTimeout(function(){
-                                                            pipette_centrifuge.style.bottom = "23%"
+                                                            // pipette_centrifuge.style.bottom = "23%"
                                                             setTimeout(function(){
                                                               milk_b_5ml.style.height = "12.2%"
                                                                 milk_sample_b_50ml.style.height = "14.75%"
@@ -136,18 +136,18 @@ function pipette1() {
                                                                          pipette_centrifuge.style.bottom = "62%"
                                                                 milk_b_5ml.style.bottom = "62%"
                                                                  setTimeout(function(){
-                                                                   pipette_centrifuge.style.left= "27.1%"
+                                                                   pipette_centrifuge.style.left= "31.585%"
                                     //                                 
 
                    
                                                               if (f === 4) {
                 f = 5;
                                                  setTimeout(function(){
-                                                    pipette_centrifuge.style.rotate = "0deg"
+                                                    // pipette_centrifuge.style.rotate = "0deg"
                                                     setTimeout(function(){
-                                                      pipette_centrifuge.style.bottom = "39%"
+                                                      // pipette_centrifuge.style.bottom = "39%"
                                                        setTimeout(function(){
-                                                         pipette_centrifuge.style.left = "34.4%"
+                                                        //  pipette_centrifuge.style.left = "34.4%"
                                                           setTimeout(function(){
                                                              pipette_centrifuge.style.bottom = "18%"
                                                               setTimeout(function(){
@@ -160,8 +160,8 @@ function pipette1() {
                                                                      milk_c_5ml.style.bottom = "60%"
                                                                        pipette_centrifuge.style.bottom = "60%"
                                                                         setTimeout(function(){
-                                                                           milk_c_5ml.style.left = "77.85%"
-                                                                       pipette_centrifuge.style.left = "76.8%"
+                                                                           milk_c_5ml.style.left = "77.67%"
+                                                                       pipette_centrifuge.style.left = "76.7%"
                                                                              setTimeout(function(){
                                                                                    milk_c_5ml.style.bottom = "40%"
                                                                        pipette_centrifuge.style.bottom= "40%"
@@ -175,16 +175,16 @@ function pipette1() {
                                                                                                
                                                                        pipette_centrifuge.style.bottom= "63%"
                                                                                                setTimeout(function(){
-                                                                                                  pipette_centrifuge.style.left = "26.8%"
+                                                                                                  // pipette_centrifuge.style.left = "26.8%"
                                                                                           
                                                                                       if (f === 5) {
                 f = 6;  
                                             
                  
                                                     setTimeout(function(){
-                                                      pipette_centrifuge.style.bottom = "39%"
+                                                      // pipette_centrifuge.style.bottom = "39%"
                                                        setTimeout(function(){
-                                                           pipette_centrifuge.style.left = "49.3%"
+                                                           pipette_centrifuge.style.left = "43.5%"
                                                             setTimeout(function(){
                                                               pipette_centrifuge.style.bottom = "15.5%"
                                                                   setTimeout(function(){
