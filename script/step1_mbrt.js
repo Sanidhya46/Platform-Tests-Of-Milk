@@ -60,7 +60,6 @@ const actualTempDisplay2 = document.getElementById("actualTempDisplay2");
 
 const timerDisplay2 = document.querySelector("#timerDisplay2");
 const timerDisplay = document.querySelector("#timerDisplay");
-
 const timerDisplay12 = document.querySelector("#timerDisplay13");
 const timerDisplay22 = document.querySelector("#timerDisplay23");
 

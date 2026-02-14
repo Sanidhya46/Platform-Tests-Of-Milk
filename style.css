@@ -1003,7 +1003,7 @@ bottom: 5%; */
    height: 20%;
     width: 10%;
     top: 70%;
-    left: 5%;
+    left: 5.25%;
     transition: all;
     transition-duration: 1s;
     z-index: 9;
@@ -1027,10 +1027,10 @@ bottom: 5%; */
 
 #milk_beaker_b_50ml{
     position: absolute;
-    height: 20%;
+    height: 20.7%;
     width: 10%;
-    top: 70%;
-    left: 16.2%;
+    top: 69.4%;
+    left: 16.4%;
     transition: all;
     transition-duration: 1s;
     z-index: 4;
@@ -1092,7 +1092,7 @@ bottom: 5%; */
     height: 20%;
     width: 10%;
     top: 70%;
-    left: 27.27%;
+    left: 27.4%;
     transition: all;
     transition-duration: 1s;
     z-index: 30;
@@ -1106,7 +1106,7 @@ bottom: 5%; */
     height: 20%;
     width: 10%;
     top: 70%;
-    left: 39.27%;
+    left: 39.52%;
     transition: all;
     transition-duration: 1s;
     z-index: 30;
@@ -1233,11 +1233,11 @@ bottom: 5%; */
 #observation_table_cob{
   position: absolute;
   width: 80.45%;
-  height: 55.50%;
-  bottom: 38%; /* 100% - top: 6.5% - height: 39% */
+  height: 45.50%;
+  bottom: 52%; /* 100% - top: 6.5% - height: 39% */
   left: 9.5%;
    overflow: hidden;
-   z-index: 60;
+   z-index: 2;
    transition: 1s all;
    visibility: hidden;
 }
@@ -1804,19 +1804,19 @@ bottom: 5%; */
  visibility: block;
 }
 
-#timerDisplay13,
-#timerDisplay23 {
-    position: absolute;
-  color: rgb(89, 10, 10);
-  background-color: yellow ;
+#timerDisplay13{
+  position: absolute;
+  color: rgb(40, 237, 0);
+  
   font-weight: bold;
-  font-size: 1.4vw;
-  bottom: 83%;
+  font-size: 2.6vw;
+  bottom: 18.9%;
   width: 9%;
   opacity: 100%;
-  left: 0.5%;
+  left: 47.8%;
   z-index: 30;
   visibility: visible;
+  display: block;
   
   
 }
@@ -2779,6 +2779,333 @@ bottom: 5%; */
     z-index: 4;
 }
 
+#pipette_familiar{
+  position: absolute;
+  height: 30%;
+  width: 2.6%;
+ bottom: -7%;
+  left: 45.0%;
+  rotate: -90deg;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 40;
+}
+
+#milk_beaker_familiar{
+  position: absolute;
+ height: 23%;
+  width: 11%;
+  top: 67%;
+  left: 35%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 9;
+  transition: transform 1s ease-in-out;
+  opacity: 100%;
+}
+
+#clock_familiar{
+  position: absolute;
+  height: 22%;
+  width: 11.6%;
+ bottom: 9.8%;
+  left: 48.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+#clock{
+  position: absolute;
+  height: 24%;
+  width: 11.9%;
+ bottom: 9.8%;
+  left: 45.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+#waterbath_familiar{
+  position: absolute;
+  height: 25%;
+  width: 20.6%;
+ bottom: 8%;
+  left: 10.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#tooltip {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.equipment {
+  cursor: pointer;
+}
+
+.popup-card {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1.25rem 1.56rem;   /* 20px 25px */
+  border-radius: 0.75rem;     /* 12px */
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.25); /* 8px 20px */
+  z-index: 1000;
+  width: 48.75rem;            /* 300px */
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-card button {
+  margin-top: 0.62rem;        /* 10px */
+  padding: 0.375rem 0.875rem;/* 6px 14px */
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0.375rem;    /* 6px */
+  cursor: pointer;
+}
+
+.exp-title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-title {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 0.3rem;
+}
+
+.tip-text {
+  font-size: 1rem;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+
+
+#test_tube_familiar{
+  position: absolute;
+  height: 52%;
+  width: 26.6%;
+ bottom: 7.6%;
+  left: 63.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#a_cob_test{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 75.3%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_cob_test{
+  position: absolute;
+  height: 5.5%;
+  width: 8.7%;
+ bottom: 67.8%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_cob_test{
+  position: absolute;
+  height: 5.5%;
+  width: 8.7%;
+ bottom: 60.1%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_cob_test{
+  position: absolute;
+  height: 6%;
+  width: 8.8%;
+ bottom: 52.3%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#a_quality{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 75.3%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_quality{
+  position: absolute;
+  height: 5.2%;
+  width: 8.6%;
+ bottom: 67.8%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_quality{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 60.2%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_quality{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 53.1%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#a_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 75.3%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 67.8%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 61%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 53.1%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#a_color{
+  position: absolute;
+  height: 4%;
+  width: 7.8%;
+ bottom: 75.3%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_color{
+  position: absolute;
+  height: 4%;
+  width: 7.8%;
+ bottom: 67.8%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_color{
+  position: absolute;
+  height: 3.8%;
+  width: 7.8%;
+ bottom: 61%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_color{
+  position: absolute;
+  height: 4%;
+  width: 7.8%;
+ bottom: 53.1%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
 
 #pipette_centrifuge2{
     position: absolute;
@@ -2922,6 +3249,7 @@ bottom: 5%; */
     z-index: 0;
     opacity: 0%;
 }
+
 #methylene_blue_drop2_b{
    position: absolute;
     height: 3.7%;
@@ -3445,6 +3773,7 @@ bottom: 5%; */
     
 }
 
+
 /* #stp1{
     position: absolute;
     height: 100%;
@@ -3468,6 +3797,10 @@ bottom: 5%; */
 #stp39{
  
     visibility: hidden;
+}
+#stp15{
+ 
+  visibility: hidden;
 }
 #stp2-section{
     opacity: 0%;
