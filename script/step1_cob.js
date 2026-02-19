@@ -31,6 +31,12 @@ const milk_strip_b = document.querySelector('#milk_strip_b');
 const milk_strip_c = document.querySelector('#milk_strip_c');
 const milk_strip_d = document.querySelector('#milk_strip_d');
 
+
+const test_tube_a = document.querySelector('#test_tube_a_cob');
+const test_tube_b = document.querySelector('#test_tube_b_cob');
+const test_tube_c = document.querySelector('#test_tube_c_cob');
+const test_tube_d = document.querySelector('#test_tube_d_cob');
+
 const offSwitch3 = document.querySelector('#offSwitch3');
 const onSwitch3 = document.querySelector('#onSwitch3');
 const upOnSwitch3 = document.querySelector('#upOnSwitch3');
@@ -65,6 +71,7 @@ const d_color = document.querySelector("#d_color");
 const observation_table_cob = document.querySelector('#observation_table_cob');
 const homeBtn = document.querySelector('#homeBtn');
 
+const inferenceBtn = document.querySelector('#inferenceBtn');
 pipette1();
 
 f = 0;
@@ -113,6 +120,8 @@ function pipette1() {
                           milk_a_5ml.style.opacity = "0%"
                             setTimeout(function(){
                                milk_tube_a.style.height = "18.8%"
+                               test_tube_a_cob.style.display = "none"
+                               butyrometer_a.style.display = "block"
                           setTimeout(function(){
                               
                              milk_strip_a.style.opacity = "0%"
@@ -139,7 +148,7 @@ function pipette1() {
                                                                 pipette_centrifuge.style.bottom = "60%"
                                                                 milk_b_5ml.style.bottom = "60%"
                                                                
-                                                                setTimeout(function(){
+                                                              setTimeout(function(){
                                                                   pipette_centrifuge.style.left= "73.1%"
                                                                   milk_b_5ml.style.left = "74.1%"
                                                                    setTimeout(function(){
@@ -152,6 +161,9 @@ function pipette1() {
                                                                      setTimeout(function(){
                                                                       milk_tube_b.style.height = "18.8%"
                                                                       milk_b_5ml.style.opacity = "0%"
+
+                                                                      test_tube_b.style.display = "none"
+                               butyrometer_b.style.display = "block"
                                                                       setTimeout(function(){
                                                                           milk_strip_b.style.opacity  = "0%"
                                                                          pipette_centrifuge.style.bottom = "62%"
@@ -165,9 +177,7 @@ function pipette1() {
                 f = 5;
                                                  setTimeout(function(){
                                                     // pipette_centrifuge.style.rotate = "0deg"
-                                                    setTimeout(function(){
-                                                      // pipette_centrifuge.style.bottom = "39%"
-                                                       setTimeout(function(){
+                                                    
                                                         //  pipette_centrifuge.style.left = "34.4%"
                                                           setTimeout(function(){
                                                              pipette_centrifuge.style.bottom = "18%"
@@ -192,6 +202,8 @@ function pipette1() {
                                                                                       setTimeout(function(){
                                                                                         milk_c_5ml.style.height = "0%"
                                                                                         milk_strip_c.style.opacity = "0%"
+                                                                                        test_tube_c.style.display = "none"
+                               butyrometer_c.style.display = "block"
                                                                                            setTimeout(function(){
                                                                                                
                                                                        pipette_centrifuge.style.bottom= "63%"
@@ -202,8 +214,7 @@ function pipette1() {
                 f = 6;  
                                             
                  
-                                                    setTimeout(function(){
-                                                      // pipette_centrifuge.style.bottom = "39%"
+                                                    
                                                        setTimeout(function(){
                                                            pipette_centrifuge.style.left = "43.5%"
                                                             setTimeout(function(){
@@ -225,6 +236,8 @@ function pipette1() {
                                                                                
                                                                                     setTimeout(function(){
                                                                                                milk_tube_d.style.height = "18.8%"
+                                                                                               test_tube_d.style.display = "none"
+                               butyrometer_d.style.display = "block"
                                                                                  setTimeout(function(){
                                                                                           milk_strip_d.style.opacity = "0%"
                                                                                           milk_d_5ml.style.opacity= "0%"
@@ -244,67 +257,66 @@ function pipette1() {
                                          ins.innerText="Click on Next button"
                                          f = 100;
                                          
-                                          },1200)
+                                          },1000)   // 1200
                                                                                               },1000)
-                                                                                         },1000)
-                                                                                                  },1000)
-                                                                                              },1000)
-                                                                                                 },1000)
-                                                                                         },1000)
-                                                                                 },1000)
-                                                                                },1000)
-                                                                           },1000)
-                                                                             },1000)
-                                                                        },1000)
-                                                                     },1000)
-                                                                  },1000)
-                                                              },1000)
+                                                                                         }, 1000)
+                                                                                                  }, 1000)
+                                                                                              }, 1000)
+                                                                                                 }, 1000)
+                                                                                         }, 1000)
+                                                                                 }, 1000)
+                                                                                }, 1000)
+                                                                           }, 1000)
+                                                                             }, 1000)
+                                                                        }, 1000)
+                                                                     }, 1000)
+                                                                  },  1000)
+                                                             
                                                         
                                                         }
                                                    
-                                                      },1000)
-                                                                                   },1000)
-                                                                         },1000)
-                                                                                                },1000)
-                                                                                   },1000)
-                                                                         },1000)
-                                                                                     },1000)
-                                                                               },1000)
-                                                                    },1000)
-                                                               },1000)
-                                                           },1000)
-                                                       },1000)
-                                                                         },1000)
+                                                      }, 1000)
+                                                                                   }, 1000)
+                                                                         }, 1000)
+                                                                                                }, 1000)
+                                                                                   }, 1000)
+                                                                         }, 1000)
+                                                                                     }, 1000)
+                                                                               }, 1000)
+                                                                    }, 1000)
+                                                               }, 1000)
+                                                        
+                                                                         }, 1000)
                                                                         }
                  
                                         
-                                                                   },1000)
-                                                                         },1000)
-                                                                       },1000)
-                                                                      },1000)
+                                                                   }, 1000)
+                                                                         }, 1000)
+                                                                       }, 1000)
+                                                                      }, 1000)
                                                                      },1000)
-                                                                   },1000)
-                                                                 },1000)
-                                                                 },1000)
-                                                             },1000)
-                                                        },1000)
+                                                                   }, 1000)
+                                                                 }, 1000)
+                                                                 }, 1000)
+                                                             }, 1000)
+                                                        }, 1000)
                                                     
-                                      },1000)
-                                     },1000)
+                                      }, 1000)
+                                     }, 1000)
                                     }
-                                  },1000)
-                             },1000)
-                              },1000)
-                          },1000)
-                        },1000)
-                       },1000)   //1200
-                  },1000)
+                                  }, 1000)
+                             }, 1000)
+                              }, 1000)
+                          }, 1000)
+                        }, 1000)
+                       }, 1000)   //1200
+                  }, 1000)
                 }
-                 },1000)
-           },1000)
-            },1000)
-            },1000)
-            },1000)
+                 }, 1000)
+           }, 1000)
+            }, 1000)
+            }, 1000)
+            }, 1000)
         }, { once: true });
 }else{console.log("nothing")}};
 
@@ -337,7 +349,7 @@ function pulse(element) {
     element.classList.add("pulse-effect");
     setTimeout(() => {
         element.classList.remove("pulse-effect");
-    }, 1000);
+    }, 100);
 }
 
 function waterbath_cob() {
@@ -364,7 +376,7 @@ offSwitch3.addEventListener("click", () => {
     actualTempDisplay3.textContent = `${currentTemp}°C`;
     sampleTempDisplay3.textContent = `${currentTemp}°C`;
 
-    ins.innerText = "Click the ↑ button to raise set temperature to 100°C";
+    ins.innerText = "Click the ↑ button symbol to raise PV temperature to 100°C";
 });
 
 // TEMP UP → Increment Set Temp
@@ -379,13 +391,13 @@ upOffSwitch3.addEventListener("click", () => {
         if (currentTemp === targetTemp && !timerStarted) {
             f = 153;
             timerStarted = true;
-            ins.innerText = "Reached 100°C. Click on the Set button to wait for 3 minutes... to rise the water bath temperature to 100°C";
+            ins.innerText = "Click on the Set button to set SV temperature to 100°C";
             setOff3.addEventListener("click", () => {
                pulse(setOff3)
               console.log("set button active")
             startHoldingTimer(3); // Start 2 min timer
             f = 201;
-            latex_beaker()
+            // latex_beaker()
               
             },  { once: true })
         }
@@ -427,7 +439,7 @@ function startHoldingTimer(minutes) {
             clearInterval(countdownInterval);
             clearInterval(tempInterval); // Stop temperature interval too
             timerDisplay13.textContent = "05:00";
-            ins.innerText = "✅ Temperature stabilized. Now Click on the tube A to put all tubes onto water bath for heating all the sample tubes at 100°C";
+            ins.innerText = "Click on the tube A to put all tubes into water bath to heat all the sample tubes at 100°C for 5 minutes";
             pulse(ins); // your existing animation
             
             
@@ -570,7 +582,7 @@ function startHoldingTimer2(minutes) {
 butyrometer_a.addEventListener("click", () => {
     if (f === 220) {
         console.log("butyrometer_a clicked for f is 220");
-        f = 221;
+        f = 220.5;
        yellow_milk_tube_b.style.visibility =  "visible"
         yellow_milk_tube_b.style.opacity =  "100%"
         butyrometer_b.style.visibility = "hidden";
@@ -642,29 +654,12 @@ butyrometer_a.addEventListener("click", () => {
 
                                 milk_tube_b.style.display = "none"
                                 milk_tube_d.style.display = "none"
-                                 ins.innerText = "Click on the butyrometer for the observations"
-                                 butyrometer_a.addEventListener("click", () => {
-                                  if (f === 221) {
-                                    
-                                     milk_tube_a.style.bottom = "40%"
-                                     butyrometer_a.style.bottom = "40%"
-                                     setTimeout(() => {
-                                      milk_tube_a.style.left = "44%"
-                                      butyrometer_a.style.left = "44%"
-                                      setTimeout(() => {
-                                        milk_tube_a.style.height = "27%"
-                                        milk_tube_a.style.width = "4%"
-
-                                        butyrometer_a.style.height = "65%"
-                                        butyrometer_a.style.width = "4%"
-                                        f = 222;
-                                        startbutton.style.visibility = "visible";
-                                      
-                                      }, 1000);
-                                    }, 1000);
-                                  }
-                                }, 1000);
-                                            },1000);
+                                 ins.innerText = "Click on the Observe Sample A button to observe it"
+                                   
+                                 
+                                  
+                             
+                                            }, 1000);
                                        }, 1000);
                       }, 1000);
                  }, 1000);
@@ -682,28 +677,85 @@ butyrometer_a.addEventListener("click", () => {
   })
 
 
-function sensory_a(){
-  console.log("sensory function is running ")
-  if(f === 222){
-    f = 223;
-    console.log("f === 400 in sensory function is running", f)
-    a_quality.style.visibility = "visible";
-    a_texture.style.visibility = "visible";
-    a_color.style.visibility = "visible";
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    setTimeout(() => {
-    startbutton.style.visibility = "visible";
-  }, 1000);
-  }console.log("the value of f is not 222 the value of f is", f)
+
+function observeA(){
+  if(f=== 220.5){
+    f = 220.8;
+     hello_world();
+     setTimeout(() => {
+  showValues("A");
+      
+  setTimeout(() => {
+    if(f=== 220.9){
+    f = 221;
+    showCob("A");
+    }
+  }, 4000);
+   }, 3000);
+  }
 }
 
-function sensory_a_result(){
-  console.log("sensory_b function is running ")
-  if(f === 223){
-   
-    console.log("f === 224 in sensory function is running", f)
-    
-    butyrometer_a.style.height = "45%"
+function observeB(){
+  if(f=== 221){
+    f = 221.5;
+    ins.innerText = "Click on Observe Sample B button to observe it"
+     hello_world2();
+     setTimeout(() => {
+  
+      
+  
+   }, 3000);
+  }
+}
+
+function observeC(){
+  if(f === 222){
+    f = 222.5;
+    ins.innerText = "Click on the Observe Sample C button to observe it"
+     hello_world3();
+     
+  }
+}
+
+function observeD(){
+  if(f === 222.8){
+    f = 223;
+    ins.innerText = "Click on the Observe Sample D button to observe it"
+     hello_world4();
+     
+  }
+}
+
+function showValues(sample) {
+  document.getElementById("texture-" + sample).style.visibility = "visible";
+  document.getElementById("color-" + sample).style.visibility = "visible";
+  document.getElementById("quality-" + sample).style.visibility = "visible";
+}
+
+function showCob(sample) {
+  document.getElementById("cob-" + sample).style.visibility = "visible";
+}
+
+
+  function hello_world(){
+  if (f === 220.8) {
+                                    console.log("f for 221 is running")
+                                    
+                                     milk_tube_a.style.bottom = "40%"
+                                     butyrometer_a.style.bottom = "40%"
+                                     setTimeout(() => {
+                                      milk_tube_a.style.left = "44%"
+                                      butyrometer_a.style.left = "44%"
+                                      setTimeout(() => {
+                                        milk_tube_a.style.height = "27%"
+                                        milk_tube_a.style.width = "4%"
+
+                                        butyrometer_a.style.height = "65%"
+                                        butyrometer_a.style.width = "4%"
+                                        
+                                        
+                                          setTimeout(() => { 
+                                          butyrometer_a.style.height = "45%"
     butyrometer_a.style.width = "2.51%"
 
     milk_tube_a.style.height = "20.5%"
@@ -714,73 +766,63 @@ function sensory_a_result(){
     setTimeout(() => {
       butyrometer_a.style.bottom = "11.8%"
       milk_tube_a.style.bottom = "11.8%"
-      a_cob_test.style.visibility = "visible"
-      setTimeout(() => {
-        butyrometer_b.style.bottom = "40%"
-        yellow_milk_tube_b.style.bottom = "40%"
-        setTimeout(() => {
-          butyrometer_b.style.left = "44%"
-          yellow_milk_tube_b.style.left = "44%"
-          setTimeout(() => {
-            
-         yellow_milk_tube_b.style.height = "69%"
-         yellow_milk_tube_b.style.width = "4.5%"
-         yellow_milk_tube_b.style.bottom = "35%"
-         f = 224;
-         setTimeout(() => {
-          startbutton.style.visibility = "visible";
-          startbutton.style.display = "block"
+       f = 220.9;
+       }, 1000);
         }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
-    
+                                    }, 2000);
+                                      }, 1000);
+                                    }, 1000);
+                                     
+                                  }else{console.log("the value of f is not 221", f)}
+                                }
 
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    startbutton.style.visibility = "visible";
-    
-  }console.log("the value of f is not 223 the value of f is", f)
-}
+  function hello_world2(){
+  if (f === 221.5) {
+                                    console.log("f for 221 is running")
+                                    
+                                      
+         yellow_milk_tube_b.style.bottom = "40%"
+                                     setTimeout(() => {
+                                      yellow_milk_tube_b.style.left = "44%"
+  
+                                      setTimeout(() => {
+                                        yellow_milk_tube_b.style.bottom = "35%"
 
-function sensory_b(){
-  console.log("sensory function is running ")
-  if(f === 224){
-    
-    console.log("f === 225 in sensory function is running", f)
-    b_quality.style.visibility = "visible";
-    b_texture.style.visibility = "visible";
-    b_color.style.visibility = "visible";
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    setTimeout(() => {
-      f = 225;
-    startbutton.style.visibility = "visible";
-    startbutton.style.display = "block"
-  }, 1000);
-  }console.log("the value of f is not 224 the value of f is", f)
-}
-
-function sensory_b_result(){
-  console.log("sensory_b function is running ")
-  startbutton.style.visibility = "hidden"
-  if(f === 225){
-   
-    console.log("f === 225 in sensory function is running", f)
-    
-    
-
-    yellow_milk_tube_b.style.height = "45%"
+                                       
+                                        
+                         
+                                          setTimeout(() => { 
+                             yellow_milk_tube_b.style.height = "65%"
+    yellow_milk_tube_b.style.width = "3.2%"
+    showValues("B");
+     setTimeout(() => {
+      yellow_milk_tube_b.style.height = "45%"
     yellow_milk_tube_b.style.width = "2.7%"
     setTimeout(() => {
-    
-    yellow_milk_tube_b.style.left = "73%"
-    setTimeout(() => {
-    
-      yellow_milk_tube_b.style.bottom = "11.8%"
-      b_cob_test.style.visibility = "visible"
+   yellow_milk_tube_b.style.left = "73%"
+   
       setTimeout(() => {
-        butyrometer_c.style.bottom = "40%"
+      yellow_milk_tube_b.style.bottom = "11.8%"
+      f = 222;
+      showCob("B"); 
+         }, 1000);
+      }, 1000);
+       }, 2000);
+       
+       
+                                    }, 1000);
+                                      }, 1000);
+                                    }, 1000);
+                                     
+                                  }else{console.log("the value of f is not 221", f)}
+                                }
+
+  function hello_world3(){
+  if (f === 222.5) {
+                                    console.log("f for 222 is running")
+                                    
+                                      
+      butyrometer_c.style.bottom = "40%"
         milk_tube_c.style.bottom = "40%"
         setTimeout(() => {
           butyrometer_c.style.left = "44%"
@@ -794,52 +836,10 @@ function sensory_b_result(){
 
             butyrometer_c.style.bottom = "38%"
             milk_tube_c.style.bottom = "38%"
-         
-         f = 226;
-         setTimeout(() => {
-           startbutton.style.display= "block";
-           startbutton.style.visibility = "visible"
-        }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
-    
-
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    startbutton.style.visibility = "visible";
-    
-  }console.log("the value of f is not 223 the value of f is", f)
-}
-
-
-function sensory_c(){
-  console.log("sensory function is running ")
-  if(f === 226){
-    startbutton.style.visibility = "hidden"
-    
-    console.log("f === 227 in sensory function is running", f)
-    c_quality.style.visibility = "visible";
-    c_texture.style.visibility = "visible";
-    c_color.style.visibility = "visible";
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    setTimeout(() => {
-      f = 227;
-    startbutton.style.display = "block";
-    startbutton.style.visibility = "visible"
-  }, 1000);
-  }console.log("the value of f is not 224 the value of f is", f)
-}
-
-
-function sensory_c_result(){
-  console.log("sensory_c function is running ")
-  if(f === 227){
-    startbutton.style.visibility = "hidden";
-    console.log("f === 227 in sensory function is running", f)
-    
-    butyrometer_c.style.height = "45%"
+     showValues("C");
+ setTimeout(() => {
+   
+       butyrometer_c.style.height = "45%"
     butyrometer_c.style.width = "2.51%"
 
     milk_tube_c.style.height = "20.5%"
@@ -854,10 +854,25 @@ function sensory_c_result(){
     
       butyrometer_c.style.bottom = "11.8%"
       milk_tube_c.style.bottom = "11.8%"
-      setTimeout(() => {
-        c_cob_test.style.visibility = "visible"
-      setTimeout(() => {
-       yellow_milk_tube_d.style.bottom = "40%"
+      f = 222.8;
+      showCob("C"); 
+      }, 1000);
+       }, 2000);
+       
+        }, 2000);
+                                    }, 1000);
+                                      }, 1000);
+                                   
+                                     
+                                  }else{console.log("the value of f is not 221", f)}
+                                }
+
+  function hello_world4(){
+  if (f === 223) {
+                                    console.log("f for 223 is running")
+                                    
+                                      
+     yellow_milk_tube_d.style.bottom = "40%"
         setTimeout(() => {
           yellow_milk_tube_d.style.left = "44%"
          
@@ -865,60 +880,10 @@ function sensory_c_result(){
             yellow_milk_tube_d.style.height = "69%"
             yellow_milk_tube_d.style.width = "4.5%"
             yellow_milk_tube_d.style.bottom = "35%"
-           
-         
-         f = 228;
-         setTimeout(() => {
-           startbutton.style.visibility = "visible";
-           startbutton.style.display = "block"
-        }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
-    }, 1000);
-    }, 1000);
-  }, 1000);
-    
-
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    startbutton.style.visibility = "visible";
-    
-  }console.log("the value of f is not 223 the value of f is", f)
-}
-
-
-function sensory_d(){
-  console.log("sensory function is running ")
-  if(f === 228){
-    startbutton.style.visibility = "hidden"
-    startbutton.style.display = "none"
-
-    console.log("f === 227 in sensory function is running", f)
-    d_quality.style.visibility = "visible";
-    d_texture.style.visibility = "visible";
-    d_color.style.visibility = "visible";
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    setTimeout(() => {
-      f = 229;
-    startbutton.style.visibility = "visible";
-    startbutton.style.display = "block";
-    console.log("f for 229 is ", f)
-  }, 1000);
-  }console.log("the value of f is not 224 the value of f is", f)
-}
-
-
-function sensory_d_result(){
-  console.log("sensory_b function is running ")
-  startbutton.style.visibility = "hidden"
-  startbutton.style.display = "none"
-  if(f === 229){
-   
-    console.log("f === 229 in sensory function is running", f)
-    
-    
-
-    yellow_milk_tube_d.style.height = "45%"
+            showValues("D");
+            setTimeout(() => {
+     
+  yellow_milk_tube_d.style.height = "45%"
     yellow_milk_tube_d.style.width = "2.7%"
     setTimeout(() => {
     
@@ -926,36 +891,37 @@ function sensory_d_result(){
     setTimeout(() => {
     
       yellow_milk_tube_d.style.bottom = "11.8%"
-      d_cob_test.style.visibility = "visible"
-      setTimeout(() => {
-        // butyrometer_c.style.bottom = "40%"
-        // milk_tube_c.style.bottom = "40%"
+      f = 224;
+      showCob("D"); 
+      ins.innerText = "Click on the Show Inference button"
         setTimeout(() => {
-          // butyrometer_c.style.left = "44%"
-          // milk_tube_c.style.left = "44%"
-          setTimeout(() => {
-            // butyrometer_c.style.height = "64%"
-            // butyrometer_c.style.width = "4%"
-        
-            // milk_tube_c.style.height = "30.5%"
-            // milk_tube_c.style.width = "4%"
-
-            // butyrometer_c.style.bottom = "38%"
-            // milk_tube_c.style.bottom = "38%"
-         
-         f = 230;
-         setTimeout(() => {
-           startbutton.style.visibility = "visible";
-        }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
+          
+      inferenceBtn.style.visibility = "visible";
+      stp16.style.visibility = "hidden"
+  stp16.style.display = "none"
+  stp15.style.display = "none"
+  milk_tube_a.style.display = "none"
+  milk_tube_c.style.display = "none"
     }, 1000);
-  }, 1000);
-    
+       }, 1000);
+       
+        }, 1000);
+                                    }, 2000);
+                                       }, 1000);
+                                      }, 1000);
+                                   
+                                     
+                                  }else{console.log("the value of f is not 221", f)}
+                                }
 
-    ins.innerText = "Click on the NEXT button to find out cob test observation and proceeding to next sample"
-    startbutton.style.visibility = "visible";
-    
-  }console.log("the value of f is not 223 the value of f is", f)
+
+
+function showInference() {
+  if(f === 224){
+  document.getElementById("inferenceBox").classList.remove("hidden");
+  
+  }else{console.log("f is not 224", f)}
 }
+
+
+

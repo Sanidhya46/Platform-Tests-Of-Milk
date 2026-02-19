@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Determination of moisture content in foods in relation to their stability</title>
+    <title>Platform Test Of Milk MBRT</title>
    
     <link rel="stylesheet" href="./style.css">    
 </head>
@@ -22,7 +22,7 @@
               <!-- ------------------------------  TABLES AND BACKGROUNDS  ----------------------- -->
                 
               <!-- <img id="workingtable" src="images/working-area-empty1-big-lab1.jpg" alt=""> -->
-              <img id="workingtable" src="images/bgAsset.png" alt="">
+              <img id="workingtable" src="images/bgAsset6.png" alt="">
               <img id="startinglab" src="images/my-lab-new.png" alt="">
 
               
@@ -45,7 +45,69 @@
 
               <!-- ---------------------------------------  MEASURING CYYLINDER AND SOLUTION  ------------------ -->
          
+  <div class="table-container_mbrt" id="observation_table_mbrt" style="display:none;">
+<h2>Sample Observation Table</h2>
+  <table>
+  <tr>
+    <th>Sample</th>
+    <th>Observations</th>
+    <th>Decoularization Time(H)</th>
+    <th>Quality</th>
+  
+  </tr>
 
+  <tr>
+    <td>A</td>
+    <td><button onclick="observeA_mbrt()">▶ Observe Sample A</button></td>
+    <td id="time-A" class="hidden" style="color: rgb(19, 192, 0); visibility: hidden;">0.5</td>
+    <td id="quality-A" class="hidden" style="color: rgb(237, 32, 17); visibility: hidden;">Very Bad</td>
+  
+  </tr>
+
+  <tr>
+    <td>B</td>
+    <td><button onclick="observeB_mbrt()">▶ Observe Sample B</button></td>
+     <td id="time-B" class="hidden" style="color: rgb(19, 192, 0); visibility: hidden;">2.0</td>
+    <td id="quality-B" class="hidden" style = "visibility: hidden;">Bad</td>
+  </tr>
+
+  <tr>
+    <td>C</td>
+    <td><button onclick="observeC_mbrt()">▶ Observe Sample C</button></td>
+   <td id="time-C" class="hidden" style="color: rgb(19, 192, 0); visibility: hidden;">4.0</td>
+    <td id="quality-C" class="hidden" style = "visibility: hidden;">Fair</td>
+  </tr>
+
+  <tr>
+    <td>D</td>
+    <td><button onclick="observeD_mbrt()">▶ Observe Sample D</button></td>
+     <td id="time-D" class="hidden" style="color: rgb(19, 192, 0); visibility: hidden;">5.0</td>
+    <td id="quality-D" class="hidden" style = "visibility: hidden;">Good</td>
+  </tr>
+</table>
+
+  </div>
+
+<button id="inferenceBtn_mbrt"
+        onclick="showInference_mbrt()">
+  ▶ Show Inference
+</button>
+
+<div id="inferenceBox_mbrt" class="inference_mbrt">
+  <h3>Inference</h3>
+  <ol>
+    <li>Sample A showed very poor quality due to rapid decolourization.</li>
+    <li>Sample B exhibited fair quality with moderate microbial activity.</li>
+    <li>Samples C and D showed better keeping quality.</li>
+    <li>MBRT effectively assesses microbial quality of milk.</li>
+  </ol>
+</div>
+
+
+ 
+
+  
+  
 <div id="step2-section">
   <div id="stp17">
          <img id="brown_butyrometer_sol2" class="brown_butyrometer_sol1" src="images/finalsolution21.75ml.png" alt="Final Solution" /> 
@@ -53,14 +115,19 @@
              
                 <img id="tiltedsol2" class="tiltedsol1" src="images/tiltedsol.png" alt="Empty Butyrometer" />
       
- <img id="butyrometer_upper2" class="butyrometer_upper1" src="images/butyrometer_upper_stand1.png" alt="Empty Butyrometer" />
+ <img id="butyrometer_upper221" class="butyrometer_upper1" src="images/butyrometer_upper_stand1.png" alt="Empty Butyrometer" />
          <img id="butyrometer_upper21" class="butyrometer_upper2" src="images/butyrometer_upper_stand2.png" alt="Empty Butyrometer" />
+       
     <img id="butyrometer_back2" class="butyrometer_back" src="images/butyrometer_back_stand.png" alt="Empty Butyrometer" />
        <img id="milk_tube_a_2" src="images/milk_5ml_test_tube_a.png" alt="Empty Pipette" />
            <img id="milk_tube_b_2" src="images/milk_5ml_test_tube_b.png" alt="Empty Pipette" />
+            <img id="milk_tube_c_2" src="images/milk_5ml_test_tube_b.png" alt="Empty Pipette" />
+             <img id="milk_tube_d_2" src="images/milk_5ml_test_tube_b.png" alt="Empty Pipette" />
 
         
              <img id="milk_10ml_b" src="images/milk_10ml_a.png" alt="Empty Pipette" />
+              <img id="milk_10ml_c" src="images/milk_10ml_a.png" alt="Empty Pipette" />
+               <img id="milk_10ml_d" src="images/milk_10ml_a.png" alt="Empty Pipette" />
 
             <img id="milk_tube_a_2" src="images/milk_5ml_test_tube_a.png" alt="Empty Pipette" />
             <img id="milk_tube_d" src="images/milk_5ml_test_tube_d.png" alt="Empty Pipette" />
@@ -69,14 +136,18 @@
 
            
 
+ <img id="test_tube_mbrt_a" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
+  <img id="test_tube_mbrt_b" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
+   <img id="test_tube_mbrt_c" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
+    <img id="test_tube_mbrt_d" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
 
-         <img id="test_tube_a_2" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
-           <img id="test_tube_b_2" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
-             <img id="test_tube_c_2" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
-               <img id="test_tube_d_2" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
+         <img id="test_tube_a_2" class="butyrometer" src="images/test_tube_a_2_mbrt.png" alt="Empty Butyrometer" />
+           <img id="test_tube_b_2" class="butyrometer" src="images/test_tube_b_2.png" alt="Empty Butyrometer" />
+             <img id="test_tube_c_2" class="butyrometer" src="images/test_tube_c_2.png" alt="Empty Butyrometer" />
+               <img id="test_tube_d_2" class="butyrometer" src="images/test_tube_d_2.png" alt="Empty Butyrometer" />
 
-               <img id="test_tube_c" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
-               <img id="test_tube_d" class="butyrometer" src="images/test_tube_a_2.png" alt="Empty Butyrometer" />
+               <img id="test_tube_c" class="butyrometer" src="images/test_tube_c_2.png" alt="Empty Butyrometer" />
+               <img id="test_tube_d" class="butyrometer" src="images/test_tube_d_2.png" alt="Empty Butyrometer" />
            
                   
                     <img id="methylene_blue_drop1" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
@@ -85,12 +156,35 @@
                         <img id="methylene_mid_blue_b" class="butyrometer" src="images/methylene_mid_blue.png" alt="Empty Butyrometer" />
                          <img id="methylene_blue_tube" class="butyrometer" src="images/methylene_blue_tube.png" alt="Empty Butyrometer" />
                                <img id="methylene_blue_tube_b" class="butyrometer" src="images/methylene_blue_tube.png" alt="Empty Butyrometer" />
+                               <img id="methylene_blue_tube_c" class="butyrometer" src="images/methylene_blue_tube.png" alt="Empty Butyrometer" />
+                               <img id="methylene_blue_tube_d" class="butyrometer" src="images/methylene_blue_tube.png" alt="Empty Butyrometer" />
+
                      <img id="methylene_blue_drop2" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
+                       <img id="methylene_blue_drop3" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
+                         <img id="methylene_blue_drop4" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
+                           <img id="methylene_blue_drop5" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
+                             <img id="methylene_blue_drop6" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
                       <img id="methylene_blue_drop2_b" class="butyrometer" src="images/methylene_blue_drop.png" alt="Empty Butyrometer" />
                
        
 
      </div>
+
+      <div id="stp1010">
+              <div id="tooltip_mbrt"></div>
+
+             
+
+              <img id="pipette_familiar_mbrt" class = "equipment_mbrt" src ="images/pipette_10ml.png" alt="Empty Pipette" />
+              <img id="waterbath_familiar_mbrt" class = "equipment_mbrt" src="images/waterbath_familiar.png" alt="Empty Pipette" />
+              <img id="milk_beaker_familiar_mbrt" class = "equipment_mbrt" src="images/milk_beaker_familiar.png" alt="Empty Pipette" />
+              <img id="clock_familiar_mbrt" class = "equipment_mbrt" src="images/clock.png" alt="Empty Pipette" />
+              <img id="test_tube_familiar_mbrt" class = "equipment_mbrt" src="images/test_tube_familiar.png" alt="Empty Pipette" />
+               <img id="methylene_blue_familiar_mbrt" class = "equipment_mbrt" src="images/methylene_blue_familiar.png" alt="Empty Pipette" />
+                  <img id="stopper_mbrt" class = "equipment_mbrt" src="images/tube_cap.png" alt="On Switch" />
+              
+              </div>
+
   <div id="stp18">
 
      <img id="milk_beaker_a_2_50ml" class="milk_sample_a_50ml" src="images/milk_beaker_a.png" alt="Empty Butyrometer" />
@@ -98,11 +192,12 @@
      <img id="milk_beaker_c_2_50ml" class="milk_sample_50ml" src="images/milk_beaker_c.png" alt="Empty Butyrometer" />
      <img id="milk_beaker_d_2_50ml" class="milk_sample_a_50ml" src="images/milk_beaker_d.png" alt="Empty kkButyrometer" />
 
-       <img id="tube_cap_a" src="images/tube_cap.png" alt="On Switch" />
+       <img id="tube_cap_a" src="images/tube_cap_mbrt.png" alt="On Switch" />
       <img id="tube_cap_b" src="images/tube_cap.png" alt="On Switch" />
-     
+     <img id="tube_cap_c" src="images/tube_cap.png" alt="On Switch" />
+      <img id="tube_cap_d" src="images/tube_cap.png" alt="On Switch" />
 
-dasddasd
+
       <img id="milk_a_2_50ml" class="milk_a_2_50ml" src="images/milk.png" alt="Empty Butyrometer" />
      <img id="milk_b_2_50ml" class="milk_b_2_50ml" src="images/milk.png" alt="Empty Butyrometer" />
      <img id="milk_c_2_50ml" class="milk_sample_a_50ml" src="images/milk.png" alt="Empty Butyrometer" />
@@ -110,6 +205,8 @@ dasddasd
 
   <img id="methylene_blue_1ml" class="butyrometer" src="images/methylene_blue_1ml.png" alt="Empty Butyrometer" />
          <img id="methylene_blue_1ml_b" class="butyrometer" src="images/methylene_blue_1mll.png" alt="Empty Butyrometer" />
+             <img id="methylene_blue_1ml_c" class="butyrometer" src="images/methylene_blue_1mll.png" alt="Empty Butyrometer" />
+                 <img id="methylene_blue_1ml_d" class="butyrometer" src="images/methylene_blue_1mll.png" alt="Empty Butyrometer" />
 
           <img id="milk_sample_b_45ml" class="milk_sample_b_45ml" src="images/milk_sample_b_45ml.png" alt="Empty Butyrometer" />
           <img id="milk_sample_a_2_40ml" class="milk_sample_a_45ml" src="images/milk_sample_a_45ml.png" alt="Empty Butyrometer" />
@@ -124,8 +221,12 @@ dasddasd
            <img id="milk_sample_d_5ml" class="milk_sample_a_50ml" src="images/milk_5ml_c_d.png" alt="Empty Butyrometer" />
 
          <img id="pipette_centrifuge2" src="images/pipette_10ml.png" alt="Empty Pipette" />
+
            <img id="milk_strip_a_2" src="images/milk_strip_a.png" alt="Empty Pipette" />
             <img id="milk_strip_b_2" src="images/milk_strip_a.png" alt="Empty Pipette" />
+               <img id="milk_strip_c_2" src="images/milk_strip_a.png" alt="Empty Pipette" />
+                  <img id="milk_strip_d_2" src="images/milk_strip_a.png" alt="Empty Pipette" />
+
            <img id="milk_strip_b" src="images/milk_strip_a.png" alt="Empty Pipette" />
 
             <img id="milk_strip_c" src="images/milk_strip_c_d.png" alt="Empty Pipette" />
@@ -137,6 +238,8 @@ dasddasd
                        <img id="milk_10ml_a" src="images/milk_10ml_a.png" alt="Empty Pipette" />
             </div>
      
+              
+
 
             <div id="stp39">
 
@@ -166,10 +269,7 @@ dasddasd
     <img id="offSwitch2" src="images/off switchh.png" alt="Off Switch" />
     <img id="onSwitch2" src="images/on switch.png" alt="On Switch" />
     <img id="upswitchholder2" src="images/up switch holder.png" alt="On Switch" />
-     <div id="timerDisplay">30:00</div>
-
-     <div id="settimerDisplay">30:00</div>
-     <div id="sampletimerDisplay">30:00</div>
+    
 
      <div id="sampletimerDisplay1">Bath Temp</div>
      <div id="sampletimerDisplay2">Sample Temp</div>
@@ -191,39 +291,42 @@ dasddasd
     <div id="timerDisplay13"></div>
     <div id="timerDisplay23" style="display: none;"></div>
 
-   
-      <img id="tongs_A" src="images/tongs.png" alt="On Switch" />
+   <img id = "clock_mbrt" src = "images/clock.png" alt = "hellow world"/>
+
 
     <div id="actualTempDisplay2">25°C</div>
     <div id="sampleTempDisplay2">25°C</div>
+ 
+     <div id="timerDisplay_mbrt">00:00</div>
 
-  
-        <img id="tongs_down" src="images/tongs_down.png" alt="Up On Switch" />
-         <img id="tongs_upper" src="images/tongs_upper.png" alt="Up On Switch" />
+    <div id="actualTempDisplay_mbrt">SV</div>
+    <div id="sampleTempDisplay_mbrt">PV</div>
+       
 
-          <img id="tongs_down2" src="images/tongs_down.png" alt="Up On Switch" />
-         <img id="tongs_upper2" src="images/tongs_upper.png" alt="Up On Switch" />
-
-          <img id="tongs_down3" src="images/tongs_down.png" alt="Up On Switch" />
-         <img id="tongs_upper3" src="images/tongs_upper.png" alt="Up On Switch" />
-
-            <img id="tongs_down4" src="images/tongs_down.png" alt="Up On Switch" />
-         <img id="tongs_upper4" src="images/tongs_upper.png" alt="Up On Switch" />
-
-           <img id="closed_methylene_blue_tube_a" src="images/methylene_blue_tube_with_cap.png" al="Up On Switch" />
+           <img id="closed_methylene_blue_tube_a" src="images/methylene_blue_tube_with_cap1.png" al="Up On Switch" />
+          <img id="closed_white_tube_a_mbrt" src="images/closed_white_tube_a.png" al="Up On Switch" />
+          <img id="closed_white_tube_b_mbrt" src="images/closed_white_tube_b.png" al="Up On Switch" />
+          <img id="closed_white_tube_c_mbrt" src="images/closed_white_tube_c.png" al="Up On Switch" />
+          <img id="closed_white_tube_d_mbrt" src="images/closed_white_tube_d.png" al="Up On Switch" />
 
             <img id="closed_pale_blue_tube" src="images/closed_pale_blue_tube.png" al="Up On Switch" />
             <img id="closed_light_blue_tube" src="images/closed_light_blue_tube.png" al="Up On Switch" />
 
 
            <img id="closed_methylene_blue_tube_a_2" src="images/methylene_blue_tube_with_cap.png" al="Up On Switch" />
-           <img id="closed_methylene_blue_tube_b" src="images/methylene_blue_tube_with_cap.png" al="Up On Switch" />
+           <img id="closed_methylene_blue_tube_b" src="images/methylene_blue_tube_with_cap_b.png" al="Up On Switch" />
+             <img id="closed_methylene_blue_tube_c" src="images/methylene_blue_tube_with_cap_c.png" al="Up On Switch" />
+               <img id="closed_methylene_blue_tube_d" src="images/methylene_blue_tube_with_cap_d.png" al="Up On Switch" />
+
              <img id="tilted_light_blue_tube" src="images/tilted_light_blue_tube.png" al="Up On Switch" />
 
             <img id="closed_methylene_blue_tube_b_2" src="images/methylene_blue_tube_with_cap.png" al="Up On Switch" />
 
               <img id="inverted_methylene_blue_tube_a" src="images/inverted_closed_blue_tube.png" al="Up On Switch" />
            <img id="inverted_methylene_blue_tube_b" src="images/inverted_closed_blue_tube.png" al="Up On Switch" />
+            <img id="inverted_methylene_blue_tube_c" src="images/inverted_closed_blue_tube.png" al="Up On Switch" />
+           <img id="inverted_methylene_blue_tube_d" src="images/inverted_closed_blue_tube.png" al="Up On Switch" />
+
             <img id="inverted_pale_blue_tube" src="images/inverted_pale_blue_tube.png" al="Up On Switch" />
 
              <img id="closed_white_tube_a" src="images/closed_white_tube.png" al="Up On Switch" />

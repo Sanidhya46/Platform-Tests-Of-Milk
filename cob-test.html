@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Determination of moisture content in foods in relation to their stability</title>
+    <title>Platform Test Of Milk COB</title>
    
     <link rel="stylesheet" href="./style.css">    
 </head>
@@ -22,7 +22,7 @@
               <!-- ------------------------------  TABLES AND BACKGROUNDS  ----------------------- -->
                 
               <!-- <img id="workingtable" src="images/working-area-empty1-big-lab1.jpg" alt=""> -->
-              <img id="workingtable" src="images/bgAsset.png" alt="">
+              <img id="workingtable" src="images/bgAsset6.png" alt="">
               <img id="startinglab" src="images/my-lab-new.png" alt="">
 
               
@@ -46,7 +46,73 @@
               <!-- ---------------------------------------  MEASURING CYYLINDER AND SOLUTION  ------------------ -->
          
 
+ 
+  <div class="table-container" id="observation_table_cob" style="visibility:hidden;">
+<h2>Sample Observation Table</h2>
+  <table>
+  <tr>
+    <th>Sample</th>
+    <th>Observation</th>
+    <th>COB Test</th>
+    <th>Quality</th>
+    <th>Texture</th>
+    <th>Color</th>
+  </tr>
 
+  <tr>
+    <td>A</td>
+    <td><button onclick="observeA()">▶ Observe Sample A</button></td>
+    <td id="cob-A" class="hidden" style="color: rgb(19, 192, 0);">Negative</td>
+    <td id="quality-A" class="hidden">Fresh Milk</td>
+    <td id="texture-A" class="hidden">Uniform</td>
+    <td id="color-A" class="hidden">White</td>
+  </tr>
+
+  <tr>
+    <td>B</td>
+    <td><button onclick="observeB()">▶ Observe Sample B</button></td>
+    <td id="cob-B" class="hidden" style="color: red;">Positive</td>
+    <td id="quality-B" class="hidden">Spoiled Milk</td>
+    <td id="texture-B" class="hidden">Lumphy</td>
+    <td id="color-B" class="hidden">Yellowish</td>
+  </tr>
+
+  <tr>
+    <td>C</td>
+    <td><button onclick="observeC()">▶ Observe Sample C</button></td>
+    <td id="cob-C" class="hidden" style="color: rgb(19, 192, 0);">Negative</td>
+    <td id="quality-C" class="hidden">Fresh Milk</td>
+    <td id="texture-C" class="hidden">Uniform</td>
+    <td id="color-C" class="hidden">White</td>
+  </tr>
+
+  <tr>
+    <td>D</td>
+    <td><button onclick="observeD()">▶ Observe Sample D</button></td>
+    <td id="cob-D" class="hidden" style="color: red;">Positive</td>
+    <td id="quality-D" class="hidden">Spoiled Milk</td>
+    <td id="texture-D" class="hidden">Curdy</td>
+    <td id="color-D" class="hidden">Yellowish</td>
+  </tr>
+</table>
+
+<button id="inferenceBtn" onclick="showInference()" style="visibility:hidden;">
+  Show Inference
+</button>
+
+<div id="inferenceBox" class="inference hidden">
+  <h3>Inference</h3>
+  <p>
+    The milk sample A showed a negative COB test, indicating that the milk is
+    fresh, smooth, and homogeneous in nature.  
+    <br><br>
+    The milk sample B showed a positive COB test, indicating poor quality,
+    which might be due to microbial growth resulting in sourness of the milk.
+  </p>
+</div>
+
+
+</div>
   <div id="stp15">
          <img id="brown_butyrometer_sol1" class="brown_butyrometer_sol1" src="images/finalsolution21.75ml.png" alt="Final Solution" /> 
              <img id="butyrometer_cork1" class="butyrometer_cork1" src="images/butyrometer_cork.png" alt="Empty Butyrometer" />
@@ -57,7 +123,12 @@
          <img id="butyrometer_upper2" class="butyrometer_upper2" src="images/butyrometer_upper_stand2.png" alt="Empty Butyrometer" />
     <img id="butyrometer_back" class="butyrometer_back" src="images/butyrometer_back_stand.png" alt="Empty Butyrometer" />
      
-            
+               <img id="test_tube_a_cob" class="butyrometer" src="images/test_tube_a.png" alt="Empty Butyrometer" />
+           <img id="test_tube_b_cob" class="butyrometer" src="images/test_tube_a.png" alt="Empty Butyrometer" />
+             <img id="test_tube_c_cob" class="butyrometer" src="images/test_tube_a.png" alt="Empty Butyrometer" />
+               <img id="test_tube_d_cob" class="butyrometer" src="images/test_tube_a.png" alt="Empty Butyrometer" />
+               <img id="test_tube_e_cob" class="butyrometer" src="images/test_tube_a.png" alt="Empty Butyrometer" />
+
          <img id="butyrometer_a" class="butyrometer" src="images/butyrometer_a.png" alt="Empty Butyrometer" />
            <img id="butyrometer_b" class="butyrometer" src="images/butyrometer_b.png" alt="Empty Butyrometer" />
              <img id="butyrometer_c" class="butyrometer" src="images/butyrometer_c.png" alt="Empty Butyrometer" />
@@ -71,7 +142,7 @@
             <img id="milk_tube_c" src="images/milk_5ml_test_tube_c.png" alt="Empty Pipette" />
             <img id="milk_tube_d" src="images/milk_5ml_test_tube_d.png" alt="Empty Pipette" />
 
-            <img id="observation_table_cob" src="images/observation_table_cob.png" alt="Down Switch" />
+            
   <div id="stp16">
      <img id="milk_sample_a_50ml" class="milk_sample_a_50ml" src="images/milk.png" alt="Empty Butyrometer" />
      <img id="milk_sample_b_50ml" class="milk_sample_a_50ml" src="images/milk.png" alt="Empty Butyrometer" />
@@ -184,7 +255,7 @@
     <div id="timerDisplay3"></div>
   
     <div id="timerDisplay13" ></div>
-    style="display: none;"
+    
     <img id="observation_table_cob" src="images/observation_table_cob.png" alt="Down Switch" />
 
     <div id="actualTempDisplay3">25°C</div>
@@ -192,8 +263,8 @@
 
     <div id="setTempDisplay3">25°C</div>
 
-    <div id="actualTempDisplay13">Bath Temp</div>
-    <div id="sampleTempDisplay13">Sample Temp</div>
+    <div id="actualTempDisplay13">SV</div>
+    <div id="sampleTempDisplay13">PV</div>
 
 
   

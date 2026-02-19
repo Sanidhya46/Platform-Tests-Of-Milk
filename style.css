@@ -30,6 +30,7 @@ body{
     display: block;
     position: relative;
     background-color: rgb(170, 165, 121);
+    font: normal;
    
 }
 
@@ -101,8 +102,147 @@ body{
     font-weight: 1000;
     font-family: 'Times New Roman', Times, serif;
     animation: blinking;
-    animation-duration: 1s infinite ; 
+    animation-duration: 1s infinite ;
+    z-index: 1000; 
 }
+
+#inferenceBtn_mbrt{
+    position:absolute;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 15%;
+    top: 49.8%;
+    border: none;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    animation: blinking;
+    animation-duration: 1s infinite ; 
+    visibility: visible;
+    display: none;
+}
+
+/* MBRT Inference Box */
+.inference_mbrt {
+  position: absolute;
+  top: 21vw;
+  left: 48.4%;
+  transform: translateX(-50%);
+
+  width: 85vw;
+  max-width: 69.5vw;
+
+  background: #ffffff;
+  border: 0.25vw solid #000;
+  border-radius: 0.6vw;
+
+   max-height: 20vw;     /* 👈 LIMIT LENGTH */
+  overflow-y: auto;     /* 👈 scroll only if needed */
+
+  padding: 1.5vw 2vw;
+  font-family: serif;
+  font-size: 1.05vw;
+  line-height: 1.6;
+
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.25);
+
+  z-index: 1200;
+  display: none;
+}
+
+/* Heading */
+.inference_mbrt h3 {
+  margin-top: 0;
+  margin-bottom: 1vw;
+  font-size: 1.4vw;
+  text-align: left;
+  border-bottom: 0.15vw solid black;
+  padding-bottom: 0.5vw;
+}
+
+/* Ordered list */
+.inference_mbrt ol {
+  margin: 0;
+  padding-left: 1.6vw;
+}
+
+/* List items */
+.inference_mbrt li {
+  margin-bottom: 0.7vw;
+}
+
+/* Smooth appearance animation */
+.inference_mbrt.show {
+  display: block;
+  animation: fadeInScale 0.4s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+
+
+
+.table-container_mbrt {
+  position: absolute;
+  top: 1vw;
+  left: 48%;
+  transform: translateX(-50%);
+
+  width: 90vw;
+  max-width: 68.75vw;
+
+  background: white;
+  padding: 0.94vw;
+
+  border: 0.19vw solid black;
+  border-radius: 0.5vw;
+
+  z-index: 1;
+
+ 
+}
+
+/* table styles ONLY for MBRT */
+.table-container_mbrt table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* table cells */
+.table-container_mbrt th,
+.table-container_mbrt td {
+  border: 0.125vw solid black;
+  padding: 0.63vw;
+  font-size: 1vw;
+}
+
+/* table header */
+.table-container_mbrt th {
+  background-color: black;
+  color: white;
+  font-size: 1.05vw;
+}
+
+/* visible rows/cells inside MBRT */
+.table-container_mbrt .hidden {
+  visibility: visible;
+}
+
+
+/*  */
+
 
 
 #homeBtn{
@@ -557,6 +697,7 @@ left: 36.792%; */
 
 
 } 
+
 #butyrometer_a{
     position: absolute;
    bottom: 11.8%;
@@ -567,6 +708,46 @@ left: 36.792%; */
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
+    display: none;
+} 
+
+#test_tube_a_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+ height: 45%;
+    left: 69.5%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+} 
+
+#test_tube_e_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 83%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+#test_tube_b_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 20.51%;
+    height: 45%;
+    left: 78.2%;
+    z-index: 17;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+    display: block;
 } 
 
 #butyrometer_b{
@@ -579,14 +760,34 @@ left: 36.792%; */
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
+    display: none;
 } 
+
+
+
+#test_tube_b_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 73.2%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+
+
+
 
 
 
 
 #test_tube_a_2{
     position: absolute;  
-   bottom: 11.8%;width: 2.2%;
+   bottom: 11.8%;
     height: 49%;
     width: 2.4%;
     height: 40%;
@@ -595,8 +796,23 @@ left: 36.792%; */
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
+    visibility: hidden;
 } 
 
+#test_tube_mbrt_a{
+    position: absolute;  
+   bottom: 11.8%;
+   width: 2.2%;
+    height: 49%;
+    width: 2.4%;
+    height: 40%;
+    left: 74.3%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
 
 
 
@@ -626,54 +842,34 @@ left: 36.792%; */
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
-    visibility: visible;
+    visibility: hidden;
 } 
 
-#test_tube_c {
-  position: absolute;  
- bottom: 11.8%;
-  width: 2.4%;
-  height: 40%;
-  left: 81.4%;
-  z-index: 23;
-  transition: all; 
-  transition-duration: 1s;
-  opacity: 100%;
-  visibility: visible;
-} 
-
-#test_tube_d {
-  position: absolute;  
- bottom: 11.8%;
-  width: 2.4%;
-  height: 40%;
-  left: 85.11%;
-  z-index: 23;
-  transition: all; 
-  transition-duration: 1s;
-  opacity: 100%;
-  visibility: visible;
-} 
-
-#test_tube_c_2  {
+#test_tube_mbrt_b {
     position: absolute;  
    bottom: 11.8%;
     width: 2.4%;
     height: 40%;
-    left: 73.37%;
+    left: 77.77%;
     z-index: 23;
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
-    visibility: hidden;
+    visibility: visible;
 } 
+
+
+
+
+
+
 
 #test_tube_d_2  {
     position: absolute;  
    bottom: 11.8%;
     width: 2.4%;
     height: 40%;
-    left: 77.0%;
+    left: 81%;
     z-index: 23;
     transition: all; 
     transition-duration: 1s;
@@ -692,6 +888,48 @@ left: 36.792%; */
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
+    display: none;
+} 
+
+#test_tube_c_cob{
+    position: absolute; 
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 45%;
+    left: 76.76%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+    display: block;
+} 
+
+#test_tube_c{
+    position: absolute; 
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 81.5%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+    display: block;
+} 
+
+#test_tube_mbrt_c {
+      position: absolute; 
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 40%;
+    left: 81.4%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
 } 
 
 #butyrometer_d{
@@ -704,6 +942,46 @@ left: 36.792%; */
     transition: all; 
     transition-duration: 1s;
     opacity: 100%;
+   display: none;
+} 
+
+#test_tube_d_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 45%;
+    left: 80.5%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+#test_tube_d{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 85%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+#test_tube_mbrt_d{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 40%;
+    left: 85%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
 } 
 
 #butyrometer_cork_centrifuge{
@@ -938,13 +1216,41 @@ bottom: 5%; */
     position: absolute;
     height: 20%;
     width: 29.4%;
-    top: 69.75%;
+    top: 69.82%;
+    left: 60.43%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+ 
+
+  }
+
+#butyrometer_upper221{
+    position: absolute;
+    height: 20%;
+    width: 29.4%;
+    top: 69.82%;
+    left: 68.49%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+ 
+
+  }
+  
+#butyrometer_upper21{
+    position: absolute;
+    height: 20%;
+    width: 29.4%;
+    bottom: 20%;
     left: 68.58%;
     transition: all;
     transition-duration: 1s;
     z-index: 30;
  
-}#butyrometer_upper21{
+}
+
+#butyrometer_upper222{
     position: absolute;
     height: 20%;
     width: 29.4%;
@@ -982,7 +1288,7 @@ bottom: 5%; */
     height: 16%;
     width: 8.35%;
     bottom: 9.8%;
-    left: 6%;
+    left: 6.45%;
    
     z-index: 2;
     transition: height 1s linear;
@@ -1309,17 +1615,7 @@ bottom: 5%; */
    transition: 1s all;
 }
 
-#observation_table_cob{
-  position: absolute;
-  width: 80.45%;
-  height: 45.50%;
-  bottom: 52%; /* 100% - top: 6.5% - height: 39% */
-  left: 9.5%;
-   overflow: hidden;
-   z-index: 2;
-   transition: 1s all;
-   visibility: hidden;
-}
+
 
 #waterBath_upper2 {
   position: absolute;
@@ -1486,8 +1782,29 @@ bottom: 5%; */
   position: absolute;
   width: 2.3%;
   height: 7.3%;
-  bottom: 12.5%;
+  bottom: 13.5%;
   left: 63.6%;
+    z-index: 40;
+    opacity: 100%;
+    transition: all 1s ;
+}
+
+#tube_cap_c {
+  position: absolute;
+  width: 2.3%;
+  height: 7.3%;
+  bottom: 10%;
+  left: 63.6%;
+    z-index: 40;
+    opacity: 100%;
+    transition: all 1s ;
+}
+#tube_cap_d {
+  position: absolute;
+  width: 2.3%;
+  height: 7.3%;
+  bottom: 10%;
+  left: 66.6%;
     z-index: 40;
     opacity: 100%;
     transition: all 1s ;
@@ -1517,7 +1834,7 @@ bottom: 5%; */
   position: absolute;
   width: 2.3%;
   height: 7.3%;
- bottom: 12.5%;
+ bottom: 13.5%;
   left: 66.7%;
     z-index: 40;
     opacity: 0%;
@@ -1593,12 +1910,10 @@ bottom: 5%; */
 
 #actualTempDisplay2 {
    position: absolute;
-
  /* Background color area you care about */
   color: rgb(233, 13, 61);
   font-weight: bold;
   font-size: 0.9vw;
-
   text-align: center;
   bottom: 22.4%;        /* 221.1 */
    left: 18.3%;
@@ -1616,7 +1931,24 @@ bottom: 5%; */
  /* Background color area you care about */
   color: cyan;
   font-weight: bold;
-  font-size: 0.6vw;
+  font-size: 1vw;
+  
+  text-align: center;
+  bottom: 18.8%;
+  left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 52;
+}
+
+#sampleTempDisplay_mbrt {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 1vw;
   
   text-align: center;
   bottom: 18.8%;
@@ -1644,22 +1976,35 @@ bottom: 5%; */
   opacity: 0%;
     z-index: 52;
 }
+
 #actualTempDisplay13 {
    position: absolute;
-
  /* Background color area you care about */
   color: cyan;
   font-weight: bold;
-  font-size: 0.6vw;
-  
+  font-size: 1vw;
   text-align: center;
   bottom: 22.9%;
    left: 14.19%;
   transition: all;
   transition-duration: 1s;
   opacity: 100%;
-    z-index: 23;
-     
+    z-index: 23; 
+}
+
+#actualTempDisplay_mbrt {
+   position: absolute;
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 1vw;
+  text-align: center;
+  bottom: 22.9%;
+   left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 23; 
 }
 
 #actualTempDisplay20 {
@@ -1714,6 +2059,24 @@ bottom: 5%; */
   opacity: 100%;
     z-index: 50;
 }
+
+#sampleTempDisplay2 {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: rgb(233, 13, 61);
+  font-weight: bold;
+  font-size: 0.9vw;
+  
+  text-align: center;
+  bottom: 18.2%;
+  left: 18.3%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 50;
+}
+
 #sampleTempDisplay21 {
   position: absolute;
 
@@ -1899,6 +2262,24 @@ bottom: 5%; */
   
   
 }
+
+#timerDisplay_mbrt{
+  position: absolute;
+  color: rgb(40, 237, 0);
+  
+  font-weight: bold;
+  font-size: 2.6vw;
+  bottom: 18.9%;
+  width: 9%;
+  opacity: 100%;
+  left: 47.8%;
+  z-index: 30;
+  visibility: hidden;
+  display: block;
+  
+  
+}
+
 #timerDisplay12,
 #timerDisplay22 {
     position: absolute;
@@ -2870,12 +3251,37 @@ bottom: 5%; */
   z-index: 40;
 }
 
+#pipette_familiar_mbrt{
+  position: absolute;
+  height: 30%;
+  width: 2.6%;
+ bottom: -7%;
+  left: 45.0%;
+  rotate: -90deg;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 40;
+}
+
 #milk_beaker_familiar{
   position: absolute;
  height: 23%;
   width: 11%;
   top: 67%;
   left: 35%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 9;
+  transition: transform 1s ease-in-out;
+  opacity: 100%;
+}
+
+#milk_beaker_familiar_mbrt{
+  position: absolute;
+ height: 23%;
+  width: 11%;
+  top: 67%;
+  left: 27%;
   transition: all;
   transition-duration: 1s;
   z-index: 9;
@@ -2894,6 +3300,29 @@ bottom: 5%; */
   z-index: 4;
 }
 
+#clock_familiar_mbrt{
+  position: absolute;
+  height: 22%;
+  width: 11.6%;
+ bottom: 9.8%;
+  left: 49.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+#stopper_mbrt{
+  position: absolute;
+  height: 12%;
+  width: 3.6%;
+ bottom: 12.5%;
+  left: 62%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+
 #clock{
   position: absolute;
   height: 24%;
@@ -2905,12 +3334,34 @@ bottom: 5%; */
   z-index: 4;
 }
 
+#clock_mbrt{
+  position: absolute;
+  height: 24%;
+  width: 11.9%;
+ bottom: 9.8%;
+  left: 45.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
 #waterbath_familiar{
   position: absolute;
   height: 25%;
   width: 20.6%;
  bottom: 8%;
   left: 10.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#waterbath_familiar_mbrt{
+  position: absolute;
+  height: 25%;
+  width: 20.6%;
+ bottom: 8%;
+  left: 6.0%;
   transition: all;
   transition-duration: 1s;
   z-index: 4;
@@ -2982,12 +3433,64 @@ bottom: 5%; */
 
 
 
+#tooltip_mbrt {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.equipment_mbrt {
+  cursor: pointer;
+}
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+
+
 #test_tube_familiar{
   position: absolute;
   height: 52%;
   width: 26.6%;
  bottom: 7.6%;
   left: 63.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#test_tube_familiar_mbrt{
+  position: absolute;
+  height: 52%;
+  width: 26.6%;
+ bottom: 7.6%;
+  left: 67.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#methylene_blue_familiar_mbrt{
+  position: absolute;
+  height: 30%;
+  width: 8.6%;
+ bottom: 12.6%;
+  left: 40.0%;
   transition: all;
   transition-duration: 1s;
   z-index: 4;
@@ -3226,7 +3729,7 @@ bottom: 5%; */
     height: 0%;    /* 21.4 % */
     width: 0.6%;
    bottom: 22.5%;
-    left: 15%;
+    left: 9%;
     transition: all;
     transition-duration: 1s;
     z-index: 4;
@@ -3238,7 +3741,31 @@ bottom: 5%; */
     height: 0%;
     width: 0.6%;
    bottom: 22.5%;
-    left: 31.2%;
+    left: 18.15%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#milk_10ml_c{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 22.5%;
+    left: 29.15%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#milk_10ml_d{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 22.5%;
+    left: 41%;
     transition: all;
     transition-duration: 1s;
     z-index: 4;
@@ -3275,8 +3802,8 @@ bottom: 5%; */
    position: absolute;
     height: 3.7%;
     width: 0.6%;
-    bottom: 26%;
-    left: 49.4%;
+    bottom: 25.8%;
+    left: 51.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
@@ -3288,7 +3815,29 @@ bottom: 5%; */
     height: 3.6%;
     width: 0.6%;
     bottom: 24%;
-    left: 49.4%;
+    left: 51.56%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+#methylene_blue_1ml_c{
+   position: absolute;
+    height: 3.6%;
+    width: 0.6%;
+    bottom: 24%;
+    left: 51.23%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+#methylene_blue_1ml_d{
+   position: absolute;
+    height: 3.6%;
+    width: 0.6%;
+    bottom: 24%;
+    left: 51.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
@@ -3300,12 +3849,13 @@ bottom: 5%; */
     height: 3.7%;
     width: 0.6%;
     bottom: 36%;
-    left: 66.8%;
+    left: 75%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
     opacity: 0%;
 }
+
 #methylene_blue_drop1_b{
    position: absolute;
     height: 3.7%;
@@ -3317,17 +3867,53 @@ bottom: 5%; */
     z-index: 0;
     opacity: 0%;
 }
+
 #methylene_blue_drop2{
    position: absolute;
     height: 3.7%;
     width: 0.6%;
     bottom: 30.5%;
-    left: 66.8%;
+    left: 75%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
     opacity: 0%;
 }
+
+#methylene_blue_drop3{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 78.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+#methylene_blue_drop4{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 82.3%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+#methylene_blue_drop5{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 86.1%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+
 
 #methylene_blue_drop2_b{
    position: absolute;
@@ -3382,7 +3968,7 @@ bottom: 5%; */
     left: 70.55%;
     transition: all;
   
-    z-index: 18;
+    z-index: 5;
     opacity: 100%;
     transition: height 1s linear;
 }
@@ -3395,7 +3981,7 @@ bottom: 5%; */
     left: 74.3%;
     transition: all;
 
-    z-index: 18;
+    z-index: 5;
     opacity: 100%;
     transition: height 1s linear;
 }
@@ -3406,7 +3992,7 @@ bottom: 5%; */
     height: 0%;    /* 32.2  */
     width: 0.3%;
    top: 54.3%;
-    left: 67.1%;
+    left: 75.28%;
     transition: all;
     transition-duration: 1s;
     z-index: 18;
@@ -3419,7 +4005,7 @@ bottom: 5%; */
     height: 0%;   /*  32.2%  */
     width: 0.3%;
    top: 54.3%;
-    left: 70.6%;
+    left: 78.9%;
     transition: all;
     transition-duration: 1s;
     z-index: 18;
@@ -3428,26 +4014,71 @@ bottom: 5%; */
 }
 
 
+#milk_strip_c_2{
+   position: absolute;
+    height: 0%;   /*  32.2%  */
+    width: 0.3%;
+   top: 54.3%;
+    left: 82.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_strip_d_2{
+   position: absolute;
+    height: 0%;   /*  32.2%  */
+    width: 0.3%;
+   top: 54.3%;
+    left: 85.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+
+
+
+
+/* 
+
+
+*/
+
+
+
+
+
+
+
+
+
+
 #milk_strip_c{
    position: absolute;
     height: 0%;
     width: 0.3%;
-   top: 45.3%;
+   top: 47%;
     left: 78.02%;
     transition: all;
     transition-duration: 1s;
-    z-index: 8;
+    z-index: 5;
     opacity: 100%;
 }
+
 #milk_strip_d{
    position: absolute;
     height: 0%;   /* 37.2  */
     width: 0.3%;
-   top: 45.3%;
+   top: 47%;
     left: 81.5%;
     transition: all;
     transition-duration: 1s;
-    z-index: 8;
+    z-index: 5;
     opacity: 100%;
 }
 
@@ -3456,7 +4087,7 @@ bottom: 5%; */
     height: 0%;    /* 17.8  */
     width: 2.0%;
    bottom: 11.8%;
-    left: 66.2%;
+    left: 74.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 18;
@@ -3492,7 +4123,7 @@ bottom: 5%; */
     height: 17.8%;
     width: 2.0%;
    bottom: 11.8%;
-    left: 66.2%;
+    left: 74.5%;
    
     z-index: 18;
     opacity: 0%;
@@ -3501,13 +4132,96 @@ bottom: 5%; */
 }
 #closed_methylene_blue_tube_a{
    position: absolute;
-    width: 2%;
-    height: 41%;
+    width: 2.13%;
+    height: 42.2%;
    bottom: 11.8%;
-    left: 66.1%;
-   visibility: visible;
+    left: 74.4%;
+   visibility: hidden;
     z-index: 20;
-    opacity: 0%;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_a_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 13.6%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_b_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 18.4%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_c_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 22.6%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_d_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 26.6%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+
+#closed_methylene_blue_tube_c{
+   position: absolute;
+    width: 2.2%;
+    height: 42.18%;
+   bottom: 11.8%;
+    left: 81.5%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#closed_methylene_blue_tube_d{
+   position: absolute;
+    width: 2.2%;
+    height: 42.18%;
+   bottom: 11.8%;
+    left: 85.1%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#closed_white3_tube_d{
+   position: absolute;
+    width: 2.2%;
+    height: 42.18%;
+   bottom: 11.8%;
+    left: 85.1%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
     transition: all 1s ease-in-out;
 }
 #closed_white_tube_a{
@@ -3543,10 +4257,10 @@ bottom: 5%; */
 }
 #closed_methylene_blue_tube_b{
    position: absolute;
-    width: 2%;
-    height: 41%;
+    width: 2.1%;
+    height: 42.2%;
    bottom: 11.8%;
-    left: 69.8%;
+    left: 77.8%;
    visibility: hidden;
     z-index: 20;
     opacity: 100%;
@@ -3598,10 +4312,34 @@ bottom: 5%; */
     height: 17.8%;
     width: 2.0%;
    bottom: 11.8%;
-    left: 69.9%;
+    left: 77.9%;
     transition: all;
     transition-duration: 1s;
     z-index: 18;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#methylene_blue_tube_c{
+   position: absolute;
+    height: 17.8%;
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 81.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 10;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#methylene_blue_tube_d{
+   position: absolute;
+    height: 17.8%;
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 85.2%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 10;
     opacity: 0%;
     transition: transform 1s ease-in;
 }
@@ -3610,7 +4348,7 @@ bottom: 5%; */
     height: 41%;
     width: 2.1%;
    bottom: 60%;
-    left: 66.1%;
+    left: 74.4%;
     transition-duration: 1s;
     z-index: 18; 
     opacity: 0%;
@@ -3620,25 +4358,38 @@ bottom: 5%; */
     position: absolute;
     height: 41%;
     width: 2.1%;
-   bottom: 61.5%;
-    left: 69.6%;
+   bottom: 60%;
+    left: 78%;
     transition-duration: 1s;
     z-index: 18;
     opacity: 0%;
     transition: all 1s ease-in;
 }
-#observation_table_mbrt{
+
+#inverted_methylene_blue_tube_c{
     position: absolute;
-    height: 85%;
-    width: 67%;
-   bottom: 10%;
-    left: 15.5%;
+    height: 41%;
+    width: 2.1%;
+   bottom: 61.5%;
+    left: 81.5%;
     transition-duration: 1s;
-    z-index: 128;
-    opacity: 100%;
-    visibility: hidden;
+    z-index: 18;
+    opacity: 0%;
     transition: all 1s ease-in;
 }
+
+#inverted_methylene_blue_tube_d{
+    position: absolute;
+    height: 41%;
+    width: 2.1%;
+   bottom: 61.5%;
+    left: 85.1%;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+
 #inverted_pale_blue_tube{
     position: absolute;
     width: 1.26%;
@@ -3650,18 +4401,46 @@ bottom: 5%; */
     opacity: 0%;
     transition: all 1s ease-in;
 }
+
 #milk_tube_b_2{
    position: absolute;
     height: 0%;   /* 17.8 */
     width: 2%;
    bottom: 11.8%;
-    left: 69.9%;
+    left: 77.9%;
     transition: all;
     transition-duration: 1s;
     z-index: 18;
     opacity: 100%;
     transition: height 1s linear;
 }
+
+#milk_tube_c_2{
+   position: absolute;
+    height: 0%;   /* 17.8 */
+    width: 2.1%;
+   bottom: 11.8%;
+    left: 81.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_tube_d_2{
+   position: absolute;
+    height: 0%;   /* 17.8 */
+    width: 2%;
+   bottom: 11.8%;
+    left: 85.1%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
 #milk_tube_a{
    position: absolute;
       height: 0%;  /*  20.5% */
@@ -3697,6 +4476,9 @@ bottom: 5%; */
     z-index: 15;
     opacity: 100%;
     transition: height 1s linear;
+}
+#observation_table_cob{
+   z-index: 1;
 }
 #milk_tube_d{
    position: absolute;
@@ -3881,6 +4663,15 @@ bottom: 5%; */
  
   visibility: hidden;
 }
+
+#stp196{
+  display: none;
+}
+
+#stp19{
+  display: none;
+}
+
 #stp2-section{
     opacity: 0%;
     visibility: hidden;
@@ -3903,6 +4694,9 @@ bottom: 5%; */
   
     visibility: visible;
    
+}
+#stp16{
+  visibility: hidden;
 }
 
 /* .dp{
@@ -4087,11 +4881,89 @@ bottom: 5%; */
 
 
 
+/* ================= UI TABLE LAYER ================= */
+
+
+
+.table-container {
+  position: fixed;
+  top: 4rem;                 /* 120px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 68.75rem;         /* 1100px */
+
+  background: white;
+  padding: 0.9375rem;          /* 15px */
+  border: 0.1875rem solid black; /* 3px */
+  border-radius: 0.5rem;       /* 8px */
+
+  z-index: 1;
+}
+
+/* table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 0.125rem solid black; /* 2px */
+  padding: 0.625rem;            /* 10px */
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  visibility: hidden;
+}
 
 
 
 
 
+.inference {
+  position: absolute;
+  width: 100%;
+  max-width: 100rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  background-color: #ffffff;
+  border: 0.25rem solid black;
+  border-radius: 0.5rem;
+  left: -0.1%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  z-index: 1000;
+}
+
+#inferenceBtn {
+  position:absolute;
+  display: block;
+  margin: 2rem auto;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+
+
+
+/* =========================
+   MBRT Experiment Table
+   ========================= */
 
 
 
@@ -4161,3 +5033,15 @@ bottom: 5%; */
       margin-top: 20px;
       cursor: pointer;
     }
+
+
+/* ===== MBRT INFERENCE BOX ===== */
+/* MBRT inference ONLY */
+
+
+/* button */
+
+
+.hidden{
+  visibility: hidden;
+}

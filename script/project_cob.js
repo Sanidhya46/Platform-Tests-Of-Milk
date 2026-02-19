@@ -17,10 +17,12 @@ let stp18 = document.querySelector("#stp18")
 let stp16 = document.querySelector("#stp16")
 let stp39 = document.querySelector("#stp39")
 let stp49 = document.querySelector("#stp49")
+let stp196 = document.querySelector("#stp196")
 let stp1000 = document.querySelector("#stp1000")
 let stp2_section = document.querySelector("#stp2-section")
 let ins = document.querySelector("#text")
 let timerDisplay13 = document.querySelector("#timerDisplay13")
+let observationUI = document.querySelector("#observationUI")
 // let statuses = 0;
   stp49.style.visibility = "hidden"
 let f=1000;
@@ -37,6 +39,7 @@ function start(){
     
     console.log("hello world")
     console.log("f for 0 is", f)
+    
      startbutton.style.visibility="hidden"
      if(f === 1000){
         f = 1001;
@@ -70,7 +73,7 @@ function start(){
        stp49.style.visibility = "visible"
         timerDisplay13.innerText = "05:00"
          
-        ins.innerText=" Click on the iso amyl cap to open it "
+        ins.innerText=" Click on the ON button of water bath"
         // pipette2();
     } else if(f===1500){
           milk_tube_b()
@@ -84,11 +87,13 @@ function start(){
     }
     else if(f===300){
         console.log("f for 300 is", f)
-     
+    
        Set.style.visibility = "visible";
         ins.innerText = "Click on the open button of centrifuge to open it"
-     
+        observationUI.style.display = "block";
+        observationUI.style.visibility = "visible"
     }else if(f === 222){
+       
         console.log("now the value of f is ", f)
         ins.innertext = "Click on The NEXT button to fill the sensory information in observation table"
         sensory_a();
@@ -97,9 +102,7 @@ function start(){
         startbutton.style.display = "none"
         sensory_a_result();
     }else if(f === 224){
-        console.log("now the value of f is ", f)
-        startbutton.style.display = "none"
-        sensory_b();
+        stp16.style.visibility = "hidden"
     }else if(f === 225){
         console.log("now the value of f is ", f)
         startbutton.style.display = "none"

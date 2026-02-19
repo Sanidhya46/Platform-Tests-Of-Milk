@@ -9,6 +9,32 @@ const sampletimerDisplay = document.getElementById("sampletimerDisplay");
 const sampletimerDisplay1 = document.querySelector("#sampletimerDisplay1");
 const sampletimerDisplay2 = document.querySelector("#sampletimerDisplay2");
 const closed_methylene_blue_tube_b = document.querySelector('#closed_methylene_blue_tube_b'); 
+const closed_methylene_blue_tube_c = document.querySelector('#closed_methylene_blue_tube_c'); 
+const closed_methylene_blue_tube_d = document.querySelector('#closed_methylene_blue_tube_d'); 
+const closed_methylene_blue_tube_a = document.querySelector('#closed_methylene_blue_tube_a'); 
+
+const closed_white_tube_a_mbrt = document.querySelector('#closed_white_tube_a_mbrt'); 
+const closed_white_tube_b_mbrt = document.querySelector('#closed_white_tube_b_mbrt'); 
+const closed_white_tube_c_mbrt = document.querySelector('#closed_white_tube_c_mbrt');
+const closed_white_tube_d_mbrt = document.querySelector('#closed_white_tube_d_mbrt'); 
+
+const test_tube_mbrt_a = document.querySelector('#test_tube_mbrt_a'); 
+const test_tube_mbrt_b = document.querySelector('#test_tube_mbrt_b'); 
+const test_tube_mbrt_c = document.querySelector('#test_tube_mbrt_c'); 
+const test_tube_mbrt_d = document.querySelector('#test_tube_mbrt_d'); 
+
+const observation_table_mbrt = document.querySelector('#observation_table_mbrt'); 
+ const time_A = document.getElementById("time-A");
+ const quality_A = document.getElementById("quality-A");
+  const time_B = document.getElementById("time-B");
+   const time_C = document.getElementById("time-C");
+    const time_D = document.getElementById("time-D");
+     const quality_B = document.getElementById("quality-B");
+      const quality_C = document.getElementById("quality-C");
+       const quality_D = document.getElementById("quality-D");
+
+              const inferenceBtn_mbrt = document.getElementById("inferenceBtn_mbrt");
+                   const inferenceBox_mbrt = document.getElementById("inferenceBox_mbrt");
 window.onload = function() {
 
 
@@ -17,23 +43,44 @@ const pipette_centrifuge2 = document.querySelector('#pipette_centrifuge2');
 const milk_a_2_50ml = document.querySelector('#milk_a_2_50ml');
 
 const milk_tube_b_2 = document.querySelector('#milk_tube_b_2');
+const milk_tube_c_2 = document.querySelector('#milk_tube_c_2');
+const milk_tube_d_2 = document.querySelector('#milk_tube_d_2');
+
 const milk_strip_a_2 = document.querySelector('#milk_strip_a_2');
-const milk_10ml_b = document.querySelector('#milk_10ml_b'); 
+const milk_10ml_b = document.querySelector('#milk_10ml_b');
+
+const milk_10ml_c = document.querySelector('#milk_10ml_c'); 
+
 const milk_10ml_a = docuhment.querySelector('#milk_10ml_a'); 
 const milk_b_2_50ml = document.querySelector('#milk_b_2_50ml');
+const milk_c_2_50ml = document.querySelector('#milk_c_2_50ml');
+const milk_d_2_50ml = document.querySelector('#milk_d_2_50ml');
 
 const milk_strip_b_2 = document.querySelector('#milk_strip_b_2');
+const milk_strip_c_2 = document.querySelector('#milk_strip_c_2');
+const milk_strip_d_2 = document.querySelector('#milk_strip_d_2');
+
 const methylene_blue_1ml = document.querySelector('#methylene_blue_1ml');
 const methylene_mid_blue = document.querySelector('#methylene_mid_blue'); 
 const methylene_mid_blue_b = document.querySelector('#methylene_mid_blue_b'); 
 const methylene_blue_tube = document.querySelector('#methylene_blue_tube'); 
 const methylene_blue_tube_b = document.querySelector('#methylene_blue_tube_b'); 
+const methylene_blue_tube_c = document.querySelector('#methylene_blue_tube_c'); 
+const methylene_blue_tube_d = document.querySelector('#methylene_blue_tube_d'); 
+
 const methylene_blue_drop1 = document.querySelector('#methylene_blue_drop1');  
 const methylene_blue_drop2 = document.querySelector('#methylene_blue_drop2');  
+const methylene_blue_drop3 = document.querySelector('#methylene_blue_drop2');  
+const methylene_blue_drop4 = document.querySelector('#methylene_blue_drop2');  
+const methylene_blue_drop5 = document.querySelector('#methylene_blue_drop2');  
+const methylene_blue_drop6 = document.querySelector('#methylene_blue_drop2');  
+
 const methylene_blue_1ml_b = document.querySelector('#methylene_blue_1ml_b');
+const methylene_blue_1ml_c = document.querySelector('#methylene_blue_1ml_c');
+const methylene_blue_1ml_d = document.querySelector('#methylene_blue_1ml_d');
 const methylene_blue_drop1_b = document.querySelector('#methylene_blue_drop1_b');  
 const methylene_blue_drop2_b = document.querySelector('#methylene_blue_drop2_b'); 
-const observation_table_mbrt = document.querySelector('#observation_table_mbrt'); 
+
 let stp99 = document.querySelector("#stp99")
 
 
@@ -60,7 +107,7 @@ const actualTempDisplay2 = document.getElementById("actualTempDisplay2");
 
 const timerDisplay2 = document.querySelector("#timerDisplay2");
 const timerDisplay = document.querySelector("#timerDisplay");
-const timerDisplay12 = document.querySelector("#timerDisplay13");
+
 const timerDisplay22 = document.querySelector("#timerDisplay23");
 
 const tiltedsol12 = document.getElementById("tiltedsol12");
@@ -68,6 +115,9 @@ const tiltedsol12 = document.getElementById("tiltedsol12");
 const sampleTempDisplay12 = document.getElementById("sampleTempDisplay12");
 const actualTempDisplay12 = document.getElementById("actualTempDisplay12");
 const tube_cap_a = document.getElementById("tube_cap_a");
+const tube_cap_c = document.getElementById("tube_cap_c");
+const tube_cap_d = document.getElementById("tube_cap_d");
+
 const tube_cap_A = document.getElementById("tube_cap_A");
 
 const tube_cap_b = document.getElementById("tube_cap_b");
@@ -78,7 +128,7 @@ const test_tube_a_2 = document.querySelector('#test_tube_a_2');
 const tongs_upper = document.querySelector('#tongs_upper');
 const tongs_down = document.querySelector('#tongs_down');
 
-const closed_methylene_blue_tube_a = document.querySelector('#closed_methylene_blue_tube_a'); 
+
 
 const closed_methylene_blue_tube_a_2 = document.querySelector('#closed_methylene_blue_tube_a_2'); 
 
@@ -109,7 +159,6 @@ const tongs_down4 = document.querySelector('#tongs_down4');
 
 pipette2();
 
-timerDisplay.style.visibility  = "block"
 
 
 
@@ -138,29 +187,7 @@ timerDisplay.style.visibility  = "block"
 
 
 
-onSwitch2.addEventListener("click", () => {
-    pulse(onSwitch2);
-    onSwitch2.style.opacity = "100%";
-    offSwitch2.style.opacity = "0%";
 
-    onSwitch2.style.borderRadius = "30%";
-    setTimeout(() => {
-        onSwitch2.style.borderRadius = "50%";
-    }, 1000);
-
-    // Show temperatures
-    setTempDisplay2.style.opacity = "100%";
-    actualTempDisplay2.style.display = "block";
-    actualTempDisplay12.style.display = "block";
-    pulse(actualTempDisplay2);
-    sampleTempDisplay2.style.display = "block";
-    sampleTempDisplay12.style.display = "block";
-    pulse(sampleTempDisplay2);
-    zoominout(sampleTempDisplay2);
-    // Reset sample temperature display
-    sampleTempDisplay2.textContent = "25°C";
-    ins.innerText = "Click on the increase temp button to increase the water bath sample temp 37°C";
-});
 
 // Gradually increase sample temperature
 
@@ -258,103 +285,6 @@ setOff2.addEventListener("click", () => {
 
 
 console.log("here new f is ", f)
-function tongs(){
-tongs_down2.addEventListener("click", () => {
-  console.log("the value of f is ", f)
-  console.log("tongs move starts")
-
- if (f === 321) {
-      f=322;
-    tongs_down2.style.bottom = "35%"
-    tongs_upper2.style.bottom = "38%"
-     setTimeout(() => {
-        tongs_down2.style.left = "65.5%"
-    tongs_upper2.style.left = "65.5%" 
-        setTimeout(() => {
-         tongs_down2.style.bottom = "67.5%"
-    tongs_upper2.style.bottom = "69.5%" 
-    inverted_methylene_blue_tube_a.style.bottom = "60%";
-      setTimeout(() => {
-        closed_methylene_blue_tube_a_2.style.opacity = "100%"
-        inverted_methylene_blue_tube_a.style.opacity = "0%";
-         setTimeout(() => {
-            closed_methylene_blue_tube_a_2.style.left = "18%"
-             tongs_down2.style.left = "17.9%"
-    tongs_upper2.style.left = "17.9%"  
-         setTimeout(() => {
-               closed_methylene_blue_tube_a_2.style.height = "26.7%"
-                closed_methylene_blue_tube_a_2.style.width = "1.26%"
-                 setTimeout(() => {
-                    closed_methylene_blue_tube_a_2.style.bottom = "30%"
-                     tongs_down2.style.bottom = "37.5%"
-    tongs_upper2.style.bottom = "40.2%"  
-      setTimeout(() => {
-             closed_methylene_blue_tube_a_2.style.bottom = "15%"
-             timerDisplay.style.visibility = "visible";
-             f = 550;
-           
-               setTimeout(() => {
-                 tongs_down2.style.bottom = "55%";
-                 tongs_upper2.style.bottom = "58%";
-                     setTimeout(() => {
-                       
-                  tongs_down2.style.left = "75%";
-                 tongs_upper2.style.left = "75%"
-                       setTimeout(() => {
-                         tongs_down2.style.bottom = "37%";
-                 tongs_upper2.style.bottom = "40%";
-                 setTimeout(() => {
-                   tongs_down2.style.left = "69%";
-                 tongs_upper2.style.left = "69%";
-                  setTimeout(() => {
-                      tongs_down2.style.bottom = "77%";
-                 tongs_upper2.style.bottom = "80%";
-                 inverted_methylene_blue_tube_b.style.bottom = "60%"
-                  setTimeout(() => {
-                         inverted_methylene_blue_tube_b.style.opacity = "0%"
-                         closed_methylene_blue_tube_b_2.style.opacity = "100%"
-                          setTimeout(() => {
-                              tongs_down2.style.left = "22%";
-                 tongs_upper2.style.left = "22%";
-                   closed_methylene_blue_tube_b_2.style.left = "22.3%"
-                    setTimeout(() => {
-                      closed_methylene_blue_tube_b_2.style.height = "26.7%"
-                      closed_methylene_blue_tube_b_2.style.width = "1.26%"
-                      setTimeout(() => {
-                      closed_methylene_blue_tube_b_2.style.bottom = "25.26%"
-                      tongs_down2.style.bottom = "37%";
-                 tongs_upper2.style.bottom = "40%";
-                  setTimeout(() => {
-                      closed_methylene_blue_tube_b_2.style.bottom = "14.8%"
-                      setTimeout(() => {
-                         tongs_down2.style.left = "40%";
-                 tongs_upper2.style.left = "40%";
-                   setTimeout(() => {
-                      tongs_down2.style.bottom = "12%";
-                 tongs_upper2.style.bottom = "15%";
-                   startFastCountdown();
-                   }, 0);
-                   }, 0);
-                          }, 0);
-                        }, 0);
-                      }, 0);
-                              }, 0);
-                      }, 0);
-                      }, 0);
-                     }, 0);
-                         }, 0);
-                  }, 0);
-                }, 0);
-          }, 0);
-                    }, 0);
-            }, 0);
-            }, 0);
-         }, 0);
-           }, 0);
-     }, 0);
- }else{console.log("not move tongs..")}
-},)
-}
 
 
 
@@ -404,141 +334,7 @@ tongs_down2.addEventListener("click", () => {
     
 
     // Start timer after a small delay
- function onFinished() {   
-    setTimeout(() => {
-      if (f === 552) {
-    f = 553;
-    console.log("white tube function runs ... ")
-       closed_white_tube_a.style.opacity = "100%";
-       closed_methylene_blue_tube_a_2.style.opacity = "0%";
-          
-            tongs_down2.addEventListener("click", () => {
-                setTimeout(() => {
-              console.log("white tube clicked")
-               tongs_down2.style.bottom = "36%";
-                 tongs_upper2.style.bottom = "39%";
-                   setTimeout(() => {
-                     tongs_down2.style.left = "17.5%";
-                 tongs_upper2.style.left = "17.5%";
-                  setTimeout(() => {
-                     tongs_down2.style.bottom = "69%";
-                 tongs_upper2.style.bottom = "72%";
-                   closed_white_tube_a.style.bottom = "50.9%";
-                 setTimeout(() => {
-                  ins.innerText = "✅yes! The first tube decolourise completely because the solution completely changed to white , now time for second tube to check it decolourise it or not"
-                  setTimeout(() => {
-                    closed_white_tube_a.style.width = "2%";
-                    closed_white_tube_a.style.height = "41%";
-                      setTimeout(() => {
-                           closed_white_tube_a.style.left = "66%";
-                             tongs_down2.style.left = "66%";
-                 tongs_upper2.style.left = "65.5%";
-                 setTimeout(() => {
-                    tongs_down2.style.bottom = "29%";
-                 tongs_upper2.style.bottom = "28%";
-                  closed_white_tube_a.style.bottom = "25%";
-                   setTimeout(() => {
-                    closed_white_tube_a.style.bottom = "12%";  
-                     setTimeout(() => {
-                         tongs_down2.style.bottom = "56%";
-                 tongs_upper2.style.bottom = "59%";
-                 closed_light_blue_tube.style.opacity = "100%";
-                 closed_methylene_blue_tube_b_2.style.opacity = "0%";
-                   setTimeout(() => {
-                      tongs_down2.style.left = "25%";
-                 tongs_upper2.style.left = "25%";
-                 ins.innerText = "Remove the second tube from water bath to check it decolourise completely or not"
-                  setTimeout(() => {
-                  tongs_down2.style.bottom = "36%";
-                 tongs_upper2.style.bottom = "39%";
-                  setTimeout(() => {
-                  tongs_down2.style.left = "22%";
-                 tongs_upper2.style.left = "22%";
-                  setTimeout(() => {
-                  tongs_down2.style.bottom = "66%";
-                 tongs_upper2.style.bottom = "69%";
-                 closed_light_blue_tube.style.bottom = "60%"
-                  setTimeout(() => {
-                 ins.innerText = "Now the second tube color is light blue means it not decolourise completely means required to put tube again in waterbath for 2 more hours"
-                    setTimeout(() => {
-                    ins.innerText = "Invert tube for 3 4 times to mix well before insert again in waterbath for 2 hours"
-                     setTimeout(() => {
-                     tilted_light_blue_tube.style.opacity = "100%";
-                     closed_light_blue_tube.style.opacity =  "0%";
-                       setTimeout(() => {
-                      tilted_light_blue_tube.style.opacity = "0%";
-                     closed_light_blue_tube.style.opacity =  "100%";
-                       setTimeout(() => {
-                          tilted_light_blue_tube.style.opacity = "100%";
-                     closed_light_blue_tube.style.opacity =  "0%";
-                      setTimeout(() => {
-                      tilted_light_blue_tube.style.opacity = "0%";
-                     closed_light_blue_tube.style.opacity =  "100%";
-                      setTimeout(() => {
-                     tilted_light_blue_tube.style.opacity = "100%";
-                     closed_light_blue_tube.style.opacity =  "0%";
-                       setTimeout(() => {
-                      tilted_light_blue_tube.style.opacity = "0%";
-                     closed_light_blue_tube.style.opacity =  "100%";
-                       setTimeout(() => {
-                          tilted_light_blue_tube.style.opacity = "100%";
-                     closed_light_blue_tube.style.opacity =  "0%";
-                      setTimeout(() => {
-                      tilted_light_blue_tube.style.opacity = "0%";
-                     closed_light_blue_tube.style.opacity =  "100%";
-                        setTimeout(() => {
-                             closed_light_blue_tube.style.bottom =  "14.9%";
-                                tongs_down2.style.bottom = "36%";
-                 tongs_upper2.style.bottom = "39%";
-                 f = 553.5;
-                  if (f === 553.5) {
-          f = 554;
-                  startFastCountdown2();
-                  }
-                   setTimeout(() => {
-                     tongs_down2.style.left = "47%";
-                 tongs_upper2.style.left = "47%";
-                  setTimeout(() => {
-                       tongs_down2.style.bottom = "11%";
-                 tongs_upper2.style.bottom = "14%";
-                
 
-      startFastCountdown(() => {
-        console.log("🎯 Countdown finished — call your final function here...");
-        ins.innerText = "Now see the tube is it decolourise completely or not.. "
-         
-       
-      });
-       }, 1000);
-        }, 1000);
-       }, 1000);
-       }, 2000);   // 2000
-       }, 1000);
-        }, 1000);
-       }, 1000);
-         }, 1000);
-       }, 1000);
-        }, 1000);
-       }, 2000);   // 2000
-        }, 7000);   // 7000
-       }, 1000);
-         }, 1000);
-       }, 1000);
-       }, 1000);
-        }, 1000);
-       }, 1000);
-       }, 1000);
-        }, 1000);
-       }, 1000);
-       }, 1000);
-         }, 2500);  // 2500
-            }, 1000);
-    },1200)     // 1200
-      }, 1000);
-          }, { once: true });
-    }else{console.log("not run white tube ..")}
-    }, 1000); // starts after 1 sec
-  }
 
 
    function startFastCountdown2() {
@@ -584,7 +380,6 @@ tongs_down2.addEventListener("click", () => {
     }, speed);
   }
 }
-
 
     // Start timer after a small delay
  function onFinished2() {   
@@ -698,363 +493,494 @@ tongs_down2.addEventListener("click", () => {
 }
 
     // Start timer after a small delay
- function onFinished3() {   
-    setTimeout(() => {
-       ins.innerText = "Click on the tongs again to Check it decolourised completely or not"
-       closed_light_blue_tube.style.opacity = "0%";
-       closed_pale_blue_tube.style.opacity = "100%";
-      if (f === 560) {
-    f = 561;   tongs_down2.addEventListener("click", () => {
-              setTimeout(() => {
-                     tongs_down2.style.bottom = "36%";
-                 tongs_upper2.style.bottom = "39%";
-                 closed_pale_blue_tube.style.opacity = "0%"
-                 closed_white_tube_b.style.opacity = "100%";
-                  setTimeout(() => {
-                     tongs_down2.style.left = "22%";
-                 tongs_upper2.style.left = "22%";
-                    setTimeout(() => {
-                        tongs_down2.style.bottom = "63%";
-                 tongs_upper2.style.bottom = "66%";
-                 closed_white_tube_b.style.bottom = "60%";
-                 ins.innerText ="Now also second tube is decolourised complete so placed it in stand"
-                  setTimeout(() => {
-                    closed_white_tube_b.style.height = "41%";
-                    closed_white_tube_b.style.width = "2.1%"
-                  setTimeout(() => {
 
-                        tongs_down2.style.left = "69%";
-                 tongs_upper2.style.left = "69%";
-                 closed_white_tube_b.style.left = "69.5%";
-                    setTimeout(() => {
-                        tongs_down2.style.bottom = "34%";
-                 tongs_upper2.style.bottom = "37%";
-                  closed_white_tube_b.style.bottom = "16%";
-                 setTimeout(() => {
-                  closed_white_tube_b.style.bottom = "12%";
-                  ins.innerText = "Now both tubes decolourise completely now the time to see the observations"
-                     setTimeout(() => {
-                       tongs_down2.style.left = "73%";
-                 tongs_upper2.style.left = "73%";
-                   setTimeout(() => {
-                      tongs_down2.style.bottom = "54%";
-                 tongs_upper2.style.bottom = "57%";
-                     setTimeout(() => {
-                        tongs_down2.style.left = "45%";
-                 tongs_upper2.style.left = "45%";
-                  setTimeout(() => {
-                      tongs_down2.style.bottom = "14%";
-                 tongs_upper2.style.bottom = "17%";
-                  setTimeout(() => {
-                    ins.innerText = "Experiment Ended !! see the observations"
-                    observation_table_mbrt.style.visibility = "visible";
-                      }, 1000);
-                      }, 1000);
-                         }, 1000);
-                    }, 1000);
-                        }, 1000);
-                   }, 1000);
-                      }, 1000);
-                         }, 1000);
-                        }, 1000);
-                         }, 1000);   
-                     }, 1000);   
-              }, 1000);   
-     }, );
-    }else{console.log("not run white tube ..")}
-      
-    }, 2000); // starts after 1 sec
-  }
 
 }
 
 function pipette2() {
-   
+
   if (f === 99) {
-      f = 100; // Move to the next step so this function doesn't run again unintentionally
-       
-      console.log("pipette");
-      console.log("heloo world....")
-      // test_tube_b_3.style.opacity = "100%"
-      tube_cap_a.style.opacity = "100%"
-       tube_cap_b.style.opacity = "100%"
- 
-      pipette_centrifuge2.addEventListener("click", () => {
-             
-       
+    f = 100;
 
-        pipette_centrifuge2.style.rotate =  "0deg"
-          setTimeout(function(){
-        pipette_centrifuge2.style.bottom = "35%"
-         setTimeout(function(){
-        pipette_centrifuge2.style.left = "14%"
-                    setTimeout(function(){
-                      pipette_centrifuge2.style.bottom = "22%"
-                          setTimeout(function(){
-                                 
-                                 
-                                  milk_a_2_50ml.style.height= "13.0%"
-                                  milk_10ml_a.style.height= "21.4%"
-                                    setTimeout(function(){
-                                            pipette_centrifuge2.style.bottom = "53%"
-                                           milk_10ml_a.style.bottom = "53%"
-                                             setTimeout(function(){
-                                               pipette_centrifuge2.style.left = "65.9%"
-                                                milk_10ml_a.style.left = "66.9%"
-                                                setTimeout(function(){
-                                                   pipette_centrifuge2.style.bottom = "43%"
-                                            milk_10ml_a.style.bottom = "43%"
-                                              setTimeout(function(){ 
-                                                        milk_strip_a_2.style.height = "32.2%"
-                                                       setTimeout(function(){      //
-                                                          milk_tube_a_2.style.height = "17.8%"
-                                                        
-                                                           setTimeout(function(){
-                                                               milk_strip_a_2.style.opacity = "0%"
-                                                                milk_10ml_a.style.opacity = "0%"
-                                                                 setTimeout(function(){
-                                                                    pipette_centrifuge2.style.bottom = "55%"
-                                                                    pipette_centrifuge2.style.zIndex = "5"
-                                                                     setTimeout(function(){
-                                                                           pipette_centrifuge2.style.left = "30.1%"
-                                                                           
-                                                                             
-                                                                   
-                                                                     
-                                 
-                                     
-                                   f = 101;
-                                      
-      f = 102; 
+    console.log("pipette");
+    console.log("heloo world....");
 
-     //
-             //
-            
-                 setTimeout(function(){
-                     pipette_centrifuge2.style.bottom = "22.4%"
-                         setTimeout(function(){
-                               milk_10ml_b.style.height =  "21.4%"
-                              milk_b_2_50ml.style.height ="13.0%"
-                         
-                                   
-                                       setTimeout(function(){
-                                           pipette_centrifuge2.style.bottom = "60.4%"
-                                             milk_10ml_b.style.bottom =  "60.4%"
-                                              setTimeout(function(){
-                                                  pipette_centrifuge2.style.bottom = "60.4%"
-                                             milk_10ml_b.style.bottom =  "60.4%"
-                                              setTimeout(function(){
-                                                 pipette_centrifuge2.style.left = "69.3%"
-                                             milk_10ml_b.style.left =  "70.4%"
-                                              setTimeout(function(){
-                                                 pipette_centrifuge2.style.bottom = "40.4%"
-                                             milk_10ml_b.style.bottom =  "40.4%"
-                                               setTimeout(function(){
-                                                milk_strip_b_2.style.height = "32.2%"
-                                                       setTimeout(function(){
-                                                milk_tube_b_2.style.height = "17.8%"
-                                                 setTimeout(function(){
-                                                  milk_10ml_b.style.opacity = "0%"
-                                                  milk_strip_b_2.style.opacity = "0%"
-                                                  pipette_centrifuge2.style.zIndex = "20";
-                                                   setTimeout(function(){
-                                                        pipette_centrifuge2.style.bottom = "60.4%"
-                                                        setTimeout(function(){
-                                                          pipette_centrifuge2.style.left = "27.3%"
-                                                           setTimeout(function(){
-                                                                     pipette_centrifuge2.style.bottom = "11%"
-                                   setTimeout(function(){
-                                    pipette_centrifuge2.style.rotate = "-90deg"
-                                    setTimeout(function(){
-                                       pipette_centrifuge2.style.bottom = "-5%"
+    tube_cap_a.style.opacity = "100%";
+    tube_cap_b.style.opacity = "100%";
 
-                                            if (f === 102) {
-      f = 103; 
-            pipette_centrifuge2.addEventListener("click", () => {
-                    pipette_centrifuge2.style.rotate =  "0deg"
-          setTimeout(function(){
-        pipette_centrifuge2.style.left= "23%"
-         setTimeout(function(){
-        pipette_centrifuge2.style.bottom = "41%"
-         setTimeout(function(){
-               pipette_centrifuge2.style.left= "42.4%"
-                 setTimeout(function(){
-                        pipette_centrifuge2.style.bottom = "25%"
-                          setTimeout(function(){
-                             methylene_blue_1ml.style.opacity = "100%"
-                             setTimeout(function(){
-                                 pipette_centrifuge2.style.bottom = "60%";
-                                   methylene_blue_1ml.style.bottom = "60%"
-                                    setTimeout(function(){
-                                          pipette_centrifuge2.style.left= "65.8%"
-                                           methylene_blue_1ml.style.left = "66.8%"
-                                           setTimeout(function(){
-                                             pipette_centrifuge2.style.bottom = "40%";
-                                   methylene_blue_1ml.style.bottom = "40%"
-                                     setTimeout(function(){
-                                      methylene_blue_drop1.style.opacity = "100%"
-                                            setTimeout(function(){
-                                            methylene_blue_drop2.style.opacity = "100%"
-                                             methylene_blue_drop1.style.opacity = "0%"
-                                       setTimeout(function(){
-                                      methylene_mid_blue.style.opacity = "100%"
-                                      milk_tube_a_2.style.opacity = "0%"
-                                       setTimeout(function(){
-                                          methylene_blue_drop2.style.opacity = "0%"
-                                             methylene_blue_tube.style.opacity = "100%"
-                                             methylene_blue_1ml.style.opacity = "0%"
-                                               setTimeout(function(){
-                                                  pipette_centrifuge2.style.bottom = "65.8%"
-                                                    setTimeout(function(){
-                                                         pipette_centrifuge2.style.left= "42.3%"
-                                                         
-         setTimeout(function(){
-      
-         setTimeout(function(){
-        
-              setTimeout(function(){
-                 pipette_centrifuge2.style.bottom = "25%"
-                  setTimeout(function(){
-                    methylene_blue_1ml_b.style.opacity = "100%"
-                     setTimeout(function(){
-                           methylene_blue_1ml_b.style.bottom = "64%"
-                             pipette_centrifuge2.style.bottom = "64%"
-                             setTimeout(function(){
-                                 pipette_centrifuge2.style.left = "69.4%"
-                                  methylene_blue_1ml_b.style.left = "70.4%"
-                                     setTimeout(function(){
-                                         methylene_blue_1ml_b.style.bottom = "43%"
-                             pipette_centrifuge2.style.bottom = "43%"
-                              
-                                 setTimeout(function(){
-                                      methylene_blue_drop1_b.style.opacity = "100%"
-                                            setTimeout(function(){
-                                            methylene_blue_drop2_b.style.opacity = "100%"
-                                             methylene_blue_drop1_b.style.opacity = "0%"
-                                       setTimeout(function(){
-                                      methylene_mid_blue_b.style.opacity = "100%"
-                                      milk_tube_b_2.style.opacity = "0%"
-                                       setTimeout(function(){
-                                          methylene_blue_drop2_b.style.opacity = "0%"
-                                             methylene_blue_tube_b.style.opacity = "100%"
-                                             methylene_blue_1ml_b.style.opacity = "0%"
-                                              setTimeout(function(){
-                                                   pipette_centrifuge2.style.bottom = "64%"
-                                                      setTimeout(function(){
-                                                          pipette_centrifuge2.style.left = "24.4%"
-                                                             setTimeout(function(){
-                                                                     pipette_centrifuge2.style.bottom = "11%"
-                                   setTimeout(function(){
-                                    pipette_centrifuge2.style.rotate = "-90deg"
-                                     f = 145;
-                                    setTimeout(function(){
-                                       pipette_centrifuge2.style.bottom = "-7%"
+    pipette_centrifuge2.addEventListener("click", () => {
 
-                                     
-                                     
-                                      
-                                        tube_cap_a.addEventListener("click", function() {
-                                             if(f === 145){
-                                              f = 146;
-                                              console.log("cap clicked !!")
-                                                  tube_cap_a.style.bottom = "60%";
+      pipette_centrifuge2.style.rotate = "0deg";
 
-                                     
+      setTimeout(function () {
+        pipette_centrifuge2.style.bottom = "35%";
 
+        setTimeout(function () {
+          pipette_centrifuge2.style.left = "8%";
 
-                                      setTimeout(function(){
-                 tube_cap_a.style.left = "66%"
-                  setTimeout(function(){
-                       tube_cap_a.style.bottom = "45%"
-       if (f === 146) {
-      f = 146.5;
-            tube_cap_b.style.bottom = "60%"
-             setTimeout(function(){
-                 tube_cap_b.style.left = "69.7%"
-                 setTimeout(function(){
-                       tube_cap_b.style.bottom = "45%"
-                                      f =147;
-                                      startbutton.style.visibility="visible"
-                                       startbutton.innerText="Next"
-                                       ins.innerText="Click on Next button"
-                                      },1000)
-                                        },1000)
-                                      }
-                                                 },1000)
-                                              },1000)
-                                                
-                                             }
-                                        },)
-                                       console.log("f is 150 just after next")
-                                                    },1000)
-                                                 },1000)
-                                              },1000)
+          setTimeout(function () {
+            pipette_centrifuge2.style.bottom = "22%";
 
-                                                         },1000)
-                                                 },1000)
-                                              },1000)
-                                        },1000)
-                                 },1000)
-                                 },1000)
-                                        },1000)
-                                 },1000)
-                       },1000)
-                      },1000)
-                 },1000)
-              },1000)
-                                                 },1000)
-                                
-                                                         },2000)
-                                                 },1000)
-                                          },1000)
-                                          },1000)
-                                         },1000)
-                                        },1000)
-                                               },1000)
-                                               },1000)
-                                 },1000)
-                             },1000)
-                    },1000)
-                 },1000)
-                                                       },1000)
-                                                  },1000)
-             }, { once: true });
-            }
-                                           },1000)
-                                                       },1000)
-                                                  },1000)
-                                                            },1000)
-                                                       },1000)
-                                                  },1000)
-                                                 },1000)
-                                                 },1000)
-                                              
-                                                 },1000)
-                                         },1000)
-                                    },1000)    //10000
-                          },1000)
-                    },1000)
+            setTimeout(function () {
 
+              milk_a_2_50ml.style.height = "13.0%";
+              milk_10ml_a.style.height = "21.4%";
 
-     
-      
-                                    
-                                                               },1000)
-                                                                        },1000)
-                                                                     },1000)
-                                                               },1000)
-                                                         },1000)
-                                                           },1000)
-                                                   },1000)
-                                                },1000)
-                                      },1000)
-                               },1000)
-                      },1000)
-            },1000)
-                                                        },1000)
-                                                     }, { once: true });
-                                                  }
-                                              }
+              setTimeout(function () {
+                pipette_centrifuge2.style.bottom = "53%";
+                milk_10ml_a.style.bottom = "53%";
+
+                setTimeout(function () {
+                  pipette_centrifuge2.style.left = "74%";
+                  milk_10ml_a.style.left = "75.1%";
+
+                  setTimeout(function () {
+                    pipette_centrifuge2.style.bottom = "43%";
+                    milk_10ml_a.style.bottom = "43%";
+
+                    setTimeout(function () {
+                      milk_strip_a_2.style.height = "32.2%";
+
+                      setTimeout(function () {
+                        milk_tube_a_2.style.height = "17.8%";
+                         test_tube_mbrt_a.style.visibility = "hidden"
+                        test_tube_a_2.style.visibility = "visible"
+                        setTimeout(function () {
+                          milk_strip_a_2.style.opacity = "0%";
+                          milk_10ml_a.style.opacity = "0%";
+
+                          setTimeout(function () {
+                            pipette_centrifuge2.style.bottom = "55%";
+                            pipette_centrifuge2.style.zIndex = "5";
+
+                            setTimeout(function () {
+                              pipette_centrifuge2.style.left = "17.1%";
+
+                              f = 101;
+                              f = 102;
+
+                              setTimeout(function () {
+                                pipette_centrifuge2.style.bottom = "22.4%";
+
+                                setTimeout(function () {
+                                  milk_10ml_b.style.height = "21.4%";
+                                  milk_b_2_50ml.style.height = "13.0%";
+
+                                  setTimeout(function () {
+                                    pipette_centrifuge2.style.bottom = "60.4%";
+                                    milk_10ml_b.style.bottom = "60.4%";
+
+                                    setTimeout(function () {
+                                      pipette_centrifuge2.style.left = "77.6%";
+                                      milk_10ml_b.style.left = "78.7%";
+
+                                      setTimeout(function () {
+                                        pipette_centrifuge2.style.bottom = "40.4%";
+                                        milk_10ml_b.style.bottom = "40.4%";
+
+                                        setTimeout(function () {
+                                          milk_strip_b_2.style.height = "32.2%";
+
+                                          setTimeout(function () {
+                                            milk_tube_b_2.style.height = "17.8%";
+
+                                            setTimeout(function () {
+                                              milk_10ml_b.style.opacity = "0%";
+                                              milk_strip_b_2.style.opacity = "0%";
+                                              pipette_centrifuge2.style.zIndex = "20";
+
+                                              setTimeout(function () {
+                                                pipette_centrifuge2.style.bottom = "60.4%";
+                                                pipette_centrifuge2.style.zIndex = "5";
+
+                                                setTimeout(function () {
+                                                  pipette_centrifuge2.style.left = "28.1%";
+
+                                                  setTimeout(function () {
+                                                    pipette_centrifuge2.style.bottom = "20%";
+
+                                                    setTimeout(function () {
+                                                      milk_10ml_c.style.height = "17.8%";
+                                                      milk_c_2_50ml.style.height = "13%";
+                                                                        test_tube_b_2.style.visibility = "visible"
+                                                                            test_tube_mbrt_b.style.visibility = "hidden"
+                                                      setTimeout(function () {
+                                                        pipette_centrifuge2.style.bottom = "54%";
+                                                        milk_10ml_c.style.bottom = "54%";
+
+                                                        if (f === 102) {
+                                                          f = 103;
+
+                                                          setTimeout(function () {
+                                                            pipette_centrifuge2.style.left = "81%";
+                                                            milk_10ml_c.style.left = "82%";
+
+                                                            setTimeout(function () {
+                                                              pipette_centrifuge2.style.bottom = "41%";
+                                                              milk_10ml_c.style.bottom = "42%";
+
+                                                              setTimeout(function () {
+                                                                milk_10ml_c.style.opacity = "0%";
+                                                                milk_strip_c_2.style.height = "32.2%";
+                                                                milk_tube_c_2.style.height = "17.8%";
+                                                                            test_tube_c.style.visibility = "visible"
+                                                                            test_tube_mbrt_c.style.visibility = "hidden"
+                                                                setTimeout(function () {
+                                                                  milk_strip_c_2.style.opacity = "0%";
+
+                                                                  setTimeout(function () {
+                                                                    pipette_centrifuge2.style.bottom = "55%";
+
+                                                                    setTimeout(function () {
+                                                                      pipette_centrifuge2.style.left = "40%";
+
+                                                                      setTimeout(function () {
+                                                                        pipette_centrifuge2.style.bottom = "25%";
+
+                                                                        setTimeout(function () {
+                                                                          milk_10ml_d.style.height = "21.4%";
+                                                                          milk_d_2_50ml.style.height = "13.0%";
+
+                                                                          setTimeout(function () {
+                                                                            pipette_centrifuge2.style.bottom = "55%";
+                                                                            milk_10ml_d.style.bottom = "55%";
+
+                                                                            setTimeout(function () {
+                                                                              milk_10ml_d.style.left = "85.9%";
+                                                                              pipette_centrifuge2.style.left = "84.8%";
+
+                                                                              setTimeout(function () {
+                                                                                milk_10ml_d.style.bottom = "42%";
+                                                                                pipette_centrifuge2.style.bottom = "42%";
+
+                                                                                setTimeout(function () {
+                                                                                  milk_10ml_d.style.opacity = "0%";
+                                                                                  milk_strip_d_2.style.height = "32.2%";
+                                                                                  milk_tube_d_2.style.height = "17.8%";
+                                                                                             test_tube_d.style.visibility = "visible"
+                                                                            test_tube_mbrt_d.style.visibility = "hidden"
+                                                                                  setTimeout(function () {
+                                                                                    milk_strip_d_2.style.opacity = "0%";
+                                                                                    pipette_centrifuge2.style.bottom = "60%";
+                                                                                    pipette_centrifuge2.style.zIndex = "20";
+
+                                                                                    setTimeout(function () {
+                                                                                      pipette_centrifuge2.style.left = "30%";
+                                                                                      f = 103.5;
+
+                                                                                      setTimeout(function () {
+                                                                                        pipette_centrifuge2.style.rotate = "-90deg";
+                                                                                        pipette_centrifuge2.style.bottom = "-4%";
+                                                                                               ins.innerText = "Click on the pipette to transfter 1ml methylene blue solution to each tube"
+                                                                                        pipette_centrifuge2.addEventListener("click", () => {
+                                                                                          if (f === 103.5) {
+                                                                                            pipette_centrifuge2.style.rotate = "0deg";
+                                                                                            pipette_centrifuge2.style.bottom = "50%";
+                                                                                                setTimeout(function () {
+                                                                                                   pipette_centrifuge2.style.left= "50.6%"
+                                                                                                   setTimeout(function () {
+                                                                                                          pipette_centrifuge2.style.bottom = "30%";
+                                                                                                  setTimeout(function () {
+                                                                                                    methylene_blue_1ml.style.visibility = "visible";
+                                                                                                    setTimeout(function () {
+                                                                                                      methylene_blue_1ml.style.bottom = "65%";
+                                                                                                      pipette_centrifuge2.style.bottom = "65%";
+                                                                                                       setTimeout(function () {
+                                                                                                        pipette_centrifuge2.style.left= "74.1%"
+                                                                                                       methylene_blue_1ml.style.left = "75.2%"
+                                                                                                         setTimeout(function () {
+                                                                                                            methylene_blue_1ml.style.bottom = "45%";
+                                                                                                             pipette_centrifuge2.style.bottom = "45%";
+                                                                                                              setTimeout(function () {
+                                                                                                                methylene_blue_drop2.style.opacity = "100%" 
+                                                                                                                methylene_blue_drop1.style.opacity = "0%"
+                                                                                                                 setTimeout(function () {
+                                                                                                                  methylene_blue_drop2.style.opacity = "0%"
+                                                                                                                     methylene_blue_tube.style.opacity = "100%" 
+                                                                                                                     methylene_blue_1ml.style.opacity = "0%"
+                                                                                                                   setTimeout(function () {
+                                                                                                                    
+                                                                                                                     milk_tube_a_2.style.opacity = "0%"
+                                                                                                                     setTimeout(function () {
+                                                                                                                      pipette_centrifuge2.style.bottom = "60%";
+                                                                                                                        setTimeout(function () {
+                                                                                                                          pipette_centrifuge2.style.left = "50.6%"
+                                                                                                                            setTimeout(function () {
+                                                                                                                              pipette_centrifuge2.style.bottom = "30%"
+                                                                                                                            setTimeout(function () {
+                                                                                                                              methylene_blue_1ml_b.style.bottom = "65%"
+                                                                                                                                pipette_centrifuge2.style.bottom = "65%"
+                                                                                                                                setTimeout(function () {
+                                                                                                                                   methylene_blue_1ml_b.style.left = "78.6%";
+                                                                                                             pipette_centrifuge2.style.left = "77.55%";
+                                                                                                              setTimeout(function () {
+                                                                                                                  pipette_centrifuge2.style.bottom  = "38.1%"
+                                                                                                       methylene_blue_1ml_b.style.bottom = "38.2%"
+                                                                                                                  setTimeout(function () {
+                                                                                                                    methylene_blue_drop3.style.opacity = "100%";
+                                                                                                                    methylene_blue_1ml_b.style.visibility = "hidden";
+                                                                                                                     setTimeout(function () {
+                                                                                                                      methylene_blue_tube_b.style.opacity = "100%"
+                                                                                                                          setTimeout(function () {
+                                                                                                                            milk_tube_b_2.style.opacity = "0%"
+                                                                                                                                setTimeout(function () {
+                                                                                                                                  pipette_centrifuge2.style.bottom = "60%"
+                                                                                                                                  milk_tube_b_2.style.opacity = "0%"
+                                                                                                                                  methylene_blue_1ml_b.style.opacity = "0%"
+                                                                                                                                  methylene_blue_1ml_b.style.display = "none"
+                                                                                                                                  methylene_blue_drop3.style.opacity = "0%"
+                                                                                                                                      setTimeout(function () {
+                                                                                                                                        pipette_centrifuge2.style.left = "50.3%";
+                                                                                                                                            setTimeout(function () {
+                                                                                                                                              pipette_centrifuge2.style.bottom = "30%"
+                                                                                                                                               setTimeout(function () {
+                                                                                                                                                methylene_blue_1ml_c.style.visibility  = "visible"
+                                                                                                                                                methylene_blue_1ml_c.style.bottom = "60%"
+                                                                                                                                                pipette_centrifuge2.style.bottom = "60%"
+                                                                                                                                                   setTimeout(function () {
+                                                                                                                                                    methylene_blue_1ml_c.style.left = "82.2%"
+                                                                                                                                                    pipette_centrifuge2.style.left = "81.14%"
+                                                                                                                                                       setTimeout(function () {
+                                                                                                                                                        pipette_centrifuge2.style.bottom = "38.1%"
+                                                                                                                                                        methylene_blue_1ml_c.style.bottom = "38.2%"
+                                                                                                                                                     
+                                                                                                                                                           setTimeout(function () {
+                                                                                                                                                                      methylene_blue_drop4.style.opacity = "100%"
+                                                                                                                                                                     
+                                                                                                                                                                       setTimeout(function () {
+                                                                                                                                                                         methylene_blue_tube_c.style.opacity = "100%"
+                                                                                                                                                                         methylene_blue_1ml_c.style.opacity = "0%"
+                                                                                                                                                                         setTimeout(function () {
+                                                                                                                                                                          milk_tube_c_2.style.opacity = "0%"
+                                                                                                                                                                          methylene_blue_drop4.style.opacity = "0%"
+                                                                                                                                                                           setTimeout(function () {
+                                                                                                                                                                            pipette_centrifuge2.style.bottom = "60%"
+                                                                                                                                                                               setTimeout(function () {
+                                                                                                                                                                                           pipette_centrifuge2.style.left = "50.6%"
+                                                                                                                                                                                   setTimeout(function () {
+                                                                                                                                                                                                  pipette_centrifuge2.style.bottom = "30%"
+                                                                                                                                                                                                     setTimeout(function () {
+                                                                                                                                                                                                        methylene_blue_1ml_d.style.opacity= "100%";
+                                                                                                                                                                                                        methylene_blue_1ml_d.style.bottom = "55%";
+                                                                                                                                                                                                        pipette_centrifuge2.style.bottom = "55%" ; 
+                                                                                                                                                                                                         setTimeout(function () {
+                                                                                                                                                                                                              methylene_blue_1ml_d.style.left = "85.88%";
+                                                                                                                                                                                                        pipette_centrifuge2.style.left = "84.83%" ;
+                                                                                                                                                                                                         setTimeout(function () { 
+                                                                                                                                                                                                                methylene_blue_1ml_d.style.bottom = "40%";
+                                                                                                                                                                                                        pipette_centrifuge2.style.bottom = "40%" ; 
+                                                                                                                                                                                                        
+                                                                                                                                                                                                           setTimeout(function () {
+                                                                                                                                                                                                        methylene_blue_drop5.style.opacity = "100%"
+                                                                                                                                                                                                           setTimeout(function () {
+                                                                                                                                                                                                            methylene_blue_tube_d.style.opacity ="100%";
+                                                                                                                                                                                                            methylene_blue_1ml_d.style.opacity = "0%"
+                                                                                                                                                                                                               setTimeout(function () {
+                                                                                                                                                                                                                milk_tube_d_2.style.opacity = "0%"
+                                                                                                                                                                                                                methylene_blue_drop5.style.opacity = "0%"
+                                                                                                                                                                                                                methylene_blue_drop5.style.display = "none"
+                                                                                                                                                                                                                 setTimeout(function () {
+                                                                                                                                                                                                                  pipette_centrifuge2.style.bottom = "60%"
+                                                                                                                                                                                                                   setTimeout(function () {
+                                                                                                                                                                                                                    pipette_centrifuge2.style.left = "30%"
+                                                                                                                                                                                                                      setTimeout(function () {
+                                                                                                                                                                                                                     pipette_centrifuge2.style.rotate = "-90deg";
+                                                                                                                                                                                                                     pipette_centrifuge2.style.bottom = "-4%";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }, 1000);
+                                                                                                                                                                                                                      
+                                                                                                                                                                                                                           f = 104.5;
+                                                                                                                                                                                                                            ins.innerText = "Click on the Stopper A to put stopper on each tube"                                                                                                                                                                                                                                                                                                                                                                                                                      }, 1000);
+                                                                                                                                                                                                                    }, 1000);
+                                                                                                                                                                                                                  }, 1000);
+                                                                                                                                                                                                                     }, 100);
+                                                                                                                                                                                                              }, 1000);
+                                                                                                                                                                                                                }, 1000);
+                                                                                                                                                                                                                  }, 1000);  
+                                                                                                                                                                                                                    }, 1000);
+                                                                                                                                                                                                        }, 1000);
+                                                                                                                                                                                                          }, 1000);
+                                                                                                                                                                           }, 1000);
+                                                                                                                                                                              }, 1000);
+                                                                                                                                                                                 }, 500);
+                                                                                                                                                                               }, 500);
+                                                                                                                        }, 1000);
+                                                                                                                     }, 1000);
+                                                                                                                                                   }, 1000);
+                                                                                                                        }, 1000);
+                                                                                                                     }, 1000);
+                                                                                                                  }, 1000);
+                                                                                                                                    }, 100);
+                                                                                                                       }, 1000);
+                                                                                                                     }, 1000);
+                                                                                                                  }, 1000);
+                                                                                                                                    },1000);
+                                                                                                                                      }, 1000);
+                                                                                                                                        }, 1000);
+                                                                                                                                          }, 1000);
+                                                                                                                       },1000);
+                                                                                                                     }, 500);
+                                                                                                                   }, 1000);
+                                                                                                                  }, 1000);
+                                                                                                                  
+                                                                                                            }, 1000);
+                                                                                                        }, 1000);
+                                                                                                         }, 1000);
+                                                                                                      }, 1000);
+                                                                                                       }, 1000);
+                                                                                                   }, 1000);
+
+                                                                                          }
+                                                                                        }, { once: true });
+
+                                                                                      }, 1000);
+
+                                                                                    }, 1000);
+
+                                                                                  }, 1000);
+
+                                                                                }, 1000);
+
+                                                                              }, 1000);
+
+                                                                            }, 1000);
+
+                                                                          }, 1000);
+
+                                                                        }, 1000);
+
+                                                                      },1000);
+
+                                                                    }, 1000);
+
+                                                                  }, 1000);
+
+                                                                }, 1000);
+
+                                                              }, 1000);
+
+                                                            }, 1000);
+
+                                                          }, 1000);
+                                                        }
+
+                                                      }, 1000);
+
+                                                    }, 1000);
+
+                                                  }, 1000);
+
+                                                }, 1000);
+
+                                              }, 1000);
+
+                                            }, 1000);
+
+                                          }, 1000);
+
+                                        }, 1000);
+
+                                      }, 1000);
+
+                                    }, 1000);
+
+                                  }, 1000);
+
+                                }, 1000);
+
+                              }, 1000);
+
+                            }, 1000);
+
+                          }, 1000);
+
+                        }, 1000);
+
+                      }, 1000);
+
+                    }, 1000);
+
+                  }, 1000);
+
+                }, 1000);
+
+              }, 1000);
+
+            }, 1000);
+
+          }, 1000);
+
+        }, 1000);
+
+      }, 1000);
+
+    }, { once: true });
+
+  }
+}
+
+tube_cap_a.addEventListener("click", () => {
+   if(f === 104.5){
+    f = 105.5;
+    tube_cap_a.style.bottom = "55%"
+      setTimeout(() => {
+        tube_cap_a.style.left = "74.35%"
+           setTimeout(() => {
+            tube_cap_a.style.bottom = "48%"
+               setTimeout(() => {
+                  tube_cap_b.style.bottom = "55%";
+                   setTimeout(() => {
+                       tube_cap_b.style.left = "77.68%";
+                        setTimeout(() => {
+                              tube_cap_b.style.bottom = "48%";
+                              closed_methylene_blue_tube_a.style.visibility = "visible"
+                              test_tube_a_2.style.display = "none"
+                              tube_cap_a.style.display = "none"
+                              methylene_blue_tube.style.display = "none"
+                          setTimeout(() => {
+                            tube_cap_c.style.bottom = "60%"
+                             setTimeout(() => {
+                              tube_cap_c.style.left = "81.43%"
+                               setTimeout(() => {
+                                tube_cap_c.style.bottom = "48%"
+                                closed_methylene_blue_tube_b.style.visibility = "visible"
+                              test_tube_b_2.style.display = "none"
+                              tube_cap_b.style.display = "none"
+                                   methylene_blue_tube_b.style.display = "none"
+                                   setTimeout(() => {
+                                    tube_cap_d.style.bottom = "55%"
+                                      setTimeout(() => {
+                                        tube_cap_d.style.left = "85%"
+                                         setTimeout(() => {
+                                            tube_cap_d.style.bottom = "48%"
+                                             closed_methylene_blue_tube_c.style.visibility = "visible"
+                              test_tube_c.style.display = "none"
+                              tube_cap_c.style.display = "none";
+                                   methylene_blue_tube_c.style.display = "none"
+                              startbutton.innerText = "NEXT"
+                               setTimeout(() => {
+                                    closed_methylene_blue_tube_d.style.visibility = "visible"
+                              test_tube_d.style.display = "none"
+                              tube_cap_d.style.display = "none"
+                                   methylene_blue_tube_d.style.display = "none"
+                    ;
+                    f=106.5;
+                    ins.innerText = "Click on NEXT button"
+                    startbutton.style.visibility = "visible"
+                                  }, 100);
+                                          }, 1000);
+                                        }, 1000);
+                                          }, 1000);
+                                      }, 1000);
+                                            }, 1000);
+                                                  }, 1000);
+                           }, 1000);
+                      }, 1000);
+                        }, 1000);
+                          }, 1000);
+          }, 1000);
+   }else{(console.log(" the value of f is anot 104.5 ", f))}
+  })
+
 
                                               function zoominout(element) {
                                                 element.classList.add("pulse-effect");
@@ -1071,29 +997,129 @@ function pulse(element) {
 }
 
 
-function milk_tube_b_201(){
+offSwitch2.addEventListener("click", () => {
+  if(f === 107.5){
+    f = 111.5
+    console.log("off switch clicked")
+    pulse(onSwitch2);
+    onSwitch2.style.opacity = "100%";
+    offSwitch2.style.opacity = "0%";
+
+    onSwitch2.style.borderRadius = "30%";
+    setTimeout(() => {
+        onSwitch2.style.borderRadius = "50%";
+    }, 1000);
+
+    // Show temperatures
+    setTempDisplay2.style.opacity = "100%";
+    actualTempDisplay2.style.display = "block";
+    actualTempDisplay2.style.opacity = "100%"
+  
+    pulse(actualTempDisplay2);
+    sampleTempDisplay2.style.display = "block";
+    sampleTempDisplay2.style.opacity = "100%";
+    sampleTempDisplay2.style.visibility = "visible";
+
+    pulse(sampleTempDisplay2);
+    zoominout(sampleTempDisplay2);
+    // Reset sample temperature display
+    sampleTempDisplay2.textContent = "25°C";
+    
+    actualTempDisplay2.textContent = `${currentTemp}°C`;
+    sampleTempDisplay2.textContent = `${currentTemp}°C`;
+
+    ins.innerText = "Click on the Increase symbol to increase the water bath PV to 37°C";
+  }else{console.log("the value for off button is not 107.5",f)}
+});
+
+upOffSwitch2.addEventListener("click", () => {
+    if (f === 111.5 && currentTemp < targetTemp) {
+         console.log("upoff switch")
+        currentTemp  += 2;
+        ins.innerText = "Again Click ↑ button to raise temperature to 100°C"
+        sampleTempDisplay2.textContent = `${currentTemp}°C`;
+        pulse(upOffSwitch2);
+
+        if (currentTemp === targetTemp && !timerStarted) {
+            f = 153;
+            timerStarted = true;
+            ins.innerText = "Click on the Set button and wait till SV reach desired temperature";
+          setOff2.addEventListener("click", () => {
+    pulse(setOff2);
+    console.log("set button active");
+
+    const sampleTarget = currentTemp;
+
+    raiseActualTempToSample(sampleTarget, () => {
+        // 🔥 Temp matched, but DO NOT start timer
+        bathReadyForHolding = true;
+        ins.innerText = "Click on Tube A to Gently Shaking And to put all tubes into water bath for 2 hours";
+        pulse(ins);
+        f = 201;
+    });
+
+}, { once: true });
+
+        }
+    }
+});
+
+function raiseActualTempToSample(sampleTarget, onDone) {
+    let actualTemp = parseFloat(actualTempDisplay2.textContent);
+
+    const tempInterval = setInterval(() => {
+        if (actualTemp < sampleTarget) {
+            actualTemp += 2;
+            actualTempDisplay2.textContent = `${actualTemp}°C`;
+        } else {
+            clearInterval(tempInterval);
+            actualTempDisplay2.textContent = `${sampleTarget}°C`;
+            if (onDone) onDone(); // 🔥 callback when temps match
+        }
+    }, 1000);
+}
+
+
+
+
+
+
+function onAllTubesInserted() {
+    if (!bathReadyForHolding) return;
+
+    bathReadyForHolding = false; // prevent re-trigger
+    console.log("All tubes inserted → starting holding timer");
+   closed_methylene_blue_tube_a.style.visibility = "hidden"
+   closed_white_tube_a_mbrt.style.visibility = "visible"
+   ins.innertext = "Wait For 2 hours"
+    startHoldingTimer(30); // minutes
+}
+
+
+
+closed_methylene_blue_tube_a.addEventListener("click", () => {
+    if(f === 201){
+      152;
   stp39.style.visibility = "visible";
   closed_methylene_blue_tube_b.style.visibility = "visible"
   test_tube_b_2.style.opacity = "0%"
                       test_tube_c_2.style.opacity = "0%"
                       test_tube_d_2.style.opacity = "0%"
- ins.innerText = "click on the tube_cap to close the tubes "
+
  console.log("tube cap ready to be clicked")
+ closed_methylene_blue_tube_a.style.bottom = "60%"
  
   
                 
                     setTimeout(function(){
-                      tongs_A.style.opacity = "100%"
-                      tongs_A.style.visibility = "visible"
+                     closed_methylene_blue_tube_a.style.transform = "rotate(180deg)"
                       
-                          ins.innerText = "click on the tongs to invert tubes for sometime to mix well the methylene solution with the milk"
+                         
                           setTimeout(function(){
-                          tube_cap_a.style.opacity = "0%"
-                          tube_cap_a.style.visibility = "hidden"
-                           tube_cap_b.style.visibility = "hidden"
-                            methylene_blue_tube_b.style.visibility = "hidden"
-                            //   test_tube_b_3.style.visibility = "hidden"
-                            //  test_tube_b_3.style.opacity = "0%"
+                                       closed_methylene_blue_tube_a.style.opacity = "0%"
+                                      closed_methylene_blue_tube_a.style.visibility = "block"
+                                      inverted_methylene_blue_tube_a.style.opacity = "100%"
+                           
                               
                   tube_cap_b.style.opacity = "0%"
                   test_tube_a_2.style.opacity = "0%"
@@ -1104,39 +1130,22 @@ function milk_tube_b_201(){
                 
                   // methylene_blue_tube_b.style.visibility = ""
                          
-                          tongs_A.onclick = function() {
-                            pulse(tongs_A)
+                         
+                          
          if (f === 152) {
         f = 153;
-        tongs_upper.style.bottom = "38%"
-        tongs_down.style.bottom = "34%"
+        
          setTimeout(() => {
-              // milk_tube_a_2.style.bottom =  "60%"
-              // milk_tube_b_2.style.bottom = "60%"
-              // test_tube_a_2.style.bottom = "60%"
-              // test_tube_b_2.style.bottom = "60%"
-              // tube_cap_a.style.bottom = "60%"
-              // tube_cap_b.style.bottom = "60%"
-                 tongs_upper.style.left = "58%"
-                  tongs_down.style.left = "58%"
-                   tongs_upper.style.bottom = "36.8%"
-                  tongs_down.style.transform = "rotate(-10deg)"
+            
                  
-                       setTimeout(() => {
-                        tongs_upper.style.bottom = "86%"
-                  tongs_down.style.bottom = "83%"
-                  closed_methylene_blue_tube_a.style.bottom = "60%"
+                     
 
                            setTimeout(() => {
-                  // test_tube_a_2.style.transform = "rotate(180deg)"
-                  //  methylene_blue_tube.style.transform = "rotate(180deg)"
+               
                   closed_methylene_blue_tube_a.style.transform = "rotate(180deg)"
                              
-                         setTimeout(() => {
-                          tongs_upper2.style.opacity = "100%";
-                           tongs_down2.style.opacity = "100%";
-                           tongs_upper.style.opacity = "0%";
-                           tongs_down.style.opacity = "0%";
+                      
+
                             
                                   setTimeout(() => {
                                       closed_methylene_blue_tube_a.style.opacity = "0%"
@@ -1157,115 +1166,188 @@ function milk_tube_b_201(){
                                               closed_methylene_blue_tube_a.style.opacity= "0%"
                                               setTimeout(() => {
                                         setTimeout(() => {
-                                      inverted_methylene_blue_tube_a.style.bottom = "20%"
-                                      tongs_upper2.style.bottom = "35%";
-                                      tongs_down2.style.bottom = "32%";
+                                       closed_methylene_blue_tube_a.style.transform = "rotate(0deg)"
+                                            inverted_methylene_blue_tube_a.style.transform = "rotate(180deg)"
+                                    
                                         setTimeout(() => {
                                           
-                                           inverted_methylene_blue_tube_a.style.bottom = "12%" 
+                                            inverted_methylene_blue_tube_a.style.opacity= "0%"
+                                              closed_methylene_blue_tube_a.style.opacity= "100%"
                             setTimeout(() => {
-                              tongs_upper2.style.opacity = "0%";
-                              tongs_down2.style.opacity = "0%";
-                             
-
-         if (f === 153) {
-        f = 154;
-        tongs_upper2.style.left = "80%"
-        tongs_down2.style.left = "80%"
-        tongs_upper2.style.opacity = "100%"
-        tongs_down2.style.opacity  = "100%"
-         setTimeout(() => {
-             
-                 tongs_upper2.style.left = "70%"
-                  tongs_down2.style.left = "70%"
-                //    tongs_upper.style.bottom = "36.8%"
-                //   tongs_down.style.transform = "rotate(-10deg)"
-                 
-                       setTimeout(() => {
-                        tongs_upper2.style.bottom = "90%"
-                  tongs_down2.style.bottom = "88%"
-                  closed_methylene_blue_tube_b.style.bottom = "62%"
-
-                           setTimeout(() => {
-               
-                  closed_methylene_blue_tube_b.style.transform = "rotate(180deg)"
-                              setTimeout(() => {
-                                closed_methylene_blue_tube_b.style.opacity = "0%"
-                                      closed_methylene_blue_tube_b.style.visibility = "block"
+                               closed_methylene_blue_tube_a.style.left = "13.6%"
+                            setTimeout(() => {    
+                                closed_methylene_blue_tube_a.style.height = "28%"
+                                  closed_methylene_blue_tube_a.style.width = "1.3%"
+                                   setTimeout(() => {  
+                                         closed_methylene_blue_tube_a.style.bottom = "11%"
+                                             setTimeout(() => {  
+                                              closed_methylene_blue_tube_b.style.bottom = "60%"
+                                                setTimeout(() => { 
+                                                      closed_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                                                    setTimeout(() => { 
+                                                              closed_methylene_blue_tube_b.style.opacity = "0%"
+                                                              
                                       inverted_methylene_blue_tube_b.style.opacity = "100%"
-                                      setTimeout(() => {
-                                        inverted_methylene_blue_tube_b.style.transform = "rotate(180deg)"
-                                        closed_methylene_blue_tube_b.style.transform = "rotate(0deg)"
-                                        setTimeout(() => {
-                                          closed_methylene_blue_tube_b.style.opacity = "100%"
-                                          inverted_methylene_blue_tube_b.style.opacity = "0%"
-                                          setTimeout(() => {
+                                                        setTimeout(() => {     
+                                                                        inverted_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                                        closed_methylene_blue_tube_b.style.transform = "rotate(0deg)"     
+                                                            setTimeout(() => { 
+                                                                             inverted_methylene_blue_tube_b.style.opacity= "0%"
+                                          closed_methylene_blue_tube_b.style.opacity= "100%"
+                                                                setTimeout(() => { 
+                                                                   closed_methylene_blue_tube_b.style.transform = "rotate(-180deg)"
                                             inverted_methylene_blue_tube_b.style.transform = "rotate(0deg)"
-                                            closed_methylene_blue_tube_b.style.transform = "rotate(180deg)"
-                                            setTimeout(() => {
-                                              closed_methylene_blue_tube_b.style.opacity = "0%"
-                                              inverted_methylene_blue_tube_b.style.opacity = "100%"
-                         setTimeout(() => {
-                          tongs_upper2.style.opacity = "100%";
-                           tongs_down2.style.opacity = "100%";
-                           tongs_upper.style.opacity = "0%";
-                           tongs_down.style.opacity = "0%";
-                            
-                                  setTimeout(() => {
-                                      inverted_methylene_blue_tube_b.style.bottom = "20%"
-                                      tongs_upper2.style.bottom = "38%";
-                                      tongs_down2.style.bottom = "35%";
-                             setTimeout(() => {
-                                       inverted_methylene_blue_tube_b.style.bottom = "12%"
-                                        setTimeout(() => {
-                                           tongs_upper2.style.left = "47%";
-                           tongs_down2.style.left = "47%";
-                           ins.innerText = "Click on the on switch to on the waterbath to insert the sample into them one by one"
-                             setTimeout(() => {
-                                       tongs_upper2.style.bottom = "15%";
-                           tongs_down2.style.bottom = "12%";
-                            f = 154;
-                 console.log(f)
-                   waterbath_cob1()
-                        
-                               }, 1000);  
-                                           }, 1000);  
-                                    }, 1000);    
-                                   }, 1000);
-                                  }, 1000);
-                           }, 300);  //300
-                          }, 1000);
-                          }, 1000);
-                        }, 1000);
-                   }, 1000);
-                     }, 1000);
-                          }, 1000);
-               }, 1000);
-              
-         }
+                                                                    setTimeout(() => { 
+                                                                          inverted_methylene_blue_tube_b.style.opacity= "100%"
+                                              closed_methylene_blue_tube_b.style.opacity= "0%"
+                                                                        setTimeout(() => { 
+                                                                            closed_methylene_blue_tube_b.style.transform = "rotate(0deg)"
+                                            inverted_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                                              setTimeout(() => { 
+                                                    inverted_methylene_blue_tube_b.style.opacity= "0%"
+                                              closed_methylene_blue_tube_b.style.opacity= "100%"
+                                                  setTimeout(() => { 
+                                                      closed_methylene_blue_tube_b.style.left = "18.4%"
+                                                      setTimeout(() => { 
+                                                            closed_methylene_blue_tube_b.style.height = "28%"
+                                  closed_methylene_blue_tube_b.style.width = "1.3%"
+                                                          setTimeout(() => { 
+                                                            closed_methylene_blue_tube_b.style.bottom = "11%"
+                                                              setTimeout(() => { 
+                                                                      closed_methylene_blue_tube_c.style.bottom = "60%"
+                                                                          setTimeout(() => { 
+                                                                               closed_methylene_blue_tube_c.style.transform = "rotate(180deg)"
+                                                                                setTimeout(() => { 
+                                                                                   closed_methylene_blue_tube_c.style.opacity = "0%"
+  
+                                      inverted_methylene_blue_tube_c.style.opacity = "100%"
+                                                                                      setTimeout(() => { 
+                                                                                         inverted_methylene_blue_tube_c.style.transform = "rotate(180deg)"
+                                        closed_methylene_blue_tube_c.style.transform = "rotate(0deg)"    
+                                                                                            setTimeout(() => { 
+                                                                                                inverted_methylene_blue_tube_c.style.opacity= "0%"
+                                          closed_methylene_blue_tube_c.style.opacity= "100%"
+                                                                                                  setTimeout(() => { 
+                                                                                                     closed_methylene_blue_tube_c.style.transform = "rotate(-180deg)"
+                                            inverted_methylene_blue_tube_c.style.transform = "rotate(0deg)"
+                                                                                                        setTimeout(() => { 
+                                                                                                           inverted_methylene_blue_tube_c.style.opacity= "100%"
+                                              closed_methylene_blue_tube_c.style.opacity= "0%"
+                                                                                                              setTimeout(() => { 
+                                                                                                                 closed_methylene_blue_tube_c.style.transform = "rotate(0deg)"
+                                            inverted_methylene_blue_tube_b.style.transform = "rotate(180deg)"
+                                              setTimeout(() => { 
+                                                 inverted_methylene_blue_tube_b.style.opacity= "0%"
+                                              closed_methylene_blue_tube_b.style.opacity= "100%"
+                                                  setTimeout(() => { 
+                                                     inverted_methylene_blue_tube_c.style.opacity= "0%"
+                                              closed_methylene_blue_tube_c.style.opacity= "100%"
+                                                      setTimeout(() => { 
+                                                           closed_methylene_blue_tube_c.style.left = "22.6%"
+                                                             setTimeout(() => { 
+                                                                           closed_methylene_blue_tube_c.style.height = "28%"
+                                  closed_methylene_blue_tube_c.style.width = "1.3%"
+                                                                setTimeout(() => { 
+                                                                           closed_methylene_blue_tube_c.style.bottom = "11%"
+                                                                    setTimeout(() => { 
+                                                                           closed_methylene_blue_tube_d.style.bottom = "60%"
+                                                                      setTimeout(() => { 
+                                                                         closed_methylene_blue_tube_d.style.transform = "rotate(180deg)"
+                                                                        setTimeout(() => { 
+                                                                                                                    closed_methylene_blue_tube_d.style.opacity = "0%"
+                                                                                                                              inverted_methylene_blue_tube_d.style.opacity = "100%"
+                                                                          setTimeout(() => { 
+                                                                              inverted_methylene_blue_tube_d.style.transform = "rotate(180deg)"
+                                        closed_methylene_blue_tube_d.style.transform = "rotate(0deg)" 
+                                                                            setTimeout(() => { 
+                                                                                inverted_methylene_blue_tube_d.style.opacity= "0%"
+                                          closed_methylene_blue_tube_d.style.opacity= "100%"
+                                                                              setTimeout(() => { 
+                                                                                closed_methylene_blue_tube_d.style.transform = "rotate(-180deg)"
+                                            inverted_methylene_blue_tube_d.style.transform = "rotate(0deg)"
+                                                                                setTimeout(() => { 
+                                                                                        inverted_methylene_blue_tube_d.style.opacity= "100%"
+                                              closed_methylene_blue_tube_d.style.opacity= "0%"
+                                                                                  setTimeout(() => { 
+                                                                                       closed_methylene_blue_tube_d.style.transform = "rotate(0deg)"
+                                            inverted_methylene_blue_tube_d.style.transform = "rotate(180deg)"
+                                                                                    setTimeout(() => { 
+                                                                                        inverted_methylene_blue_tube_d.style.opacity= "0%"
+                                              closed_methylene_blue_tube_d.style.opacity= "100%"
+
+                                                 setTimeout(() => { 
+                                                  closed_methylene_blue_tube_d.style.left = "26.6%"
+                                                     setTimeout(() => { 
+                                                       closed_methylene_blue_tube_d.style.height = "28%"
+                                  closed_methylene_blue_tube_d.style.width = "1.3%"
+                                  f === 121;
+                                                         setTimeout(() => { 
+                                                        closed_methylene_blue_tube_d.style.bottom = "11%"
+                                                              onAllTubesInserted();
+                                                              },1000) 
+                                                              },1000) 
+                                                              },1000) 
+                                                                                       },1000) 
+                                                                                        },1000) 
+                                                                                         },1000) 
+                                                                                          },1000) 
+                                                                                           },1000) 
+                                                                                            },1000) 
+                                                                                             },1000) 
+                                                                                              },1000) 
+                                                                        },1000) 
+                                                                          },1000) 
+                                                                            },1000) 
+                                                           },0) 
+                                                              },0) 
+                                                                 },0) 
+                                                                                                                       },1000)   
+                                                                                                                              },1000)   
+                                                                                                                                     },1000)   
+                                                                                                                                            },1000)   
+                                                                                                                                                   },1000)   
+                                                                                                                                                          },1000)   
+                                                                                                                                                                 },1000)   
+                                                                   },1000)   
+                                                                      },1000)   
+                                                                         },1000)   
+                                                                            },1000)   
+                                                                               },1000)   
+
+                                                               },1000)               
+                                                                 },1000) 
+                                                                   },1000) 
+                                                                     },1000) 
+                                                     },1000)     
+                                                     },1000)
+                                                     },1000)
+                                            },1000)
+                                      },1000)
+            },1000)
         },1000)
   },1000)
  }, 1000);
 }, 1000);
 }, 1000);
-}, 1500); // 1500
+}, 1000); // 1500
 }, 1000);
 }, 1000);
                                    }, 1000);
-                           }, 300);   //300
+                         
                    }, 1000);
-                          }, 1000);
+                         
                }, 1000);
          }
-        }
+        
          }, 1000);
-                            }, 1000);
+                            }, 10);
               
                 
   
   
+                          }else{(console.log("the value is not 107.5", f))}
+                        })
 
-}
 
 let currentTemp = 25;
 let targetTemp = 37;
@@ -1280,71 +1362,7 @@ onSwitch2.style.visibility = "hidden";
 actualTempDisplay2.style.display = "none";
 sampleTempDisplay2.style.display = "none";
 
-function waterbath_cob1() {
-  stp39.style.visibility = "visible";
-  ins.innerText = "Click on the off switch of water bath to on it "
-offSwitch2.addEventListener("click", () => {
-    if (f === 154) {
-        f = 155;
-        offSwitch2.style.visibility = "hidden";
-        onSwitch2.style.visibility = "visible";
-        pulse(onSwitch2);
-    }
 
-    onSwitch2.style.opacity = "100%";
-    pulse(onSwitch2);
-      console.log("displaying")
-      console.log(setTempDisplay2);
-    settimerDisplay.style.visibility = "visible";
-   pulse(settimerDisplay)
-   sampletimerDisplay.style.visibility = "visible";
-   pulse(sampletimerDisplay)
-
-    setTempDisplay2.style.opacity = "1";
-    actualTempDisplay2.style.display = "block";
-
-    sampletimerDisplay1.style.visibility = "visible";
-    sampletimerDisplay2.style.visibility = "visible";
-  pulse(sampletimerDisplay1)
-  pulse(sampletimerDisplay2)
-    upOffSwitch2.style.display = "block";
-
-    setTempDisplay2.textContent = `${currentTemp}°C`;
-    actualTempDisplay2.textContent = `${currentTemp}°C`;
-    sampletimerDisplay.textContent = `${currentTemp}°C`;
-
-    ins.innerText = "Click the ↑ button to raise set temperature to 100°C";
-});
-
-// TEMP UP → Increment Set Temp
-upOffSwitch2.addEventListener("click", () => {
-    if (f === 155 && currentTemp < targetTemp) {
-         console.log("upoff switch")
-        currentTemp  += 2;
-        ins.innerText = "Again Click ↑ button to raise temperature to 100°C"
-        settimerDisplay.textContent = `${currentTemp}°C`;
-        pulse(upOffSwitch2);
-
-        if (currentTemp === targetTemp && !timerStarted) {
-            f = 156;
-            timerStarted = true;
-            ins.innerText = "Reached 100°C. Click on the Set button to wait for 3 minutes... to rise the water bath temperature to 100°C";
-            console.log = "Click on the set button it is active.."
-            setOff2.addEventListener("click", () => {
-               pulse(setOff2)
-              console.log("set button active")
-            startHoldingTimer(3); // Start 2 min timer
-            f = 201;
-            latex_beaker()
-              
-            },  { once: true })
-        }
-    }
-});
-
-// ⏲️ Start Countdown Timer
-
-}
 
 function startHoldingTimer(minutes) {
 
@@ -1359,46 +1377,635 @@ function startHoldingTimer(minutes) {
     const tempInterval = setInterval(() => {
         if (currentTemp < targetTemp) {
             currentTemp += 2; // Increase temp slowly
-          sampletimerDisplay.textContent = `${currentTemp.toFixed(1)}°C`;
+         
         } else {
             clearInterval(tempInterval);
-            sampletimerDisplay.textContent = `${targetTemp.toFixed(1)}°C`;
+          
         }
-    } , 400  ); //  480 every 0.5s adjust as needed
+    } , 10  ); //  480 every 0.5s adjust as needed
 
     // ⏲️ Countdown Timer
     const countdownInterval = setInterval(() => {
-       timerDisplay13.style.visibility = "visible";
+       timerDisplay_mbrt.style.visibility = "visible";
         let min = Math.floor(seconds / 60);
         let sec = seconds % 60;
-        timerDisplay.textContent = `Timer - ${min}:${sec < 10 ? "0" : ""}${sec}`;
+       timerDisplay_mbrt.textContent = `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
         seconds--;
 
         if (seconds < 0) {
             clearInterval(countdownInterval);
             clearInterval(tempInterval); // Stop temperature interval too
-            timerDisplay13.textContent = "";
-            ins.innerText = "✅ Temperature stabilized. Now Click on the tube A to put all tubes onto water bath for heating all the sample tubes at 100°C";
+            timerDisplay_mbrt.textContent = "00:00";
+            ins.innerText = "Click on Observe Sample A to observe it";
+            f = 991;
+            observation_table_mbrt.style.display = "block"
+            observation_table_mbrt.style.visibility = "visible"
             pulse(ins); // your existing animation
-            
-            
         }
-    }, 100);  //100
+    }, 1);  //100
 }
 
 
 
 
 
+function observeA_mbrt(){
+  if(f=== 991){
+    f = 992;
+     hello_world_mbrt();
+     
+  }
+}
+
+function observeB_mbrt(){
+  if(f=== 993){
+    f = 994;
+     hello_world_mbrt_b();
+    
+  }else if(f === 1000){
+     f = 1001;
+      closed_white_tube_b_mbrt.style.visibility = "visible"
+      closed_methylene_blue_tube_b.style.visibility = "hidden" 
+      hello_world_mbrt_b_b();
+  }else{(console.log("f is not 993 or 1000", f))}
+}
+
+function observeC_mbrt(){
+  if(f=== 995){
+    f = 996;
+     hello_world_mbrt_c();
+    
+  }else if(f === 1002){
+       f = 1003;
+        hello_world_mbrt_c_b();
+  }else if(f === 1007){
+    f = 1008;
+        hello_world_mbrt_c_c();
+  }else{(console.log("value of f is not 995", f))}
+}
+
+function observeD_mbrt(){
+  if(f=== 997){
+    f = 998;
+     hello_world_mbrt_d();
+    
+  }else if(f === 1004){
+       f = 1005;
+        hello_world_mbrt_d_b();
+  }else if(f === 1009){
+     f = 1010;
+        hello_world_mbrt_d_c();
+  }else if(f === 1012){
+    f = 1013;
+    closed_white_tube_d_mbrt.style.visibility = "visible"
+      closed_methylene_blue_tube_d.style.visibility = "hidden" 
+        hello_world_mbrt_d_d();
+  }else{(console.log("value of f is not 995", f))}
+}
+function showValues(sample) {
+  document.getElementById("time-" + sample).style.visibility = "visible";
+  document.getElementById("quality-" + sample).style.visibility = "visible";
+}
+
+
+function hello_world_mbrt(){
+    if(f=== 992){
+      f = 992.5;
+      closed_white_tube_a_mbrt.style.bottom = "40%"
+       setTimeout(() => {
+        closed_white_tube_a_mbrt.style.left = "50%"
+        setTimeout(() => {
+        closed_white_tube_a_mbrt.style.height = "50.2%"
+        closed_white_tube_a_mbrt.style.width = "3.3%"
+        ins.innerText = "Sample is completely decolourised in 30 minutes , Now click on Observe sample B to observe it"
+         setTimeout(() => {
+        showValues("A");
+        
+            setTimeout(() => {
+                  closed_white_tube_a_mbrt.style.height = "49%"
+        closed_white_tube_a_mbrt.style.width = "2.4%"
+               setTimeout(() => {
+                closed_white_tube_a_mbrt.style.left = "74.3%"
+                 setTimeout(() => {
+                  closed_white_tube_a_mbrt.style.bottom = "11.8%"
+                  f = 993;
+                   },1000)
+                    },1000)
+                     },2000)  // 2000
+                        },1000)
+          },1000)
+       },1000)
+    }else{(console.log("f = 992 is not running", f))}
+}
+
+
+function hello_world_mbrt_b(){
+    if(f=== 994){
+      f=994.5;
+      closed_methylene_blue_tube_b.style.bottom = "40%"
+       setTimeout(() => {
+        closed_methylene_blue_tube_b.style.left = "50%"
+       
+  time_B.textContent = "Not Decoularized Yet";
+  quality_B.textContent = "Wait";
+
+        setTimeout(() => {
+        closed_methylene_blue_tube_b.style.height = "55.2%"
+        closed_methylene_blue_tube_b.style.width = "3%"
+        ins.innerText = "Sample B not decolourised yet put again in water bath"        
+              showValues("B");
+            setTimeout(() => {
+                  closed_methylene_blue_tube_b.style.left = "18.4%"
+               setTimeout(() => {
+            
+                    closed_methylene_blue_tube_b.style.height = "28%"
+        closed_methylene_blue_tube_b.style.width = "1.3%"
+                 setTimeout(() => {
+                 closed_methylene_blue_tube_b.style.bottom = "11.8%"
+                  f = 995;
+                  ins.innerText = "Now click on Observe Sample C"
+                   },1000)
+                    },1000)
+                     },2000)  // 2000
+          },1000)
+       },1000)
+    }else{(console.log("f is not 994", f))}
+}
+
+function hello_world_mbrt_b_b(){
+    if(f=== 1001){
+      f = 1001.5;
+     console.log("closed_white_tube_b have to move")
+     
+    
+      closed_white_tube_b_mbrt.style.bottom = "40%"
+       setTimeout(() => {
+        closed_white_tube_b_mbrt.style.left = "50%"
+       
+  time_B.textContent = "2.5";
+  quality_B.textContent = "Bad";
+
+        setTimeout(() => {
+        closed_white_tube_b_mbrt.style.height = "55.2%"
+        closed_white_tube_b_mbrt.style.width = "3%"
+        ins.innerText = "Sample B decolourised put into stand"        
+              showValues("B");
+            setTimeout(() => {
+                  closed_white_tube_b_mbrt.style.left = "77.77%"
+               setTimeout(() => {
+            
+                    closed_white_tube_b_mbrt.style.height = "49%"
+        closed_white_tube_b_mbrt.style.width = "2.4%"
+                 setTimeout(() => {
+                 closed_white_tube_b_mbrt.style.bottom = "11.8%"
+                  f = 1002;
+                  ins.innerText = "Now click on Observe Sample C"
+                   },1000)
+                    },1000)
+                     },2000)
+          },1000)
+       },1000)
+    }else{(console.log("f is not 1001", f))}
+}
 
 
 
+function hello_world_mbrt_c(){
+    if(f=== 996){
+      f = 996.5;
+      closed_methylene_blue_tube_c.style.bottom = "40%"
+       setTimeout(() => {
+        closed_methylene_blue_tube_c.style.left = "50%"
+       
+  time_C.textContent = "Not Decoularized Yet";
+  quality_C.textContent = "Wait";
+
+        setTimeout(() => {
+        closed_methylene_blue_tube_c.style.height = "55.2%"
+        closed_methylene_blue_tube_c.style.width = "3%"
+        ins.innerText = "Sample C not decolourised yet put again in water bath"  
+          setTimeout(() => {      
+              showValues("C");
+            setTimeout(() => {
+                  closed_methylene_blue_tube_c.style.left = "22.6%"
+               setTimeout(() => {
+            
+                    closed_methylene_blue_tube_c.style.height = "28%"
+        closed_methylene_blue_tube_c.style.width = "1.3%"
+                 setTimeout(() => {
+                 closed_methylene_blue_tube_c.style.bottom = "11.8%"
+                  f = 997;
+                  ins.innerText = "Now click on Observe Sample D"
+                   },1000)
+                    },1000)
+                     },2000)  // 2000
+                     },50)   // 500
+          },1000)
+       },1000)
+    }else{(console.log("the value of f is not 996", f))}
+}
 
 
 
+function hello_world_mbrt_c_b(){
+    if(f=== 1003){
+      f = 1003.5;
+     console.log("closed_white_tube_b have to move")
+     
+      closed_methylene_blue_tube_c.style.bottom = "40%"
+       setTimeout(() => {
+        closed_methylene_blue_tube_c.style.left = "50%"
+       
+  
+
+        setTimeout(() => {
+        closed_methylene_blue_tube_c.style.height = "55.2%"
+        closed_methylene_blue_tube_c.style.width = "3%"
+        ins.innerText = "Sample C not decolourised yet put into water bath"        
+              showValues("C");
+            setTimeout(() => {
+                  closed_methylene_blue_tube_c.style.left = "22.6%"
+               setTimeout(() => {
+            
+                    closed_methylene_blue_tube_c.style.height = "28%"
+        closed_methylene_blue_tube_c.style.width = "1.3%"
+                 setTimeout(() => {
+                 closed_methylene_blue_tube_c.style.bottom = "11.8%"
+                  f = 1004;
+                  ins.innerText = "Now click on Observe Sample C"
+                   },1000)
+                    },1000)
+                     },2000)
+          },1000)
+       },1000)
+    }else{(console.log("f is not 1001", f))}
+}
+
+function hello_world_mbrt_c_c(){
+    if(f=== 1008){
+         f = 1008.5;
+      console.log("closed_white_tube_b have to move")
+     
+    
+      closed_white_tube_c_mbrt.style.bottom = "40%"
+       setTimeout(() => {
+        closed_white_tube_c_mbrt.style.left = "50%"
+       
+  time_C.textContent = "4.5";
+  quality_C.textContent = "Fair";
+
+        setTimeout(() => {
+        closed_white_tube_c_mbrt.style.height = "55.2%"
+        closed_white_tube_c_mbrt.style.width = "3%"
+        ins.innerText = "Sample B decolourised put into stand"        
+              showValues("C");
+            setTimeout(() => {
+                  closed_white_tube_c_mbrt.style.left = "81.2%"
+               setTimeout(() => {
+            
+                    closed_white_tube_c_mbrt.style.height = "49%"
+        closed_white_tube_c_mbrt.style.width = "2.4%"
+                 setTimeout(() => {
+                 closed_white_tube_c_mbrt.style.bottom = "11.8%"
+                  f = 1009;
+                  ins.innerText = "Now click on Observe Sample D"
+                   },1000)
+                    },1000)
+                     },2000)
+          },1000)
+       },1000)
+    }else{(console.log("the value of f is not 996", f))}
+}
+
+function hello_world_mbrt_d(){
+    if(f=== 998){
+       f = 998.5;
+      closed_methylene_blue_tube_d.style.bottom = "40%"
+       setTimeout(() => {
+        closed_methylene_blue_tube_d.style.left = "50%"
+       
+  time_D.textContent = "Not Decoularized Yet";
+  quality_D.textContent = "Wait";
+
+        setTimeout(() => {
+        closed_methylene_blue_tube_d.style.height = "55.2%"
+        closed_methylene_blue_tube_d.style.width = "3%"
+        ins.innerText = "Sample C not decolourised yet put again in water bath"  
+          setTimeout(() => {      
+              showValues("D");
+            setTimeout(() => {
+                  closed_methylene_blue_tube_d.style.left = "26.6%"
+               setTimeout(() => {
+
+                    closed_methylene_blue_tube_d.style.height = "28%"
+        closed_methylene_blue_tube_d.style.width = "1.3%"
+                 setTimeout(() => {
+                 closed_methylene_blue_tube_d.style.bottom = "11.8%"
+                  f = 999;
+                  ins.innerText = "Now heat all butyrometer again for 2 hours more"
+                     time_B.style.visibility = "hidden"
+                     time_C.style.visibility = "hidden"
+                     time_D.style.visibility = "hidden"
+                     quality_B.style.visibility  = "hidden"
+                      quality_C.style.visibility  = "hidden"
+                      quality_D.style.visibility  = "hidden"
+                       setTimeout(() => {
+                      startHoldingTimer_mbrt_b(120);
+                      
+                       },1000)
+                   },2000)  // 3000
+                    },100)
+                     },2000) //2000
+                     },500)  // 500
+          },1000)
+       },1000)  //
+    }
+}
+
+function hello_world_mbrt_d_b(){
+    if(f=== 1005){
+       f = 1005.5;
+      closed_methylene_blue_tube_d.style.bottom = "40%"
+       setTimeout(() => {
+        closed_methylene_blue_tube_d.style.left = "50%"
+       
+  time_D.textContent = "Not Decoularized Yet";
+  quality_D.textContent = "Wait";
+
+        setTimeout(() => {
+        closed_methylene_blue_tube_d.style.height = "55.2%"
+        closed_methylene_blue_tube_d.style.width = "3%"
+        ins.innerText = "Sample C not decolourised yet put again in water bath"  
+          setTimeout(() => {      
+              showValues("D");
+            setTimeout(() => {
+                  closed_methylene_blue_tube_d.style.left = "26.6%"
+               setTimeout(() => {
+
+                    closed_methylene_blue_tube_d.style.height = "28%"
+        closed_methylene_blue_tube_d.style.width = "1.3%"
+                 setTimeout(() => {
+                 closed_methylene_blue_tube_d.style.bottom = "11.8%"
+                  f = 1006;
+                  ins.innerText = "Now heat all butyrometer again for 2 hours more"
+                   
+                     time_C.style.visibility = "hidden"
+                     time_D.style.visibility = "hidden"
+                    
+                      quality_C.style.visibility  = "hidden"
+                      quality_D.style.visibility  = "hidden"
+                       setTimeout(() => {
+                      startHoldingTimer_mbrt_b_b(120);
+                      
+                       },1000)
+                   },3000)  // 3000
+                    },1000)
+                     },2000) //2000
+                     },500)  // 500
+          },1000)
+       },1000)  //
+    }
+}
+
+function hello_world_mbrt_d_c(){
+    if(f=== 1010){
+        f = 1010.5
+      closed_methylene_blue_tube_d.style.bottom = "40%"
+       setTimeout(() => {
+        closed_methylene_blue_tube_d.style.left = "50%"
+       
+  time_D.textContent = "Not Decoularized Yet";
+  quality_D.textContent = "Wait";
+
+        setTimeout(() => {
+        closed_methylene_blue_tube_d.style.height = "55.2%"
+        closed_methylene_blue_tube_d.style.width = "3%"
+        ins.innerText = "Sample D not decolourised yet put again in water bath"  
+          setTimeout(() => {      
+              showValues("D");
+            setTimeout(() => {
+                  closed_methylene_blue_tube_d.style.left = "26.6%"
+               setTimeout(() => {
+
+                    closed_methylene_blue_tube_d.style.height = "28%"
+        closed_methylene_blue_tube_d.style.width = "1.3%"
+                 setTimeout(() => {
+                 closed_methylene_blue_tube_d.style.bottom = "11.8%"
+                  
+                  ins.innerText = "Now heat only D tube for 1 hours more"
+                   
+                    
+                     time_D.style.visibility = "hidden"
+                    
+
+                      quality_D.style.visibility  = "hidden"
+                       setTimeout(() => {
+                        f = 1011;
+                      startHoldingTimer_mbrt_b_c(60);
+                      
+                       },1000)
+                   },3000)  // 3000
+                    },1000)
+                     },2000) //2000
+                     },500)  // 500
+          },1000)
+       },1000)  //
+    }
+}
+
+function hello_world_mbrt_d_d(){
+    if(f=== 1013){
+        f = 1013.5
+      console.log("closed_white_tube_b have to move")
+     
+    
+      closed_white_tube_d_mbrt.style.bottom = "40%"
+       setTimeout(() => {
+        closed_white_tube_d_mbrt.style.left = "50%"
+       
+  time_D.textContent = "5.5";
+  quality_D.textContent = "Good";
+
+        setTimeout(() => {
+        closed_white_tube_d_mbrt.style.height = "55.2%"
+        closed_white_tube_d_mbrt.style.width = "3%"
+        ins.innerText = "Sample D decolourised put into stand"        
+              showValues("D");
+            setTimeout(() => {
+                  closed_white_tube_d_mbrt.style.left = "85%"
+               setTimeout(() => {
+            
+                    closed_white_tube_d_mbrt.style.height = "49%"
+        closed_white_tube_d_mbrt.style.width = "2.4%"
+                 setTimeout(() => {
+                 closed_white_tube_d_mbrt.style.bottom = "11.8%"
+                  f = 1014;
+                  ins.innerText = "Now click on Show Inference Button"
+                  inferenceBtn_mbrt.style.visibility = "visible"
+                  inferenceBtn_mbrt.style.display = "block"
+                   },1000)
+                    },1000)
+                     },2000)
+          },1000)
+       },1000)
+    }else{(console.log("the value of f is not 996", f))}
+}
 
 
+function startHoldingTimer_mbrt_b(minutes) {
+     if(f === 999){
+    let seconds = minutes * 60;
+    let currentTemp = 20; // Starting temperature
+    const targetTemp = 100;
+    
+    closed_methylene_blue_tube_b.style.visibility = "hidden"
+     closed_methylene_blue_tube_b.style.visibility = "visible"
+    
+    actualTempDisplay2.style.display = "block"; // Optional if you have a bath temp display
+   
+    // 🔥 Interval to increase bath temperature slowly
+    const tempInterval = setInterval(() => {
+        if (currentTemp < targetTemp) {
+            currentTemp += 2; // Increase temp slowly
+      
+        } else {
+            clearInterval(tempInterval);
+
+        }
+    } , 0 ); //  480 every 0.5s adjust as needed
+
+    // ⏲️ Countdown Timer
+    const countdownInterval = setInterval(() => {
+       timerDisplay_mbrt.style.visibility = "visible";
+        let min = Math.floor(seconds / 60);
+        let sec = seconds % 60;
+        timerDisplay_mbrt.textContent = `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+        seconds--;
+
+        if (seconds < 0) {
+            clearInterval(countdownInterval);
+            clearInterval(tempInterval); // Stop temperature interval too
+            timerDisplay_mbrt.textContent = "00:00";
+            ins.innerText = "Now click on Observe Sample B";
+            f = 1000;
+            
+
+            observation_table_mbrt.style.display = "block"
+            observation_table_mbrt.style.visibility = "visible"
+            pulse(ins); // your existing animation
+        }
+    }, 0);  //100
+  }else{(console.log("currently f is not 999", f))}
+}
 
 
+function startHoldingTimer_mbrt_b_b(minutes) {
+     if(f === 1006){
+    let seconds = minutes * 60;
+    let currentTemp = 20; // Starting temperature
+    const targetTemp = 100;
+    
+
+    
+    actualTempDisplay2.style.display = "block"; // Optional if you have a bath temp display
+   
+    // 🔥 Interval to increase bath temperature slowly
+    const tempInterval = setInterval(() => {
+        if (currentTemp < targetTemp) {
+            currentTemp += 2; // Increase temp slowly
+       
+        } else {
+            clearInterval(tempInterval);
+     
+        }
+    } , 0 ); //  480 every 0.5s adjust as needed
+
+    // ⏲️ Countdown Timer
+    const countdownInterval = setInterval(() => {
+       timerDisplay_mbrt.style.visibility = "visible";
+        let min = Math.floor(seconds / 60);
+        let sec = seconds % 60;
+       timerDisplay_mbrt.textContent = `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+        seconds--;
+
+        if (seconds < 0) {
+            clearInterval(countdownInterval);
+            clearInterval(tempInterval); // Stop temperature interval too
+            timerDisplay_mbrt.textContent = "00:00";
+            ins.innerText = "Now click on Observe Sample B";
+            f = 1007;
+             closed_white_tube_c_mbrt.style.visibility = "visible"
+      closed_methylene_blue_tube_c.style.visibility = "hidden" 
+
+            observation_table_mbrt.style.display = "block"
+            observation_table_mbrt.style.visibility = "visible"
+            pulse(ins); // your existing animation
+        }
+    }, 1);  //100
+  }else{(console.log("currently f is not 999", f))}
+}
+
+function startHoldingTimer_mbrt_b_c(minutes) {
+     if(f === 1011){
+    let seconds = minutes * 60;
+    let currentTemp = 20; // Starting temperature
+    const targetTemp = 100;
+    
+
+    
+    actualTempDisplay2.style.display = "block"; // Optional if you have a bath temp display
+   
+    // 🔥 Interval to increase bath temperature slowly
+    const tempInterval = setInterval(() => {
+        if (currentTemp < targetTemp) {
+            currentTemp += 2; // Increase temp slowly
+    
+        } else {
+            clearInterval(tempInterval);
+
+        }
+    } , 0 ); //  480 every 0.5s adjust as needed
+
+    // ⏲️ Countdown Timer
+    const countdownInterval = setInterval(() => {
+       timerDisplay_mbrt.style.visibility = "visible";
+        let min = Math.floor(seconds / 60);
+        let sec = seconds % 60;
+    timerDisplay_mbrt.textContent = `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+        seconds--;
+
+        if (seconds < 0) {
+            clearInterval(countdownInterval);
+            clearInterval(tempInterval); // Stop temperature interval too
+            timerDisplay_mbrt.textContent = "00:00";
+            ins.innerText = "Now click on Observe Sample D";
+            f = 1012;
+             closed_white_tube_c_mbrt.style.visibility = "visible"
+      closed_methylene_blue_tube_c.style.visibility = "hidden" 
+
+            observation_table_mbrt.style.display = "block"
+            observation_table_mbrt.style.visibility = "visible"
+            pulse(ins); // your existing animation
+        }
+    }, 1);  //100
+  }else{(console.log("currently f is not 999", f))}
+}
+
+
+showInference_mbrt()
+function showInference_mbrt() {
+    pulse(inferenceBtn_mbrt);
+      
+  if(f === 1014){
+    ins.innerText = "Now read observations and inference carefully"
+  inferenceBtn_mbrt.style.display = "none";
+  stp39.style.visibility = "hidden"
+  stp18.style.visibility = "hidden"
+inferenceBox_mbrt.style.display = "block"
+stp39.style.display = "none"
+   console.log("1014 inference function is runnning")
+   stp17.style.display = "none"
+  }else{console.log("f is not 1014", f)}
+}
 
 
