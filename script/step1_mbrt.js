@@ -588,7 +588,8 @@ function pipette2() {
                                               milk_10ml_b.style.opacity = "0%";
                                               milk_strip_b_2.style.opacity = "0%";
                                               pipette_centrifuge2.style.zIndex = "20";
-
+                                                 test_tube_b_2.style.visibility = "visible"
+                                                                            test_tube_mbrt_b.style.visibility = "hidden"
                                               setTimeout(function () {
                                                 pipette_centrifuge2.style.bottom = "60.4%";
                                                 pipette_centrifuge2.style.zIndex = "5";
@@ -602,8 +603,7 @@ function pipette2() {
                                                     setTimeout(function () {
                                                       milk_10ml_c.style.height = "17.8%";
                                                       milk_c_2_50ml.style.height = "13%";
-                                                                        test_tube_b_2.style.visibility = "visible"
-                                                                            test_tube_mbrt_b.style.visibility = "hidden"
+                                                                     
                                                       setTimeout(function () {
                                                         pipette_centrifuge2.style.bottom = "54%";
                                                         milk_10ml_c.style.bottom = "54%";
@@ -612,7 +612,7 @@ function pipette2() {
                                                           f = 103;
 
                                                           setTimeout(function () {
-                                                            pipette_centrifuge2.style.left = "81%";
+                                                            pipette_centrifuge2.style.left = "81.8%";
                                                             milk_10ml_c.style.left = "82%";
 
                                                             setTimeout(function () {
@@ -677,7 +677,7 @@ function pipette2() {
                                                                                             pipette_centrifuge2.style.rotate = "0deg";
                                                                                             pipette_centrifuge2.style.bottom = "50%";
                                                                                                 setTimeout(function () {
-                                                                                                   pipette_centrifuge2.style.left= "50.6%"
+                                                                                                   pipette_centrifuge2.style.left= "51.6%"
                                                                                                    setTimeout(function () {
                                                                                                           pipette_centrifuge2.style.bottom = "30%";
                                                                                                   setTimeout(function () {
@@ -790,35 +790,35 @@ function pipette2() {
                                                                                                                                                                                                                       
                                                                                                                                                                                                                            f = 104.5;
                                                                                                                                                                                                                             ins.innerText = "Click on the Stopper A to put stopper on each tube"                                                                                                                                                                                                                                                                                                                                                                                                                      }, 1000);
-                                                                                                                                                                                                                    }, 1000);
-                                                                                                                                                                                                                  }, 1000);
-                                                                                                                                                                                                                     }, 100);
-                                                                                                                                                                                                              }, 1000);
-                                                                                                                                                                                                                }, 1000);
+                                                                                                                                                                                                                    }, 0);
+                                                                                                                                                                                                                  }, 0);
+                                                                                                                                                                                                                     }, 0);  // 100
+                                                                                                                                                                                                              }, 0);
+                                                                                                                                                                                                                }, 0);
                                                                                                                                                                                                                   }, 1000);  
                                                                                                                                                                                                                     }, 1000);
                                                                                                                                                                                                         }, 1000);
                                                                                                                                                                                                           }, 1000);
                                                                                                                                                                            }, 1000);
                                                                                                                                                                               }, 1000);
-                                                                                                                                                                                 }, 500);
-                                                                                                                                                                               }, 500);
+                                                                                                                                                                                 }, 500);  //500
+                                                                                                                                                                               }, 500);  // 500
                                                                                                                         }, 1000);
                                                                                                                      }, 1000);
                                                                                                                                                    }, 1000);
                                                                                                                         }, 1000);
                                                                                                                      }, 1000);
                                                                                                                   }, 1000);
-                                                                                                                                    }, 100);
+                                                                                                                                    }, 100); // 100
                                                                                                                        }, 1000);
                                                                                                                      }, 1000);
                                                                                                                   }, 1000);
                                                                                                                                     },1000);
                                                                                                                                       }, 1000);
                                                                                                                                         }, 1000);
-                                                                                                                                          }, 1000);
-                                                                                                                       },1000);
-                                                                                                                     }, 500);
+                                                                                                                                          }, 0);
+                                                                                                                       }, 1000);
+                                                                                                                     }, 500);  //500
                                                                                                                    }, 1000);
                                                                                                                   }, 1000);
                                                                                                                   
@@ -832,86 +832,86 @@ function pipette2() {
                                                                                           }
                                                                                         }, { once: true });
 
-                                                                                      }, 1000);
+                                                                                      }, 0);
 
-                                                                                    }, 1000);
+                                                                                    }, 0);
 
-                                                                                  }, 1000);
+                                                                                  }, 0);
 
-                                                                                }, 1000);
+                                                                                }, 0);
 
-                                                                              }, 1000);
+                                                                              }, 0);
 
-                                                                            }, 1000);
+                                                                            }, 0);
 
-                                                                          }, 1000);
+                                                                          }, 0);
 
-                                                                        }, 1000);
+                                                                        }, 0);
 
-                                                                      },1000);
+                                                                      },0);
 
-                                                                    }, 1000);
+                                                                    }, 0);
 
-                                                                  }, 1000);
+                                                                  }, 0);
 
-                                                                }, 1000);
+                                                                }, 0);
 
-                                                              }, 1000);
+                                                              }, 0);
 
-                                                            }, 1000);
+                                                            }, 0);
 
-                                                          }, 1000);
+                                                          }, 0);
                                                         }
 
-                                                      }, 1000);
+                                                      }, 0);
 
-                                                    }, 1000);
+                                                    }, 0);
 
-                                                  }, 1000);
+                                                  }, 0);
 
-                                                }, 1000);
+                                                }, 0);
 
-                                              }, 1000);
+                                              }, 0);
 
-                                            }, 1000);
+                                            }, 0);
 
-                                          }, 1000);
+                                          }, 0);
 
-                                        }, 1000);
+                                        }, 0);
 
-                                      }, 1000);
+                                      }, 0);
 
-                                    }, 1000);
+                                    }, 0);
 
-                                  }, 1000);
+                                  }, 0);
 
-                                }, 1000);
+                                }, 0);
 
-                              }, 1000);
+                              }, 0);
 
-                            }, 1000);
+                            }, 0);
 
-                          }, 1000);
+                          }, 0);
 
-                        }, 1000);
+                        }, 0);
 
-                      }, 1000);
+                      }, 0);
 
-                    }, 1000);
+                    }, 0);
 
-                  }, 1000);
+                  }, 0);
 
-                }, 1000);
+                }, 0);
 
-              }, 1000);
+              }, 0);
 
-            }, 1000);
+            }, 0);
 
-          }, 1000);
+          }, 0);
 
-        }, 1000);
+        }, 0);
 
-      }, 1000);
+      }, 0);
 
     }, { once: true });
 
@@ -925,13 +925,13 @@ tube_cap_a.addEventListener("click", () => {
       setTimeout(() => {
         tube_cap_a.style.left = "74.35%"
            setTimeout(() => {
-            tube_cap_a.style.bottom = "48%"
+            tube_cap_a.style.bottom = "46%"
                setTimeout(() => {
                   tube_cap_b.style.bottom = "55%";
                    setTimeout(() => {
                        tube_cap_b.style.left = "77.68%";
                         setTimeout(() => {
-                              tube_cap_b.style.bottom = "48%";
+                              tube_cap_b.style.bottom = "46%";
                               closed_methylene_blue_tube_a.style.visibility = "visible"
                               test_tube_a_2.style.display = "none"
                               tube_cap_a.style.display = "none"
@@ -941,7 +941,7 @@ tube_cap_a.addEventListener("click", () => {
                              setTimeout(() => {
                               tube_cap_c.style.left = "81.43%"
                                setTimeout(() => {
-                                tube_cap_c.style.bottom = "48%"
+                                tube_cap_c.style.bottom = "46%"
                                 closed_methylene_blue_tube_b.style.visibility = "visible"
                               test_tube_b_2.style.display = "none"
                               tube_cap_b.style.display = "none"
@@ -951,7 +951,7 @@ tube_cap_a.addEventListener("click", () => {
                                       setTimeout(() => {
                                         tube_cap_d.style.left = "85%"
                                          setTimeout(() => {
-                                            tube_cap_d.style.bottom = "48%"
+                                            tube_cap_d.style.bottom = "46%"
                                              closed_methylene_blue_tube_c.style.visibility = "visible"
                               test_tube_c.style.display = "none"
                               tube_cap_c.style.display = "none";
@@ -966,18 +966,18 @@ tube_cap_a.addEventListener("click", () => {
                     f=106.5;
                     ins.innerText = "Click on NEXT button"
                     startbutton.style.visibility = "visible"
-                                  }, 100);
-                                          }, 1000);
-                                        }, 1000);
-                                          }, 1000);
-                                      }, 1000);
-                                            }, 1000);
-                                                  }, 1000);
-                           }, 1000);
-                      }, 1000);
-                        }, 1000);
-                          }, 1000);
-          }, 1000);
+                                  }, 0);  //100
+                                          }, 0);
+                                        }, 0);
+                                          }, 0);
+                                      },0);
+                                            }, 0);
+                                                  }, 0);
+                           }, 0);
+                      }, 0);
+                        }, 0);
+                          }, 0);
+          }, 0);
    }else{(console.log(" the value of f is anot 104.5 ", f))}
   })
 
@@ -1053,7 +1053,7 @@ upOffSwitch2.addEventListener("click", () => {
     raiseActualTempToSample(sampleTarget, () => {
         // 🔥 Temp matched, but DO NOT start timer
         bathReadyForHolding = true;
-        ins.innerText = "Click on Tube A to Gently Shaking And to put all tubes into water bath for 2 hours";
+        ins.innerText = "Click on Tube A to Gently Shaking And to put all tubes into water bath for 30 minutes";
         pulse(ins);
         f = 201;
     });
@@ -1301,45 +1301,45 @@ closed_methylene_blue_tube_a.addEventListener("click", () => {
                                                            },0) 
                                                               },0) 
                                                                  },0) 
-                                                                                                                       },1000)   
-                                                                                                                              },1000)   
-                                                                                                                                     },1000)   
-                                                                                                                                            },1000)   
-                                                                                                                                                   },1000)   
-                                                                                                                                                          },1000)   
-                                                                                                                                                                 },1000)   
-                                                                   },1000)   
-                                                                      },1000)   
-                                                                         },1000)   
-                                                                            },1000)   
-                                                                               },1000)   
+                                                                                                                       },0)   
+                                                                                                                              },0)   
+                                                                                                                                     },0)   
+                                                                                                                                            },0)   
+                                                                                                                                                   },0)   
+                                                                                                                                                          },0)   
+                                                                                                                                                                 },0)   
+                                                                   },0)   
+                                                                      },0)   
+                                                                         },0)   
+                                                                            },0)   
+                                                                               },0)   
 
-                                                               },1000)               
-                                                                 },1000) 
-                                                                   },1000) 
-                                                                     },1000) 
-                                                     },1000)     
-                                                     },1000)
-                                                     },1000)
-                                            },1000)
-                                      },1000)
-            },1000)
-        },1000)
-  },1000)
- }, 1000);
-}, 1000);
-}, 1000);
-}, 1000); // 1500
-}, 1000);
-}, 1000);
-                                   }, 1000);
+                                                               },0)               
+                                                                 },0) 
+                                                                   },0) 
+                                                                     },0) 
+                                                     },0)     
+                                                     },0)
+                                                     },0)
+                                            },0)
+                                      },0)
+            },0)
+        },0)
+  },0)
+ }, 0);
+}, 0);
+}, 0);
+}, 0); // 1500
+}, 0);
+}, 0);
+                                   }, 0);
                          
-                   }, 1000);
+                   }, 0);
                          
-               }, 1000);
+               }, 0);
          }
         
-         }, 1000);
+         }, 0);
                             }, 10);
               
                 
@@ -1475,12 +1475,15 @@ function hello_world_mbrt(){
        setTimeout(() => {
         closed_white_tube_a_mbrt.style.left = "50%"
         setTimeout(() => {
+          closed_methylene_blue_tube_a.style.bottom = "28%"
+          setTimeout(() => {
         closed_white_tube_a_mbrt.style.height = "50.2%"
         closed_white_tube_a_mbrt.style.width = "3.3%"
         ins.innerText = "Sample is completely decolourised in 30 minutes , Now click on Observe sample B to observe it"
          setTimeout(() => {
         showValues("A");
-        
+               setTimeout(() => {
+                 closed_white_tube_a_mbrt.style.bottom = "40%"
             setTimeout(() => {
                   closed_white_tube_a_mbrt.style.height = "49%"
         closed_white_tube_a_mbrt.style.width = "2.4%"
@@ -1492,7 +1495,9 @@ function hello_world_mbrt(){
                    },1000)
                     },1000)
                      },2000)  // 2000
+                      },1000)
                         },1000)
+                           },1000)
           },1000)
        },1000)
     }else{(console.log("f = 992 is not running", f))}
@@ -1508,13 +1513,16 @@ function hello_world_mbrt_b(){
        
   time_B.textContent = "Not Decoularized Yet";
   quality_B.textContent = "Wait";
-
+       setTimeout(() => {
+          closed_methylene_blue_tube_b.style.bottom = "28%"
         setTimeout(() => {
         closed_methylene_blue_tube_b.style.height = "55.2%"
         closed_methylene_blue_tube_b.style.width = "3%"
         ins.innerText = "Sample B not decolourised yet put again in water bath"        
               showValues("B");
             setTimeout(() => {
+                closed_methylene_blue_tube_b.style.bottom = "40%"
+                  setTimeout(() => {
                   closed_methylene_blue_tube_b.style.left = "18.4%"
                setTimeout(() => {
             
@@ -1526,8 +1534,10 @@ function hello_world_mbrt_b(){
                   ins.innerText = "Now click on Observe Sample C"
                    },1000)
                     },1000)
+                       },1000)
                      },2000)  // 2000
           },1000)
+           },1000)
        },1000)
     }else{(console.log("f is not 994", f))}
 }
@@ -1544,13 +1554,16 @@ function hello_world_mbrt_b_b(){
        
   time_B.textContent = "2.5";
   quality_B.textContent = "Bad";
-
+             setTimeout(() => {
+          closed_white_tube_b_mbrt.style.bottom = "28%"
         setTimeout(() => {
         closed_white_tube_b_mbrt.style.height = "55.2%"
         closed_white_tube_b_mbrt.style.width = "3%"
         ins.innerText = "Sample B decolourised put into stand"        
               showValues("B");
             setTimeout(() => {
+                closed_white_tube_b_mbrt.style.bottom = "40%"
+                 setTimeout(() => {
                   closed_white_tube_b_mbrt.style.left = "77.77%"
                setTimeout(() => {
             
@@ -1562,8 +1575,10 @@ function hello_world_mbrt_b_b(){
                   ins.innerText = "Now click on Observe Sample C"
                    },1000)
                     },1000)
+                      },1000)
                      },2000)
           },1000)
+           },1000)
        },1000)
     }else{(console.log("f is not 1001", f))}
 }
@@ -1579,13 +1594,16 @@ function hello_world_mbrt_c(){
        
   time_C.textContent = "Not Decoularized Yet";
   quality_C.textContent = "Wait";
-
+             setTimeout(() => {
+          closed_methylene_blue_tube_c.style.bottom = "28%"
         setTimeout(() => {
         closed_methylene_blue_tube_c.style.height = "55.2%"
         closed_methylene_blue_tube_c.style.width = "3%"
         ins.innerText = "Sample C not decolourised yet put again in water bath"  
           setTimeout(() => {      
               showValues("C");
+                setTimeout(() => {  
+                    closed_methylene_blue_tube_c.style.bottom = "40%"
             setTimeout(() => {
                   closed_methylene_blue_tube_c.style.left = "22.6%"
                setTimeout(() => {
@@ -1598,9 +1616,11 @@ function hello_world_mbrt_c(){
                   ins.innerText = "Now click on Observe Sample D"
                    },1000)
                     },1000)
+                          },1000)
                      },2000)  // 2000
                      },50)   // 500
           },1000)
+            },1000)
        },1000)
     }else{(console.log("the value of f is not 996", f))}
 }
@@ -1616,7 +1636,8 @@ function hello_world_mbrt_c_b(){
        setTimeout(() => {
         closed_methylene_blue_tube_c.style.left = "50%"
        
-  
+        setTimeout(() => {
+          closed_methylene_blue_tube_c.style.bottom = "28%"
 
         setTimeout(() => {
         closed_methylene_blue_tube_c.style.height = "55.2%"
@@ -1624,6 +1645,8 @@ function hello_world_mbrt_c_b(){
         ins.innerText = "Sample C not decolourised yet put into water bath"        
               showValues("C");
             setTimeout(() => {
+                 closed_methylene_blue_tube_c.style.bottom = "40%"
+                 setTimeout(() => {
                   closed_methylene_blue_tube_c.style.left = "22.6%"
                setTimeout(() => {
             
@@ -1635,8 +1658,9 @@ function hello_world_mbrt_c_b(){
                   ins.innerText = "Now click on Observe Sample C"
                    },1000)
                     },1000)
+                       },1000)
                      },2000)
-          },1000)
+          },1000)  },1000)
        },1000)
     }else{(console.log("f is not 1001", f))}
 }
@@ -1653,13 +1677,16 @@ function hello_world_mbrt_c_c(){
        
   time_C.textContent = "4.5";
   quality_C.textContent = "Fair";
-
+              setTimeout(() => {
+          closed_white_tube_c_mbrt.style.bottom = "28%"
         setTimeout(() => {
         closed_white_tube_c_mbrt.style.height = "55.2%"
         closed_white_tube_c_mbrt.style.width = "3%"
         ins.innerText = "Sample B decolourised put into stand"        
               showValues("C");
             setTimeout(() => {
+                 closed_white_tube_c_mbrt.style.bottom = "40%"
+               setTimeout(() => {
                   closed_white_tube_c_mbrt.style.left = "81.2%"
                setTimeout(() => {
             
@@ -1671,8 +1698,10 @@ function hello_world_mbrt_c_c(){
                   ins.innerText = "Now click on Observe Sample D"
                    },1000)
                     },1000)
+                       },1000)
                      },2000)
           },1000)
+           },1000)
        },1000)
     }else{(console.log("the value of f is not 996", f))}
 }
@@ -1686,15 +1715,20 @@ function hello_world_mbrt_d(){
        
   time_D.textContent = "Not Decoularized Yet";
   quality_D.textContent = "Wait";
-
+                    setTimeout(() => {
+          closed_methylene_blue_tube_d.style.bottom = "28%"
         setTimeout(() => {
         closed_methylene_blue_tube_d.style.height = "55.2%"
         closed_methylene_blue_tube_d.style.width = "3%"
         ins.innerText = "Sample C not decolourised yet put again in water bath"  
           setTimeout(() => {      
               showValues("D");
+               setTimeout(() => {  
+                    closed_methylene_blue_tube_d.style.bottom = "40%"
             setTimeout(() => {
                   closed_methylene_blue_tube_d.style.left = "26.6%"
+
+             
                setTimeout(() => {
 
                     closed_methylene_blue_tube_d.style.height = "28%"
@@ -1715,9 +1749,11 @@ function hello_world_mbrt_d(){
                        },1000)
                    },2000)  // 3000
                     },100)
+                      },1000)
                      },2000) //2000
                      },500)  // 500
           },1000)
+           },1000)
        },1000)  //
     }
 }
@@ -1731,13 +1767,16 @@ function hello_world_mbrt_d_b(){
        
   time_D.textContent = "Not Decoularized Yet";
   quality_D.textContent = "Wait";
-
+           setTimeout(() => {
+          closed_methylene_blue_tube_d.style.bottom = "28%"
         setTimeout(() => {
         closed_methylene_blue_tube_d.style.height = "55.2%"
         closed_methylene_blue_tube_d.style.width = "3%"
         ins.innerText = "Sample C not decolourised yet put again in water bath"  
           setTimeout(() => {      
               showValues("D");
+                        setTimeout(() => { 
+             closed_methylene_blue_tube_d.style.bottom = "40%"  
             setTimeout(() => {
                   closed_methylene_blue_tube_d.style.left = "26.6%"
                setTimeout(() => {
@@ -1760,8 +1799,10 @@ function hello_world_mbrt_d_b(){
                        },1000)
                    },3000)  // 3000
                     },1000)
+                        },1000)
                      },2000) //2000
                      },500)  // 500
+          },1000)
           },1000)
        },1000)  //
     }
@@ -1783,6 +1824,8 @@ function hello_world_mbrt_d_c(){
         ins.innerText = "Sample D not decolourised yet put again in water bath"  
           setTimeout(() => {      
               showValues("D");
+               setTimeout(() => {  
+                      closed_methylene_blue_tube_d.style.bottom = "40%"
             setTimeout(() => {
                   closed_methylene_blue_tube_d.style.left = "26.6%"
                setTimeout(() => {
@@ -1806,6 +1849,7 @@ function hello_world_mbrt_d_c(){
                        },1000)
                    },3000)  // 3000
                     },1000)
+                      },1000)
                      },2000) //2000
                      },500)  // 500
           },1000)
@@ -1831,6 +1875,8 @@ function hello_world_mbrt_d_d(){
         closed_white_tube_d_mbrt.style.width = "3%"
         ins.innerText = "Sample D decolourised put into stand"        
               showValues("D");
+                setTimeout(() => {
+            closed_white_tube_d_mbrt.style.bottom = "40%"
             setTimeout(() => {
                   closed_white_tube_d_mbrt.style.left = "85%"
                setTimeout(() => {
@@ -1843,8 +1889,10 @@ function hello_world_mbrt_d_d(){
                   ins.innerText = "Now click on Show Inference Button"
                   inferenceBtn_mbrt.style.visibility = "visible"
                   inferenceBtn_mbrt.style.display = "block"
+                  document.getElementById("workingtable").src = "images/light_blue_color.jpg";
                    },1000)
                     },1000)
+                      },1000)
                      },2000)
           },1000)
        },1000)
@@ -2002,6 +2050,7 @@ function showInference_mbrt() {
   stp39.style.visibility = "hidden"
   stp18.style.visibility = "hidden"
 inferenceBox_mbrt.style.display = "block"
+
 stp39.style.display = "none"
    console.log("1014 inference function is runnning")
    stp17.style.display = "none"

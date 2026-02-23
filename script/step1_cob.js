@@ -244,13 +244,13 @@ function pipette1() {
                                                                                              setTimeout(function(){
                                                                                                 pipette_centrifuge.style.bottom = "62%"
                                                                                                     setTimeout(function(){
-                                                                                              pipette_centrifuge.style.left= "30.3%"
+                                                                                              pipette_centrifuge.style.left= "55.3%"
                                                                                                          setTimeout(function(){
-                                                                       pipette_centrifuge.style.bottom = "11%"
+                                                                       pipette_centrifuge.style.bottom = "20%"
                                      setTimeout(function(){       
                                       pipette_centrifuge.style.rotate = "-90deg"
                                       setTimeout(function(){
-                                         pipette_centrifuge.style.bottom = "-5%"
+                                         pipette_centrifuge.style.bottom = "-1%"
 
                                          startbutton.style.visibility="visible"
                                          startbutton.innerText="Next"
@@ -275,31 +275,31 @@ function pipette1() {
                                                         
                                                         }
                                                    
-                                                      }, 1000)
-                                                                                   }, 1000)
-                                                                         }, 1000)
+                                                      },0)
+                                                                                   },0)
+                                                                         },0)
                                                                                                 }, 1000)
-                                                                                   }, 1000)
-                                                                         }, 1000)
-                                                                                     }, 1000)
-                                                                               }, 1000)
-                                                                    }, 1000)
-                                                               }, 1000)
+                                                                                   }, 0)
+                                                                         }, 0)
+                                                                                     }, 0)
+                                                                               }, 0)
+                                                                    }, 0)
+                                                               }, 0)
                                                         
-                                                                         }, 1000)
+                                                                         }, 0)
                                                                         }
                  
                                         
-                                                                   }, 1000)
-                                                                         }, 1000)
-                                                                       }, 1000)
-                                                                      }, 1000)
-                                                                     },1000)
-                                                                   }, 1000)
-                                                                 }, 1000)
-                                                                 }, 1000)
-                                                             }, 1000)
-                                                        }, 1000)
+                                                                   }, 0)
+                                                                         },0)
+                                                                       }, 0)
+                                                                      }, 0)
+                                                                     },0)
+                                                                   }, 0)
+                                                                 }, 0)
+                                                                 }, 0)
+                                                             }, 0)
+                                                        }, 0)
                                                     
                                       }, 1000)
                                      }, 1000)
@@ -309,7 +309,7 @@ function pipette1() {
                               }, 1000)
                           }, 1000)
                         }, 1000)
-                       }, 1000)   //1200
+                       }, 1200)   //1200
                   }, 1000)
                 }
                  }, 1000)
@@ -417,15 +417,15 @@ function startHoldingTimer(minutes) {
     actualTempDisplay3.style.display = "block"; // Optional if you have a bath temp display
    
     // 🔥 Interval to increase bath temperature slowly
-    const tempInterval = setInterval(() => {
-        if (currentTemp < targetTemp) {
-            currentTemp += 2; // Increase temp slowly
-          actualTempDisplay3.textContent = `${currentTemp.toFixed(1)}°C`;
-        } else {
-            clearInterval(tempInterval);
-            actualTempDisplay3.textContent = `${targetTemp.toFixed(1)}°C`;
-        }
-    } , 400  ); //400  480 every 0.5s adjust as needed
+  const tempInterval = setInterval(() => {
+  if (currentTemp < targetTemp) {
+    currentTemp += 2;
+    actualTempDisplay3.textContent = `${Math.round(currentTemp)}°C`;
+  } else {
+    clearInterval(tempInterval);
+    actualTempDisplay3.textContent = `${Math.round(targetTemp)}°C`;
+  }
+}, 400); //400  480 every 0.5s adjust as needed
 
     // ⏲️ Countdown Timer
     const countdownInterval = setInterval(() => {
@@ -746,7 +746,13 @@ function showCob(sample) {
                                      setTimeout(() => {
                                       milk_tube_a.style.left = "44%"
                                       butyrometer_a.style.left = "44%"
+                                       setTimeout(() => {
+                                           milk_tube_a.style.bottom = "28%"
+                                     butyrometer_a.style.bottom = "28%"
                                       setTimeout(() => {
+                                         milk_tube_a.style.bottom = "40%"
+                                     butyrometer_a.style.bottom = "40%"
+                                            setTimeout(() => {
                                         milk_tube_a.style.height = "27%"
                                         milk_tube_a.style.width = "4%"
 
@@ -770,7 +776,9 @@ function showCob(sample) {
        }, 1000);
         }, 1000);
                                     }, 2000);
+                                         }, 1000);
                                       }, 1000);
+                                         }, 1000);
                                     }, 1000);
                                      
                                   }else{console.log("the value of f is not 221", f)}
@@ -786,11 +794,11 @@ function showCob(sample) {
                                       yellow_milk_tube_b.style.left = "44%"
   
                                       setTimeout(() => {
-                                        yellow_milk_tube_b.style.bottom = "35%"
+                                        yellow_milk_tube_b.style.bottom = "28%"
 
                                        
-                                        
-                         
+                                            
+                                           
                                           setTimeout(() => { 
                              yellow_milk_tube_b.style.height = "65%"
     yellow_milk_tube_b.style.width = "3.2%"
@@ -812,7 +820,9 @@ function showCob(sample) {
        
                                     }, 1000);
                                       }, 1000);
-                                    }, 1000);
+                                      }, 1000);
+
+                                    
                                      
                                   }else{console.log("the value of f is not 221", f)}
                                 }
@@ -827,15 +837,17 @@ function showCob(sample) {
         setTimeout(() => {
           butyrometer_c.style.left = "44%"
           milk_tube_c.style.left = "44%"
-          setTimeout(() => {
+         
+
+               setTimeout(() => {
             butyrometer_c.style.height = "64%"
             butyrometer_c.style.width = "4%"
         
             milk_tube_c.style.height = "30.5%"
             milk_tube_c.style.width = "4%"
 
-            butyrometer_c.style.bottom = "38%"
-            milk_tube_c.style.bottom = "38%"
+            butyrometer_c.style.bottom = "28%"
+            milk_tube_c.style.bottom = "28%"
      showValues("C");
  setTimeout(() => {
    
@@ -860,7 +872,8 @@ function showCob(sample) {
        }, 2000);
        
         }, 2000);
-                                    }, 1000);
+          }, 1000);
+                                  
                                       }, 1000);
                                    
                                      
@@ -879,7 +892,7 @@ function showCob(sample) {
           setTimeout(() => {
             yellow_milk_tube_d.style.height = "69%"
             yellow_milk_tube_d.style.width = "4.5%"
-            yellow_milk_tube_d.style.bottom = "35%"
+            yellow_milk_tube_d.style.bottom = "28%"
             showValues("D");
             setTimeout(() => {
      

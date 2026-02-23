@@ -1781,7 +1781,7 @@ bottom: 5%; */
 #tube_cap_a {
   position: absolute;
   width: 2.3%;
-  height: 7.3%;
+  height: 6%;
   bottom: 13.5%;
   left: 63.6%;
     z-index: 40;
@@ -1792,7 +1792,7 @@ bottom: 5%; */
 #tube_cap_c {
   position: absolute;
   width: 2.3%;
-  height: 7.3%;
+  height: 6%;
   bottom: 10%;
   left: 63.6%;
     z-index: 40;
@@ -1802,7 +1802,7 @@ bottom: 5%; */
 #tube_cap_d {
   position: absolute;
   width: 2.3%;
-  height: 7.3%;
+  height: 6%;
   bottom: 10%;
   left: 66.6%;
     z-index: 40;
@@ -1833,7 +1833,7 @@ bottom: 5%; */
 #tube_cap_b {
   position: absolute;
   width: 2.3%;
-  height: 7.3%;
+  height: 6%;
  bottom: 13.5%;
   left: 66.7%;
     z-index: 40;
@@ -1875,13 +1875,13 @@ bottom: 5%; */
    position: absolute;
 
  /* Background color area you care about */
-  color: rgb(233, 13, 61);
+   color: rgb(255, 247, 0);
   font-weight: bold;
-  font-size: 0.9vw;
+  font-size: 1.25vw;
 
   text-align: center;
-  bottom: 22.4%;        /* 221.1 */
-   left: 18.3%;
+  bottom: 22.2%;        /* 221.1 */
+   left: 17.6%;
   transition: all;
   transition-duration: 1s;
   opacity: 100%;
@@ -1895,7 +1895,7 @@ bottom: 5%; */
  /* Background color area you care about */
   color: rgb(233, 13, 61);
   font-weight: bold;
-  font-size: 0.9vw;
+  font-size: 1.2vw;
 
   text-align: center;
   bottom: 22.4%;        /* 221.1 */
@@ -1911,12 +1911,12 @@ bottom: 5%; */
 #actualTempDisplay2 {
    position: absolute;
  /* Background color area you care about */
-  color: rgb(233, 13, 61);
+  color: rgb(255, 247, 0);
   font-weight: bold;
-  font-size: 0.9vw;
+  font-size: 1.2vw;
   text-align: center;
   bottom: 22.4%;        /* 221.1 */
-   left: 18.3%;
+   left: 18%;
   transition: all;
   transition-duration: 1s;
   opacity: 0%;
@@ -1931,10 +1931,10 @@ bottom: 5%; */
  /* Background color area you care about */
   color: cyan;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.25vw;
   
   text-align: center;
-  bottom: 18.8%;
+  bottom: 18.2%;
   left: 14.19%;
   transition: all;
   transition-duration: 1s;
@@ -1948,10 +1948,10 @@ bottom: 5%; */
  /* Background color area you care about */
   color: cyan;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.2vw;
   
   text-align: center;
-  bottom: 18.8%;
+  bottom: 18.2%;
   left: 14.19%;
   transition: all;
   transition-duration: 1s;
@@ -1982,9 +1982,9 @@ bottom: 5%; */
  /* Background color area you care about */
   color: cyan;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.25vw;
   text-align: center;
-  bottom: 22.9%;
+  bottom: 22.35%;
    left: 14.19%;
   transition: all;
   transition-duration: 1s;
@@ -1997,9 +1997,9 @@ bottom: 5%; */
  /* Background color area you care about */
   color: cyan;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-align: center;
-  bottom: 22.9%;
+  bottom: 22.3%;
    left: 14.19%;
   transition: all;
   transition-duration: 1s;
@@ -2047,13 +2047,13 @@ bottom: 5%; */
   position: absolute;
 
  /* Background color area you care about */
-  color: rgb(233, 13, 61);
+ color: rgb(77, 255, 0);
   font-weight: bold;
-  font-size: 0.9vw;
+  font-size: 1.25vw;
   
   text-align: center;
-  bottom: 18.2%;
-  left: 18.3%;
+  bottom: 17.67%;
+  left: 17.55%;
   transition: all;
   transition-duration: 1s;
   opacity: 100%;
@@ -2064,13 +2064,13 @@ bottom: 5%; */
   position: absolute;
 
  /* Background color area you care about */
-  color: rgb(233, 13, 61);
+  color: rgb(77, 255, 0);
   font-weight: bold;
-  font-size: 0.9vw;
+  font-size: 1.2vw;
   
   text-align: center;
   bottom: 18.2%;
-  left: 18.3%;
+  left: 18%;
   transition: all;
   transition-duration: 1s;
   opacity: 100%;
@@ -2232,6 +2232,7 @@ bottom: 5%; */
 }
 
 
+
 #set{
   position: absolute;
  color: rgb(89, 10, 10);
@@ -2246,10 +2247,11 @@ bottom: 5%; */
  visibility: block;
 }
 
+
+
 #timerDisplay13{
   position: absolute;
   color: rgb(40, 237, 0);
-  
   font-weight: bold;
   font-size: 2.6vw;
   bottom: 18.9%;
@@ -2259,26 +2261,23 @@ bottom: 5%; */
   z-index: 30;
   visibility: visible;
   display: block;
-  
-  
 }
+
 
 #timerDisplay_mbrt{
   position: absolute;
   color: rgb(40, 237, 0);
-  
   font-weight: bold;
-  font-size: 2.6vw;
+  font-size: 2.3vw;
   bottom: 18.9%;
   width: 9%;
   opacity: 100%;
-  left: 47.8%;
+  left: 48.1%;
   z-index: 30;
   visibility: hidden;
   display: block;
-  
-  
 }
+
 
 #timerDisplay12,
 #timerDisplay22 {
@@ -2791,9 +2790,10 @@ bottom: 5%; */
   display: block;
   visibility: visible;
   opacity: 1;
-  color: red;
+  color: rgb(9, 255, 0);
   height: 100%;
   z-index: 30;
+  font-size: 1.2vw;
 }
 
 #water_beaker{
@@ -3488,9 +3488,9 @@ bottom: 5%; */
 #methylene_blue_familiar_mbrt{
   position: absolute;
   height: 30%;
-  width: 8.6%;
+  width: 6.6%;
  bottom: 12.6%;
-  left: 40.0%;
+  left: 41.3%;
   transition: all;
   transition-duration: 1s;
   z-index: 4;
@@ -3774,10 +3774,10 @@ bottom: 5%; */
 
 #methylene_blue_container{
    position: absolute;
-    height: 27.4%;
-    width: 7.5%;
-   bottom: 12.6%;
-    left: 48%;
+    height: 29%;
+    width: 7.1%;
+   bottom: 11.6%;
+    left: 49%;
     transition: all;
     transition-duration: 1s;
     z-index: 34;
@@ -3786,12 +3786,14 @@ bottom: 5%; */
 
 
 
+
+
 #methylene_blue_cap{
    position: absolute;
-    height: 7.9%;
-    width: 5.0%;
-    bottom: 12.6%;
-    left: 56.6%;
+    height: 5.5%;
+    width: 3%;
+    bottom: 13%;
+    left: 57%;
     transition: all;
     transition-duration: 1s;
     z-index: 4;
@@ -3803,7 +3805,7 @@ bottom: 5%; */
     height: 3.7%;
     width: 0.6%;
     bottom: 25.8%;
-    left: 51.5%;
+    left: 52.5%;
     transition: all;
     transition-duration: 1s;
     z-index: 0;
@@ -4132,8 +4134,8 @@ bottom: 5%; */
 }
 #closed_methylene_blue_tube_a{
    position: absolute;
-    width: 2.13%;
-    height: 42.2%;
+    width: 2.24%;
+    height: 40%;
    bottom: 11.8%;
     left: 74.4%;
    visibility: hidden;
@@ -4193,8 +4195,8 @@ bottom: 5%; */
 
 #closed_methylene_blue_tube_c{
    position: absolute;
-    width: 2.2%;
-    height: 42.18%;
+   width: 2.24%;
+    height: 40%;
    bottom: 11.8%;
     left: 81.5%;
    visibility: hidden;
@@ -4204,8 +4206,8 @@ bottom: 5%; */
 }
 #closed_methylene_blue_tube_d{
    position: absolute;
-    width: 2.2%;
-    height: 42.18%;
+   width: 2.24%;
+    height: 40%;
    bottom: 11.8%;
     left: 85.1%;
    visibility: hidden;
@@ -4257,8 +4259,8 @@ bottom: 5%; */
 }
 #closed_methylene_blue_tube_b{
    position: absolute;
-    width: 2.1%;
-    height: 42.2%;
+    width: 2.24%;
+    height: 40%;
    bottom: 11.8%;
     left: 77.8%;
    visibility: hidden;
