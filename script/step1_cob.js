@@ -21,6 +21,8 @@ const milk_b_5ml = document.querySelector('#milk_sample_b_5ml');
 const milk_c_5ml = document.querySelector('#milk_sample_c_5ml');
 const milk_d_5ml = document.querySelector('#milk_sample_d_5ml');
 
+const workingTable = document.getElementById("workingtable");
+
 const milk_tube_a = document.querySelector('#milk_tube_a');
 const milk_tube_b = document.querySelector('#milk_tube_b');
 const milk_tube_c = document.querySelector('#milk_tube_c');
@@ -197,8 +199,9 @@ function pipette1() {
                                                                                    milk_c_5ml.style.bottom = "40%"
                                                                        pipette_centrifuge.style.bottom= "40%"
                                                                                setTimeout(function(){
-                                                                                milk_strip_c.style.height =  "42.2%"
+                                                                                
                                                                                 milk_tube_c.style.height = "18.8%"
+                                                                                milk_strip_c.style.height =  "30.2%"
                                                                                       setTimeout(function(){
                                                                                         milk_c_5ml.style.height = "0%"
                                                                                         milk_strip_c.style.opacity = "0%"
@@ -275,31 +278,31 @@ function pipette1() {
                                                         
                                                         }
                                                    
-                                                      },0)
-                                                                                   },0)
-                                                                         },0)
+                                                      }, 1000)
+                                                                                   }, 1000)
+                                                                         }, 1000)
                                                                                                 }, 1000)
-                                                                                   }, 0)
-                                                                         }, 0)
-                                                                                     }, 0)
-                                                                               }, 0)
-                                                                    }, 0)
-                                                               }, 0)
+                                                                                   }, 1000)
+                                                                         }, 1000)
+                                                                                     }, 1000)
+                                                                               }, 1000)
+                                                                    }, 1000)
+                                                               }, 1000)
                                                         
-                                                                         }, 0)
+                                                                         }, 1000)
                                                                         }
                  
                                         
-                                                                   }, 0)
-                                                                         },0)
-                                                                       }, 0)
-                                                                      }, 0)
-                                                                     },0)
-                                                                   }, 0)
-                                                                 }, 0)
-                                                                 }, 0)
-                                                             }, 0)
-                                                        }, 0)
+                                                                   }, 1000)
+                                                                         }, 1000)
+                                                                       }, 1000)
+                                                                      }, 1000)
+                                                                     }, 1000)
+                                                                   }, 1000)
+                                                                 }, 1000)
+                                                                 }, 1000)
+                                                             }, 1000)
+                                                        }, 500)
                                                     
                                       }, 1000)
                                      }, 1000)
@@ -550,10 +553,10 @@ function startHoldingTimer2(minutes) {
         if (currentTemp2 < targetTemp2) {
             currentTemp2 += 2; // Increase temp slowly
           
-          actualTempDisplay3.textContent = `${currentTemp.toFixed(1)}°C`;
+          actualTempDisplay3.textContent = `${Math.round(currentTemp)}°C`;
         } else {
             clearInterval(tempInterval);
-            actualTempDisplay3.textContent = `${targetTemp.toFixed(1)}°C`;
+            actualTempDisplay3.textContent = `${Math.round(currentTemp)}°C`;
         }
     } , 400  ); //  480 every 0.5s adjust as needed
 
@@ -678,22 +681,7 @@ butyrometer_a.addEventListener("click", () => {
 
 
 
-function observeA(){
-  if(f=== 220.5){
-    f = 220.8;
-     hello_world();
-     setTimeout(() => {
-  showValues("A");
-      
-  setTimeout(() => {
-    if(f=== 220.9){
-    f = 221;
-    showCob("A");
-    }
-  }, 4000);
-   }, 3000);
-  }
-}
+
 
 function observeB(){
   if(f=== 221){
@@ -705,7 +693,7 @@ function observeB(){
       
   
    }, 3000);
-  }
+  }else{(console.log("the value of f is not 221", f))}
 }
 
 function observeC(){
@@ -749,9 +737,7 @@ function showCob(sample) {
                                        setTimeout(() => {
                                            milk_tube_a.style.bottom = "28%"
                                      butyrometer_a.style.bottom = "28%"
-                                      setTimeout(() => {
-                                         milk_tube_a.style.bottom = "40%"
-                                     butyrometer_a.style.bottom = "40%"
+                                     
                                             setTimeout(() => {
                                         milk_tube_a.style.height = "27%"
                                         milk_tube_a.style.width = "4%"
@@ -759,8 +745,12 @@ function showCob(sample) {
                                         butyrometer_a.style.height = "65%"
                                         butyrometer_a.style.width = "4%"
                                         
-                                        
+                                          setTimeout(() => {
+                                                    showValues("A");
                                           setTimeout(() => { 
+                                                milk_tube_a.style.bottom = "40%"
+                                     butyrometer_a.style.bottom = "40%"
+                                            setTimeout(() => { 
                                           butyrometer_a.style.height = "45%"
     butyrometer_a.style.width = "2.51%"
 
@@ -773,16 +763,33 @@ function showCob(sample) {
       butyrometer_a.style.bottom = "11.8%"
       milk_tube_a.style.bottom = "11.8%"
        f = 220.9;
+        setTimeout(() => {
+    if(f=== 220.9){
+    f = 221;
+    showCob("A");
+    ins.innerText = "Click on Observe Sample B button to observe it"
+    }else{(console.log("the value of f is not 220.9",f))}
+  }, 1000);
        }, 1000);
         }, 1000);
                                     }, 2000);
+                                       }, 1000);
+                                     }, 1000);
                                          }, 1000);
-                                      }, 1000);
+                                    
                                          }, 1000);
                                     }, 1000);
                                      
                                   }else{console.log("the value of f is not 221", f)}
                                 }
+                                
+    function observeA(){
+  if(f=== 220.5){
+    f = 220.8;
+     hello_world();
+   
+  }
+}
 
   function hello_world2(){
   if (f === 221.5) {
@@ -807,14 +814,18 @@ function showCob(sample) {
       yellow_milk_tube_b.style.height = "45%"
     yellow_milk_tube_b.style.width = "2.7%"
     setTimeout(() => {
+        yellow_milk_tube_b.style.bottom = "40%"
+       setTimeout(() => {
    yellow_milk_tube_b.style.left = "73%"
    
       setTimeout(() => {
       yellow_milk_tube_b.style.bottom = "11.8%"
       f = 222;
-      showCob("B"); 
+      showCob("B");
+      ins.innerText = "Click on Observe Sample C button to observe it" 
          }, 1000);
       }, 1000);
+       }, 1000);
        }, 2000);
        
        
@@ -838,7 +849,9 @@ function showCob(sample) {
           butyrometer_c.style.left = "44%"
           milk_tube_c.style.left = "44%"
          
-
+                 setTimeout(() => {
+                    butyrometer_c.style.bottom = "28%"
+            milk_tube_c.style.bottom = "28%"
                setTimeout(() => {
             butyrometer_c.style.height = "64%"
             butyrometer_c.style.width = "4%"
@@ -846,8 +859,7 @@ function showCob(sample) {
             milk_tube_c.style.height = "30.5%"
             milk_tube_c.style.width = "4%"
 
-            butyrometer_c.style.bottom = "28%"
-            milk_tube_c.style.bottom = "28%"
+          
      showValues("C");
  setTimeout(() => {
    
@@ -857,7 +869,9 @@ function showCob(sample) {
     milk_tube_c.style.height = "20.5%"
     milk_tube_c.style.width = "2.53%"
 
-    
+     setTimeout(() => {
+          butyrometer_c.style.bottom = "40%"
+        milk_tube_c.style.bottom = "40%"
     setTimeout(() => {
     
       butyrometer_c.style.left = "77%"
@@ -870,10 +884,11 @@ function showCob(sample) {
       showCob("C"); 
       }, 1000);
        }, 2000);
+        }, 1000);
        
         }, 2000);
           }, 1000);
-                                  
+                      }, 1000);             
                                       }, 1000);
                                    
                                      
@@ -889,16 +904,20 @@ function showCob(sample) {
         setTimeout(() => {
           yellow_milk_tube_d.style.left = "44%"
          
+           setTimeout(() => {
+             yellow_milk_tube_d.style.bottom = "28%"
           setTimeout(() => {
             yellow_milk_tube_d.style.height = "69%"
             yellow_milk_tube_d.style.width = "4.5%"
-            yellow_milk_tube_d.style.bottom = "28%"
+           
             showValues("D");
             setTimeout(() => {
      
   yellow_milk_tube_d.style.height = "45%"
     yellow_milk_tube_d.style.width = "2.7%"
     setTimeout(() => {
+       yellow_milk_tube_d.style.bottom = "40%"
+       setTimeout(() => {
     
     yellow_milk_tube_d.style.left = "80.3%"
     setTimeout(() => {
@@ -910,6 +929,7 @@ function showCob(sample) {
         setTimeout(() => {
           
       inferenceBtn.style.visibility = "visible";
+       workingTable.src = "images/bgblue.png";
       stp16.style.visibility = "hidden"
   stp16.style.display = "none"
   stp15.style.display = "none"
@@ -919,8 +939,10 @@ function showCob(sample) {
        }, 1000);
        
         }, 1000);
+          }, 1000);
                                     }, 2000);
                                        }, 1000);
+                                         }, 1000);
                                       }, 1000);
                                    
                                      

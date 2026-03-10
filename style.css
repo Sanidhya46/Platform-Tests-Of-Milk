@@ -1610,7 +1610,7 @@ bottom: 5%; */
   bottom: 18%; /* 100% - top: 6.5% - height: 39% */
   left: 26.5%;
    overflow: hidden;
-   z-index: 17;
+   z-index: 18;
    visibility: hidden;
    transition: 1s all;
 }
@@ -4064,8 +4064,8 @@ bottom: 5%; */
    position: absolute;
     height: 0%;
     width: 0.3%;
-   top: 47%;
-    left: 78.02%;
+   top: 49%;
+    left: 77.89%;
     transition: all;
     transition-duration: 1s;
     z-index: 5;
