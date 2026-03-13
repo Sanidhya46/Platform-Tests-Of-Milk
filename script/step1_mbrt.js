@@ -35,6 +35,7 @@ const observation_table_mbrt = document.querySelector('#observation_table_mbrt')
 
               const inferenceBtn_mbrt = document.getElementById("inferenceBtn_mbrt");
                    const inferenceBox_mbrt = document.getElementById("inferenceBox_mbrt");
+                   const workingTable = document.getElementById("workingtable");
 window.onload = function() {
 
 
@@ -1890,7 +1891,7 @@ function hello_world_mbrt_d_d(){
                   ins.innerText = "Now click on Show Inference Button"
                   inferenceBtn_mbrt.style.visibility = "visible"
                   inferenceBtn_mbrt.style.display = "block"
-                  document.getElementById("workingtable").src = "images/light_blue_color.jpg";
+                  workingTable.src = "images/bgblue.png";
                    },1000)
                     },1000)
                       },1000)
